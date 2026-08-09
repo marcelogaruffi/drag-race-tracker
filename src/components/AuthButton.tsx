@@ -28,7 +28,7 @@ export default async function AuthButton() {
   }
 
   return (
-    <Link href="/login" style={{
+    <Link href="/auth" style={{
       backgroundColor: '#ff007f',
       color: '#fff',
       border: 'none',

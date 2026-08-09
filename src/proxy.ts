@@ -7,13 +7,13 @@ export function proxy(request: NextRequest) {
   const hasCookie = request.cookies.has(cookieName);
 
   // Se o usuário está tentando acessar login ou signup, e JÁ tem o cookie, joga pra Home
-  if (hasCookie && (request.nextUrl.pathname.startsWith('/login') || request.nextUrl.pathname.startsWith('/signup'))) {
+  if (hasCookie && (request.nextUrl.pathname.startsWith('/auth') || request.nextUrl.pathname.startsWith('/signup'))) {
     return NextResponse.redirect(new URL('/', request.url))
   }
 
   // Se o usuário NÃO tem o cookie e está tentando acessar qualquer rota protegida
-  if (!hasCookie && !request.nextUrl.pathname.startsWith('/login') && !request.nextUrl.pathname.startsWith('/signup')) {
-    return NextResponse.redirect(new URL('/login', request.url))
+  if (!hasCookie && !request.nextUrl.pathname.startsWith('/auth') && !request.nextUrl.pathname.startsWith('/signup')) {
+    return NextResponse.redirect(new URL('/auth', request.url))
   }
 
   return NextResponse.next()

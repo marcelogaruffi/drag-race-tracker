@@ -52,7 +52,7 @@ export default async function LoginPage({
           background: 'linear-gradient(90deg, transparent, var(--color-neon-pink), transparent)'
         }}></div>
 
-        <form className="flex flex-col w-full gap-5" style={{ color: '#fff' }}>
+        <form action={login} className="flex flex-col w-full gap-5" style={{ color: '#fff' }}>
           
           <div className="flex flex-col gap-2">
             <label htmlFor="email" style={{ fontWeight: '500', color: '#ddd', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</label>
@@ -99,7 +99,7 @@ export default async function LoginPage({
 
           <div className="flex flex-col mt-4">
             <button
-              formAction={login}
+              type="submit"
               style={{
                 backgroundColor: 'var(--color-neon-pink)',
                 color: '#fff',

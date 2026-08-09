@@ -52,7 +52,7 @@ export default async function SignupPage({
           background: 'linear-gradient(90deg, transparent, var(--color-gold), transparent)'
         }}></div>
 
-        <form className="flex flex-col w-full gap-4" style={{ color: '#fff' }}>
+        <form action={signup} className="flex flex-col w-full gap-4" style={{ color: '#fff' }}>
           
           <div className="flex flex-col gap-1">
             <label htmlFor="email" style={{ fontWeight: '500', color: '#ddd', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</label>
@@ -142,7 +142,7 @@ export default async function SignupPage({
 
           <div className="flex flex-col mt-4">
             <button
-              formAction={signup}
+              type="submit"
               style={{
                 backgroundColor: 'transparent',
                 color: 'var(--color-gold)',
@@ -177,7 +177,7 @@ export default async function SignupPage({
 
         <div style={{ marginTop: '2.5rem', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem' }}>
           <p style={{ color: '#888', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Já possui acesso?</p>
-          <Link href="/login" style={{ 
+          <Link href="/auth" style={{ 
             color: '#fff', 
             textDecoration: 'none', 
             fontWeight: 'bold', 

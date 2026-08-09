@@ -19,7 +19,7 @@ export async function login(formData: FormData) {
   });
 
   if (error || !userId) {
-    return redirect(`/login?message=${encodeURIComponent(error?.message || "Credenciais inválidas")}`);
+    return redirect(`/auth?message=${encodeURIComponent(error?.message || "Credenciais inválidas")}`);
   }
 
   const cookieStore = await cookies();
@@ -58,7 +58,7 @@ export async function signup(formData: FormData) {
   }
 
   // Se deu sucesso, redireciona para o login informando o sucesso
-  redirect("/login?success=true");
+  redirect("/auth?success=true");
 }
 
 export async function logout() {
