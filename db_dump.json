@@ -1,0 +1,7967 @@
+{
+  "franchises": [
+    {
+      "id": "can-regular",
+      "name": "Canada's Drag Race"
+    },
+    {
+      "id": "down-under-vs-tw",
+      "name": "RuPaul's Drag Race Down Under vs. The World"
+    },
+    {
+      "id": "espana-all-stars",
+      "name": "Drag Race España All Stars"
+    },
+    {
+      "id": "france-all-stars",
+      "name": "Drag Race France All Stars"
+    },
+    {
+      "id": "mexico-latina-royale",
+      "name": "Drag Race México: Latina Royale"
+    },
+    {
+      "id": "philippines-slaysian",
+      "name": "Drag Race Philippines: Slaysian Royale"
+    },
+    {
+      "id": "espana",
+      "name": "Drag Race España"
+    },
+    {
+      "id": "global-all-stars",
+      "name": "RuPaul's Drag Race Global All Stars"
+    },
+    {
+      "id": "us-all-stars-untucked",
+      "name": "RuPaul's Drag Race All Stars Untucked!"
+    },
+    {
+      "id": "down-under",
+      "name": "RuPaul's Drag Race Down Under"
+    },
+    {
+      "id": "germany",
+      "name": "Drag Race Germany"
+    },
+    {
+      "id": "holland",
+      "name": "Drag Race Holland"
+    },
+    {
+      "id": "italia",
+      "name": "Drag Race Italia"
+    },
+    {
+      "id": "france",
+      "name": "Drag Race France"
+    },
+    {
+      "id": "philippines-untucked",
+      "name": "Drag Race Philippines: Untucked!"
+    },
+    {
+      "id": "can-all-stars",
+      "name": "Canada's Drag Race: Canada vs. The World"
+    },
+    {
+      "id": "us-regular",
+      "name": "RuPaul's Drag Race"
+    },
+    {
+      "id": "mexico",
+      "name": "Drag Race México"
+    },
+    {
+      "id": "us-untucked",
+      "name": "RuPaul's Drag Race Untucked!"
+    },
+    {
+      "id": "us-all-stars",
+      "name": "RuPaul's Drag Race All Stars"
+    },
+    {
+      "id": "belgique",
+      "name": "Drag Race Belgique"
+    },
+    {
+      "id": "brasil",
+      "name": "Drag Race Brasil"
+    },
+    {
+      "id": "philippines",
+      "name": "Drag Race Philippines"
+    },
+    {
+      "id": "sverige",
+      "name": "Drag Race Sverige"
+    },
+    {
+      "id": "thailand",
+      "name": "Drag Race Thailand"
+    },
+    {
+      "id": "uk-regular",
+      "name": "RuPaul's Drag Race UK"
+    },
+    {
+      "id": "uk-vs-tw",
+      "name": "RuPaul's Drag Race UK vs. The World"
+    },
+    {
+      "id": "secret-celebrity",
+      "name": "RuPaul's Secret Celebrity Drag Race"
+    }
+  ],
+  "seasons": [
+    {
+      "id": "us-regular-s1",
+      "franchise_id": "us-regular",
+      "name": "Season 1",
+      "release_year": 2009,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s1",
+      "franchise_id": "us-untucked",
+      "name": "Season 1",
+      "release_year": 2009,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s2",
+      "franchise_id": "us-regular",
+      "name": "Season 2",
+      "release_year": 2010,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s2",
+      "franchise_id": "us-untucked",
+      "name": "Season 2",
+      "release_year": 2010,
+      "type": "untucked"
+    },
+    {
+      "id": "us-untucked-s3",
+      "franchise_id": "us-untucked",
+      "name": "Season 3",
+      "release_year": 2011,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s3",
+      "franchise_id": "us-regular",
+      "name": "Season 3",
+      "release_year": 2011,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s4",
+      "franchise_id": "us-untucked",
+      "name": "Season 4",
+      "release_year": 2012,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s4",
+      "franchise_id": "us-regular",
+      "name": "Season 4",
+      "release_year": 2012,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s1",
+      "franchise_id": "us-all-stars",
+      "name": "Season 1",
+      "release_year": 2012,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-all-stars-untucked-s1",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 1",
+      "release_year": 2012,
+      "type": "all-stars"
+    },
+    {
+      "id": "us-untucked-s5",
+      "franchise_id": "us-untucked",
+      "name": "Season 5",
+      "release_year": 2013,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s5",
+      "franchise_id": "us-regular",
+      "name": "Season 5",
+      "release_year": 2013,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s6",
+      "franchise_id": "us-untucked",
+      "name": "Season 6",
+      "release_year": 2014,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s6",
+      "franchise_id": "us-regular",
+      "name": "Season 6",
+      "release_year": 2014,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s7",
+      "franchise_id": "us-regular",
+      "name": "Season 7",
+      "release_year": 2015,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s7",
+      "franchise_id": "us-untucked",
+      "name": "Season 7",
+      "release_year": 2015,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s8",
+      "franchise_id": "us-regular",
+      "name": "Season 8",
+      "release_year": 2016,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s2",
+      "franchise_id": "us-all-stars",
+      "name": "Season 2",
+      "release_year": 2016,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-untucked-s8",
+      "franchise_id": "us-untucked",
+      "name": "Season 8",
+      "release_year": 2016,
+      "type": "untucked"
+    },
+    {
+      "id": "us-regular-s9",
+      "franchise_id": "us-regular",
+      "name": "Season 9",
+      "release_year": 2017,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s9",
+      "franchise_id": "us-untucked",
+      "name": "Season 9",
+      "release_year": 2017,
+      "type": "untucked"
+    },
+    {
+      "id": "us-all-stars-s3",
+      "franchise_id": "us-all-stars",
+      "name": "Season 3",
+      "release_year": 2017,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-all-stars-s4",
+      "franchise_id": "us-all-stars",
+      "name": "Season 4",
+      "release_year": 2018,
+      "type": "all_stars"
+    },
+    {
+      "id": "thailand-s1",
+      "franchise_id": "thailand",
+      "name": "Season 1",
+      "release_year": 2018,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s10",
+      "franchise_id": "us-regular",
+      "name": "Season 10",
+      "release_year": 2018,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s10",
+      "franchise_id": "us-untucked",
+      "name": "Season 10",
+      "release_year": 2018,
+      "type": "untucked"
+    },
+    {
+      "id": "thailand-s2",
+      "franchise_id": "thailand",
+      "name": "Season 2",
+      "release_year": 2019,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s11",
+      "franchise_id": "us-regular",
+      "name": "Season 11",
+      "release_year": 2019,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s11",
+      "franchise_id": "us-untucked",
+      "name": "Season 11",
+      "release_year": 2019,
+      "type": "untucked"
+    },
+    {
+      "id": "uk-regular-s1",
+      "franchise_id": "uk-regular",
+      "name": "Season 1",
+      "release_year": 2019,
+      "type": "regular"
+    },
+    {
+      "id": "can-regular-s1",
+      "franchise_id": "can-regular",
+      "name": "Season 1",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s13",
+      "franchise_id": "us-regular",
+      "name": "Season 13",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "secret-celebrity-s1",
+      "franchise_id": "secret-celebrity",
+      "name": "Season 1",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s12",
+      "franchise_id": "us-regular",
+      "name": "Season 12",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "holland-s1",
+      "franchise_id": "holland",
+      "name": "Season 1",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s2",
+      "franchise_id": "uk-regular",
+      "name": "Season 2",
+      "release_year": 2020,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s12",
+      "franchise_id": "us-untucked",
+      "name": "Season 12",
+      "release_year": 2020,
+      "type": "untucked"
+    },
+    {
+      "id": "us-all-stars-untucked-s5",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 5",
+      "release_year": 2020,
+      "type": "all-stars"
+    },
+    {
+      "id": "us-all-stars-s5",
+      "franchise_id": "us-all-stars",
+      "name": "Season 5",
+      "release_year": 2020,
+      "type": "all_stars"
+    },
+    {
+      "id": "holland-s2",
+      "franchise_id": "holland",
+      "name": "Season 2",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-untucked-s6",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 6",
+      "release_year": 2021,
+      "type": "all-stars"
+    },
+    {
+      "id": "can-regular-s2",
+      "franchise_id": "can-regular",
+      "name": "Season 2",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s14",
+      "franchise_id": "us-regular",
+      "name": "Season 14",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "espana-s1",
+      "franchise_id": "espana",
+      "name": "Season 1",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "down-under-s1",
+      "franchise_id": "down-under",
+      "name": "Season 1",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s13",
+      "franchise_id": "us-untucked",
+      "name": "Season 13",
+      "release_year": 2021,
+      "type": "untucked"
+    },
+    {
+      "id": "us-all-stars-s6",
+      "franchise_id": "us-all-stars",
+      "name": "Season 6",
+      "release_year": 2021,
+      "type": "all_stars"
+    },
+    {
+      "id": "italia-s1",
+      "franchise_id": "italia",
+      "name": "Season 1",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s3",
+      "franchise_id": "uk-regular",
+      "name": "Season 3",
+      "release_year": 2021,
+      "type": "regular"
+    },
+    {
+      "id": "philippines-untucked-s1",
+      "franchise_id": "philippines-untucked",
+      "name": "Season 1",
+      "release_year": 2022,
+      "type": "untucked"
+    },
+    {
+      "id": "us-all-stars-s7",
+      "franchise_id": "us-all-stars",
+      "name": "Season 7",
+      "release_year": 2022,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-all-stars-untucked-s7",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 7",
+      "release_year": 2022,
+      "type": "all-stars"
+    },
+    {
+      "id": "us-regular-s15",
+      "franchise_id": "us-regular",
+      "name": "Season 15",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s14",
+      "franchise_id": "us-untucked",
+      "name": "Season 14",
+      "release_year": 2022,
+      "type": "untucked"
+    },
+    {
+      "id": "philippines-s1",
+      "franchise_id": "philippines",
+      "name": "Season 1",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "secret-celebrity-s2",
+      "franchise_id": "secret-celebrity",
+      "name": "Season 2",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "can-all-stars-s1",
+      "franchise_id": "can-all-stars",
+      "name": "Season 1",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "can-regular-s3",
+      "franchise_id": "can-regular",
+      "name": "Season 3",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "italia-s2",
+      "franchise_id": "italia",
+      "name": "Season 2",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "uk-vs-tw-s1",
+      "franchise_id": "uk-vs-tw",
+      "name": "Season 1",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s4",
+      "franchise_id": "uk-regular",
+      "name": "Season 4",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "espana-s2",
+      "franchise_id": "espana",
+      "name": "Season 2",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "france-s1",
+      "franchise_id": "france",
+      "name": "Season 1",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "down-under-s2",
+      "franchise_id": "down-under",
+      "name": "Season 2",
+      "release_year": 2022,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s16",
+      "franchise_id": "us-regular",
+      "name": "Season 16",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s8",
+      "franchise_id": "us-all-stars",
+      "name": "Season 8",
+      "release_year": 2023,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-untucked-s15",
+      "franchise_id": "us-untucked",
+      "name": "Season 15",
+      "release_year": 2023,
+      "type": "untucked"
+    },
+    {
+      "id": "can-regular-s4",
+      "franchise_id": "can-regular",
+      "name": "Season 4",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "belgique-s1",
+      "franchise_id": "belgique",
+      "name": "Season 1",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "brasil-s1",
+      "franchise_id": "brasil",
+      "name": "Season 1",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "espana-s3",
+      "franchise_id": "espana",
+      "name": "Season 3",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "germany-s1",
+      "franchise_id": "germany",
+      "name": "Season 1",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "italia-s3",
+      "franchise_id": "italia",
+      "name": "Season 3",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "mexico-s1",
+      "franchise_id": "mexico",
+      "name": "Season 1",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "philippines-s2",
+      "franchise_id": "philippines",
+      "name": "Season 2",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "sverige-s1",
+      "franchise_id": "sverige",
+      "name": "Season 1",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s5",
+      "franchise_id": "uk-regular",
+      "name": "Season 5",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "down-under-s3",
+      "franchise_id": "down-under",
+      "name": "Season 3",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "philippines-untucked-s2",
+      "franchise_id": "philippines-untucked",
+      "name": "Season 2",
+      "release_year": 2023,
+      "type": "untucked"
+    },
+    {
+      "id": "france-s2",
+      "franchise_id": "france",
+      "name": "Season 2",
+      "release_year": 2023,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-untucked-s8",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 8",
+      "release_year": 2023,
+      "type": "all-stars"
+    },
+    {
+      "id": "philippines-s3",
+      "franchise_id": "philippines",
+      "name": "Season 3",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s6",
+      "franchise_id": "uk-regular",
+      "name": "Season 6",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s17",
+      "franchise_id": "us-regular",
+      "name": "Season 17",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "philippines-untucked-s3",
+      "franchise_id": "philippines-untucked",
+      "name": "Season 3",
+      "release_year": 2024,
+      "type": "untucked"
+    },
+    {
+      "id": "can-all-stars-s2",
+      "franchise_id": "can-all-stars",
+      "name": "Season 2",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "uk-vs-tw-s2",
+      "franchise_id": "uk-vs-tw",
+      "name": "Season 2",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "belgique-s2",
+      "franchise_id": "belgique",
+      "name": "Season 2",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "espana-all-stars-s1",
+      "franchise_id": "espana-all-stars",
+      "name": "Season 1",
+      "release_year": 2024,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-all-stars-s9",
+      "franchise_id": "us-all-stars",
+      "name": "Season 9",
+      "release_year": 2024,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-untucked-s16",
+      "franchise_id": "us-untucked",
+      "name": "Season 16",
+      "release_year": 2024,
+      "type": "untucked"
+    },
+    {
+      "id": "global-all-stars-s1",
+      "franchise_id": "global-all-stars",
+      "name": "Season 1",
+      "release_year": 2024,
+      "type": "all_stars"
+    },
+    {
+      "id": "down-under-s4",
+      "franchise_id": "down-under",
+      "name": "Season 4",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-untucked-s9",
+      "franchise_id": "us-all-stars-untucked",
+      "name": "Season 9",
+      "release_year": 2024,
+      "type": "all-stars"
+    },
+    {
+      "id": "france-s3",
+      "franchise_id": "france",
+      "name": "Season 3",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "mexico-s2",
+      "franchise_id": "mexico",
+      "name": "Season 2",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "thailand-s3",
+      "franchise_id": "thailand",
+      "name": "Season 3",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "espana-s4",
+      "franchise_id": "espana",
+      "name": "Season 4",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "can-regular-s5",
+      "franchise_id": "can-regular",
+      "name": "Season 5",
+      "release_year": 2024,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s10",
+      "franchise_id": "us-all-stars",
+      "name": "Season 10",
+      "release_year": 2025,
+      "type": "all_stars"
+    },
+    {
+      "id": "espana-s5",
+      "franchise_id": "espana",
+      "name": "Season 5",
+      "release_year": 2025,
+      "type": "regular"
+    },
+    {
+      "id": "brasil-s2",
+      "franchise_id": "brasil",
+      "name": "Season 2",
+      "release_year": 2025,
+      "type": "regular"
+    },
+    {
+      "id": "us-regular-s18",
+      "franchise_id": "us-regular",
+      "name": "Season 18",
+      "release_year": 2025,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s7",
+      "franchise_id": "uk-regular",
+      "name": "Season 7",
+      "release_year": 2025,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s17",
+      "franchise_id": "us-untucked",
+      "name": "Season 17",
+      "release_year": 2025,
+      "type": "untucked"
+    },
+    {
+      "id": "can-regular-s6",
+      "franchise_id": "can-regular",
+      "name": "Season 6",
+      "release_year": 2025,
+      "type": "regular"
+    },
+    {
+      "id": "france-all-stars-s1",
+      "franchise_id": "france-all-stars",
+      "name": "Season 1",
+      "release_year": 2025,
+      "type": "all-stars"
+    },
+    {
+      "id": "mexico-latina-royale-s1",
+      "franchise_id": "mexico-latina-royale",
+      "name": "Season 1",
+      "release_year": 2026,
+      "type": "regular"
+    },
+    {
+      "id": "uk-regular-s8",
+      "franchise_id": "uk-regular",
+      "name": "Season 8",
+      "release_year": 2026,
+      "type": "regular"
+    },
+    {
+      "id": "uk-vs-tw-s3",
+      "franchise_id": "uk-vs-tw",
+      "name": "Season 3",
+      "release_year": 2026,
+      "type": "regular"
+    },
+    {
+      "id": "us-untucked-s18",
+      "franchise_id": "us-untucked",
+      "name": "Season 18",
+      "release_year": 2026,
+      "type": "untucked"
+    },
+    {
+      "id": "down-under-vs-tw-s1",
+      "franchise_id": "down-under-vs-tw",
+      "name": "Season 1",
+      "release_year": 2026,
+      "type": "vs-the-world"
+    },
+    {
+      "id": "philippines-slaysian-s1",
+      "franchise_id": "philippines-slaysian",
+      "name": "Season 1",
+      "release_year": 2026,
+      "type": "regular"
+    },
+    {
+      "id": "france-s4",
+      "franchise_id": "france",
+      "name": "Season 4",
+      "release_year": 2026,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s11",
+      "franchise_id": "us-all-stars",
+      "name": "Season 11",
+      "release_year": 2026,
+      "type": "all_stars"
+    },
+    {
+      "id": "mexico-s3",
+      "franchise_id": "mexico",
+      "name": "Season 3",
+      "release_year": null,
+      "type": "regular"
+    },
+    {
+      "id": "us-all-stars-s12",
+      "franchise_id": "us-all-stars",
+      "name": "Season 12",
+      "release_year": null,
+      "type": "all_stars"
+    },
+    {
+      "id": "us-regular-s19",
+      "franchise_id": "us-regular",
+      "name": "Season 19",
+      "release_year": null,
+      "type": "regular"
+    },
+    {
+      "id": "philippines-s4",
+      "franchise_id": "philippines",
+      "name": "Season 4",
+      "release_year": null,
+      "type": "regular"
+    },
+    {
+      "id": "can-regular-s7",
+      "franchise_id": "can-regular",
+      "name": "Season 7",
+      "release_year": null,
+      "type": "regular"
+    },
+    {
+      "id": "espana-s6",
+      "franchise_id": "espana",
+      "name": "Season 6",
+      "release_year": null,
+      "type": "regular"
+    }
+  ],
+  "queens": [
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "jordan-connor",
+      "queens": {
+        "name": "Jordan Connor"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "jermaine-fowler",
+      "queens": {
+        "name": "Jermaine Fowler"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "nico-tortorella",
+      "queens": {
+        "name": "Nico Tortorella"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "vanessa-williams",
+      "queens": {
+        "name": "Vanessa Williams"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "loni-love",
+      "queens": {
+        "name": "Loni Love"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "tami-roman",
+      "queens": {
+        "name": "Tami Roman"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "alex-newell",
+      "queens": {
+        "name": "Alex Newell"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "dustin-milligan",
+      "queens": {
+        "name": "Dustin Milligan"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "matt-iseman",
+      "queens": {
+        "name": "Matt Iseman"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "hayley-kiyoko",
+      "queens": {
+        "name": "Hayley Kiyoko"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "madison-beer",
+      "queens": {
+        "name": "Madison Beer"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s1",
+      "queen_id": "phoebe-robinson",
+      "queens": {
+        "name": "Phoebe Robinson"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "aj-mclean",
+      "queens": {
+        "name": "AJ McLean"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "tatyana-ali",
+      "queens": {
+        "name": "Tatyana Ali"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "mark-indelicato",
+      "queens": {
+        "name": "Mark Indelicato"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "thom-filicia",
+      "queens": {
+        "name": "Thom Filicia"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "jenna-ushkowitz",
+      "queens": {
+        "name": "Jenna Ushkowitz"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "taylor-dayne",
+      "queens": {
+        "name": "Taylor Dayne"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "kevin-mchale",
+      "queens": {
+        "name": "Kevin McHale"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "daniel-franzese",
+      "queens": {
+        "name": "Daniel Franzese"
+      }
+    },
+    {
+      "season_id": "secret-celebrity-s2",
+      "queen_id": "loretta-devine",
+      "queens": {
+        "name": "Loretta Devine"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "latrice-royale",
+      "queens": {
+        "name": "Latrice Royale"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "jiggly-caliente",
+      "queens": {
+        "name": "Jiggly Caliente"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "jinkx-monsoon",
+      "queens": {
+        "name": "Jinkx Monsoon"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "alaska",
+      "queens": {
+        "name": "Alaska"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "roxxxy-andrews",
+      "queens": {
+        "name": "Roxxxy Andrews"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "detox",
+      "queens": {
+        "name": "Detox"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "coco-montrese",
+      "queens": {
+        "name": "CoCo Montrese"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "alyssa-edwards",
+      "queens": {
+        "name": "Alyssa Edwards"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "monica-beverly-hillz",
+      "queens": {
+        "name": "Monica Beverly Hillz"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "serena-chacha",
+      "queens": {
+        "name": "Serena ChaCha"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "adore-delano",
+      "queens": {
+        "name": "Adore Delano"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "darienne-lake",
+      "queens": {
+        "name": "Darienne Lake"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "bendelacreme",
+      "queens": {
+        "name": "BenDeLaCreme"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "trinity-k-bonet",
+      "queens": {
+        "name": "Trinity K Bonet"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "milk",
+      "queens": {
+        "name": "Milk"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "gia-gunn",
+      "queens": {
+        "name": "Gia Gunn"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "ginger-minj",
+      "queens": {
+        "name": "Ginger Minj"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "kennedy-davenport",
+      "queens": {
+        "name": "Kennedy Davenport"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "katya",
+      "queens": {
+        "name": "Katya"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "trixie-mattel",
+      "queens": {
+        "name": "Trixie Mattel"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "jasmine-masters",
+      "queens": {
+        "name": "Jasmine Masters"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "naomi-smalls",
+      "queens": {
+        "name": "Naomi Smalls"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "derrick-barry",
+      "queens": {
+        "name": "Derrick Barry"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "thorgy-thor",
+      "queens": {
+        "name": "Thorgy Thor"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "acid-betty",
+      "queens": {
+        "name": "Acid Betty"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "naysha-lopez",
+      "queens": {
+        "name": "Naysha Lopez"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "alexis-michelle",
+      "queens": {
+        "name": "Alexis Michelle"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "valentina",
+      "queens": {
+        "name": "Valentina"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "farrah-moan",
+      "queens": {
+        "name": "Farrah Moan"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "aja",
+      "queens": {
+        "name": "Aja"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "jaymes-mansfield",
+      "queens": {
+        "name": "Jaymes Mansfield"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "eureka",
+      "queens": {
+        "name": "Eureka"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "miz-cracker",
+      "queens": {
+        "name": "Miz Cracker"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "monique-heart",
+      "queens": {
+        "name": "Monique Heart"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "mayhem-miller",
+      "queens": {
+        "name": "Mayhem Miller"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "vanessa-vanjie-mateo",
+      "queens": {
+        "name": "Vanessa Vanjie Mateo"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "yvie-oddly",
+      "queens": {
+        "name": "Yvie Oddly"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "vanessa-vanjie-mateo",
+      "queens": {
+        "name": "Vanessa Vanjie Mateo"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "nina-west",
+      "queens": {
+        "name": "Nina West"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "shuga-cain",
+      "queens": {
+        "name": "Shuga Cain"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "plastique-tiara",
+      "queens": {
+        "name": "Plastique Tiara"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "rajah-ohara",
+      "queens": {
+        "name": "Ra'Jah O'Hara"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "scarlet-envy",
+      "queens": {
+        "name": "Scarlet Envy"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "kahanna-montrese",
+      "queens": {
+        "name": "Kahanna Montrese"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "jaida-essence-hall",
+      "queens": {
+        "name": "Jaida Essence Hall"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "crystal-methyd",
+      "queens": {
+        "name": "Crystal Methyd"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "jackie-cox",
+      "queens": {
+        "name": "Jackie Cox"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "heidi-n-closet",
+      "queens": {
+        "name": "Heidi N Closet"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "jan",
+      "queens": {
+        "name": "Jan"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "kandy-muse",
+      "queens": {
+        "name": "Kandy Muse"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "gottmik",
+      "queens": {
+        "name": "Gottmik"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "olivia-lux",
+      "queens": {
+        "name": "Olivia Lux"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "tina-burner",
+      "queens": {
+        "name": "Tina Burner"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "denali",
+      "queens": {
+        "name": "Denali"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "lala-ri",
+      "queens": {
+        "name": "LaLa Ri"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "joey-jay",
+      "queens": {
+        "name": "Joey Jay"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "angeria-paris-vanmicheals",
+      "queens": {
+        "name": "Angeria Paris VanMicheals"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "bosco",
+      "queens": {
+        "name": "Bosco"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "daya-betty",
+      "queens": {
+        "name": "Daya Betty"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "deja-skye",
+      "queens": {
+        "name": "DeJa Skye"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "jorgeous",
+      "queens": {
+        "name": "Jorgeous"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "jasmine-kennedie",
+      "queens": {
+        "name": "Jasmine Kennedie"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "kerri-colby",
+      "queens": {
+        "name": "Kerri Colby"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "alyssa-hunter",
+      "queens": {
+        "name": "Alyssa Hunter"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "mistress-isabelle-brooks",
+      "queens": {
+        "name": "Mistress Isabelle Brooks"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "salina-estitties",
+      "queens": {
+        "name": "Salina EsTitties"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "aura-mayari",
+      "queens": {
+        "name": "Aura Mayari"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "morphine-love-dion",
+      "queens": {
+        "name": "Morphine Love Dion"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "dawn",
+      "queens": {
+        "name": "Dawn"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "hershii-liqcour-jet",
+      "queens": {
+        "name": "Hershii LiqCour-Jeté"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "sam-star",
+      "queens": {
+        "name": "Sam Star"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "lydia-b-kollins",
+      "queens": {
+        "name": "Lydia B Kollins"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "lucky-starzzz",
+      "queens": {
+        "name": "Lucky Starzzz"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "raven",
+      "queens": {
+        "name": "Raven"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "shannel",
+      "queens": {
+        "name": "Shannel"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "alexis-mateo",
+      "queens": {
+        "name": "Alexis Mateo"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "manila-luzon",
+      "queens": {
+        "name": "Manila Luzon"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "tammie-brown",
+      "queens": {
+        "name": "Tammie Brown"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "pandora-boxx",
+      "queens": {
+        "name": "Pandora Boxx"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "alaska",
+      "queens": {
+        "name": "Alaska"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "detox",
+      "queens": {
+        "name": "Detox"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "katya",
+      "queens": {
+        "name": "Katya"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "roxxxy-andrews",
+      "queens": {
+        "name": "Roxxxy Andrews"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "alyssa-edwards",
+      "queens": {
+        "name": "Alyssa Edwards"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "tatianna",
+      "queens": {
+        "name": "Tatianna"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "ginger-minj",
+      "queens": {
+        "name": "Ginger Minj"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "adore-delano",
+      "queens": {
+        "name": "Adore Delano"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "coco-montrese",
+      "queens": {
+        "name": "CoCo Montrese"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "trixie-mattel",
+      "queens": {
+        "name": "Trixie Mattel"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "kennedy-davenport",
+      "queens": {
+        "name": "Kennedy Davenport"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "bebe-zahara-benet",
+      "queens": {
+        "name": "Bebe Zahara Benet"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "shangela",
+      "queens": {
+        "name": "Shangela"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "bendelacreme",
+      "queens": {
+        "name": "BenDeLaCreme"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "aja",
+      "queens": {
+        "name": "Aja"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "milk",
+      "queens": {
+        "name": "Milk"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "thorgy-thor",
+      "queens": {
+        "name": "Thorgy Thor"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "trinity-the-tuck",
+      "queens": {
+        "name": "Trinity The Tuck"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "monique-heart",
+      "queens": {
+        "name": "Monique Heart"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "naomi-smalls",
+      "queens": {
+        "name": "Naomi Smalls"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "latrice-royale",
+      "queens": {
+        "name": "Latrice Royale"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "manila-luzon",
+      "queens": {
+        "name": "Manila Luzon"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "valentina",
+      "queens": {
+        "name": "Valentina"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "gia-gunn",
+      "queens": {
+        "name": "Gia Gunn"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "farrah-moan",
+      "queens": {
+        "name": "Farrah Moan"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "jasmine-masters",
+      "queens": {
+        "name": "Jasmine Masters"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "jujubee",
+      "queens": {
+        "name": "Jujubee"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "miz-cracker",
+      "queens": {
+        "name": "Miz Cracker"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "alexis-mateo",
+      "queens": {
+        "name": "Alexis Mateo"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "india-ferrah",
+      "queens": {
+        "name": "India Ferrah"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "mayhem-miller",
+      "queens": {
+        "name": "Mayhem Miller"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "mariah-paris-balenciaga",
+      "queens": {
+        "name": "Mariah Paris Balenciaga"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "ongina",
+      "queens": {
+        "name": "Ongina"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "derrick-barry",
+      "queens": {
+        "name": "Derrick Barry"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "kylie-sonique-love",
+      "queens": {
+        "name": "Kylie Sonique Love"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "eureka",
+      "queens": {
+        "name": "Eureka"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "ginger-minj",
+      "queens": {
+        "name": "Ginger Minj"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "rajah-ohara",
+      "queens": {
+        "name": "Ra'Jah O'Hara"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "pandora-boxx",
+      "queens": {
+        "name": "Pandora Boxx"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "jan",
+      "queens": {
+        "name": "Jan"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "scarlet-envy",
+      "queens": {
+        "name": "Scarlet Envy"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "yara-sofia",
+      "queens": {
+        "name": "Yara Sofia"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "silky-nutmeg-ganache",
+      "queens": {
+        "name": "Silky Nutmeg Ganache"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "jiggly-caliente",
+      "queens": {
+        "name": "Jiggly Caliente"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "serena-chacha",
+      "queens": {
+        "name": "Serena ChaCha"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "jinkx-monsoon",
+      "queens": {
+        "name": "Jinkx Monsoon"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "trinity-the-tuck",
+      "queens": {
+        "name": "Trinity The Tuck"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "raja",
+      "queens": {
+        "name": "Raja"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "yvie-oddly",
+      "queens": {
+        "name": "Yvie Oddly"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "jaida-essence-hall",
+      "queens": {
+        "name": "Jaida Essence Hall"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "the-vivienne",
+      "queens": {
+        "name": "The Vivienne"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "jimbo",
+      "queens": {
+        "name": "Jimbo"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "kandy-muse",
+      "queens": {
+        "name": "Kandy Muse"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "jessica-wild",
+      "queens": {
+        "name": "Jessica Wild"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "alexis-michelle",
+      "queens": {
+        "name": "Alexis Michelle"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "lala-ri",
+      "queens": {
+        "name": "LaLa Ri"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "kahanna-montrese",
+      "queens": {
+        "name": "Kahanna Montrese"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "jaymes-mansfield",
+      "queens": {
+        "name": "Jaymes Mansfield"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "heidi-n-closet",
+      "queens": {
+        "name": "Heidi N Closet"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "darienne-lake",
+      "queens": {
+        "name": "Darienne Lake"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "naysha-lopez",
+      "queens": {
+        "name": "Naysha Lopez"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "monica-beverly-hillz",
+      "queens": {
+        "name": "Monica Beverly Hillz"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "angeria-paris-vanmicheals",
+      "queens": {
+        "name": "Angeria Paris VanMicheals"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "roxxxy-andrews",
+      "queens": {
+        "name": "Roxxxy Andrews"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "gottmik",
+      "queens": {
+        "name": "Gottmik"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "jorgeous",
+      "queens": {
+        "name": "Jorgeous"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "nina-west",
+      "queens": {
+        "name": "Nina West"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "plastique-tiara",
+      "queens": {
+        "name": "Plastique Tiara"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "jessica-wild",
+      "queens": {
+        "name": "Jessica Wild"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "shannel",
+      "queens": {
+        "name": "Shannel"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "ongina",
+      "queens": {
+        "name": "Ongina"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "tammie-brown",
+      "queens": {
+        "name": "Tammie Brown"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "morgan-mcmicheals",
+      "queens": {
+        "name": "Morgan McMicheals"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "jujubee",
+      "queens": {
+        "name": "Jujubee"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "tatianna",
+      "queens": {
+        "name": "Tatianna"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "manila-luzon",
+      "queens": {
+        "name": "Manila Luzon"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "raja",
+      "queens": {
+        "name": "Raja"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "nicole-paige-brooks",
+      "queens": {
+        "name": "Nicole Paige Brooks"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "alexis-mateo",
+      "queens": {
+        "name": "Alexis Mateo"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "india-ferrah",
+      "queens": {
+        "name": "India Ferrah"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "phoenix",
+      "queens": {
+        "name": "Phoenix"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "shannel",
+      "queens": {
+        "name": "Shannel"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "ginger-minj",
+      "queens": {
+        "name": "Ginger Minj"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "jorgeous",
+      "queens": {
+        "name": "Jorgeous"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "lydia-b-kollins",
+      "queens": {
+        "name": "Lydia B Kollins"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "bosco",
+      "queens": {
+        "name": "Bosco"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "daya-betty",
+      "queens": {
+        "name": "Daya Betty"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "aja",
+      "queens": {
+        "name": "Aja"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "kerri-colby",
+      "queens": {
+        "name": "Kerri Colby"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "mistress-isabelle-brooks",
+      "queens": {
+        "name": "Mistress Isabelle Brooks"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "acid-betty",
+      "queens": {
+        "name": "Acid Betty"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "alyssa-hunter",
+      "queens": {
+        "name": "Alyssa Hunter"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "denali",
+      "queens": {
+        "name": "Denali"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "pandora-boxx",
+      "queens": {
+        "name": "Pandora Boxx"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "raven",
+      "queens": {
+        "name": "Raven"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "shangela",
+      "queens": {
+        "name": "Shangela"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "yara-sofia",
+      "queens": {
+        "name": "Yara Sofia"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "nina-flowers",
+      "queens": {
+        "name": "Nina Flowers"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "rebecca-glasscock",
+      "queens": {
+        "name": "Rebecca Glasscock"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "jade",
+      "queens": {
+        "name": "Jade"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "akashia",
+      "queens": {
+        "name": "Akashia"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "victoria-parker",
+      "queens": {
+        "name": "Victoria Parker"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "tyra-sanchez",
+      "queens": {
+        "name": "Tyra Sanchez"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "sahara-davenport",
+      "queens": {
+        "name": "Sahara Davenport"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "sonique",
+      "queens": {
+        "name": "Sonique"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "mystique-summers-madison",
+      "queens": {
+        "name": "Mystique Summers Madison"
+      }
+    },
+    {
+      "season_id": "us-regular-s2",
+      "queen_id": "shangela-laquifa-wadley",
+      "queens": {
+        "name": "Shangela Laquifa Wadley"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "carmen-carrera",
+      "queens": {
+        "name": "Carmen Carrera"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "delta-work",
+      "queens": {
+        "name": "Delta Work"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "stacy-layne-matthews",
+      "queens": {
+        "name": "Stacy Layne Matthews"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "mariah",
+      "queens": {
+        "name": "Mariah"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "mimi-imfurst",
+      "queens": {
+        "name": "Mimi Imfurst"
+      }
+    },
+    {
+      "season_id": "us-regular-s3",
+      "queen_id": "venus-d-lite",
+      "queens": {
+        "name": "Venus D-Lite"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "sharon-needles",
+      "queens": {
+        "name": "Sharon Needles"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "chad-michaels",
+      "queens": {
+        "name": "Chad Michaels"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "phi-phi-ohara",
+      "queens": {
+        "name": "Phi Phi O'Hara"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "kenya-micheals",
+      "queens": {
+        "name": "Kenya Micheals"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "dida-ritz",
+      "queens": {
+        "name": "DiDa Ritz"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "willam",
+      "queens": {
+        "name": "Willam"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "milan",
+      "queens": {
+        "name": "Milan"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "madame-laqueer",
+      "queens": {
+        "name": "Madame LaQueer"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "the-princess",
+      "queens": {
+        "name": "The Princess"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "lashauwn-beyond",
+      "queens": {
+        "name": "LaShauwn Beyond"
+      }
+    },
+    {
+      "season_id": "us-regular-s4",
+      "queen_id": "alisa-summers",
+      "queens": {
+        "name": "Alisa Summers"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "ivy-winters",
+      "queens": {
+        "name": "Ivy Winters"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "jade-jolie",
+      "queens": {
+        "name": "Jade Jolie"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "lineysha-sparx",
+      "queens": {
+        "name": "Lineysha Sparx"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "honey-mahoganey",
+      "queens": {
+        "name": "Honey Mahoganey"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "vivienne-pinay",
+      "queens": {
+        "name": "Vivienne Pinay"
+      }
+    },
+    {
+      "season_id": "us-regular-s5",
+      "queen_id": "penny-tration",
+      "queens": {
+        "name": "Penny Tration"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "bianca-del-rio",
+      "queens": {
+        "name": "Bianca Del Rio"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "courtney-act",
+      "queens": {
+        "name": "Courtney Act"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "joslyn-fox",
+      "queens": {
+        "name": "Joslyn Fox"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "laganja-estranja",
+      "queens": {
+        "name": "Laganja Estranja"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "april-carrion",
+      "queens": {
+        "name": "April Carrion"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "vivacious",
+      "queens": {
+        "name": "Vivacious"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "magnolia-crawford",
+      "queens": {
+        "name": "Magnolia Crawford"
+      }
+    },
+    {
+      "season_id": "us-regular-s6",
+      "queen_id": "kelly-mantle",
+      "queens": {
+        "name": "Kelly Mantle"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "violet-chachki",
+      "queens": {
+        "name": "Violet Chachki"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "pearl",
+      "queens": {
+        "name": "Pearl"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "miss-fame",
+      "queens": {
+        "name": "Miss Fame"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "jaidynn-diore-fierce",
+      "queens": {
+        "name": "Jaidynn Diore Fierce"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "max",
+      "queens": {
+        "name": "Max"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "kandy-ho",
+      "queens": {
+        "name": "Kandy Ho"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "mrs-kasha-davis",
+      "queens": {
+        "name": "Mrs Kasha Davis"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "sasha-belle",
+      "queens": {
+        "name": "Sasha Belle"
+      }
+    },
+    {
+      "season_id": "us-regular-s7",
+      "queen_id": "tempest-dujour",
+      "queens": {
+        "name": "Tempest DuJour"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "bob-the-drag-queen",
+      "queens": {
+        "name": "Bob The Drag Queen"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "kim-chi",
+      "queens": {
+        "name": "Kim Chi"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "chichi-devayne",
+      "queens": {
+        "name": "ChiChi DeVayne"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "robbie-turner",
+      "queens": {
+        "name": "Robbie Turner"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "cynthia-lee-fonatine",
+      "queens": {
+        "name": "Cynthia Lee Fonatine"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "dax-exclamation-point",
+      "queens": {
+        "name": "Dax Exclamation Point"
+      }
+    },
+    {
+      "season_id": "us-regular-s8",
+      "queen_id": "laila-mcqueen",
+      "queens": {
+        "name": "Laila McQueen"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "sasha-velour",
+      "queens": {
+        "name": "Sasha Velour"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "peppermint",
+      "queens": {
+        "name": "Peppermint"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "shea-coulee",
+      "queens": {
+        "name": "Shea Coulee"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "trinity-taylor",
+      "queens": {
+        "name": "Trinity Taylor"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "nina-bonina-brown",
+      "queens": {
+        "name": "Nina Bonina Brown"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "cynthia-lee-fonatine",
+      "queens": {
+        "name": "Cynthia Lee Fonatine"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "eureka-ohara",
+      "queens": {
+        "name": "Eureka O'Hara"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "charli-hides",
+      "queens": {
+        "name": "Charli Hides"
+      }
+    },
+    {
+      "season_id": "us-regular-s9",
+      "queen_id": "kimora-blac",
+      "queens": {
+        "name": "Kimora Blac"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "aquaria",
+      "queens": {
+        "name": "Aquaria"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "kameron-micheals",
+      "queens": {
+        "name": "Kameron Micheals"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "asia-ohara",
+      "queens": {
+        "name": "Asia O'Hara"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "monet-x-change",
+      "queens": {
+        "name": "Monet X Change"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "the-vixen",
+      "queens": {
+        "name": "The Vixen"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "blair-st-clair",
+      "queens": {
+        "name": "Blair St Clair"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "dusty-ray-bottoms",
+      "queens": {
+        "name": "Dusty Ray Bottoms"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "yuhua-hamasaki",
+      "queens": {
+        "name": "Yuhua Hamasaki"
+      }
+    },
+    {
+      "season_id": "us-regular-s10",
+      "queen_id": "kalorie-karbdasian-williams",
+      "queens": {
+        "name": "Kalorie Karbdasian Williams"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "brooke-lynn-hytes",
+      "queens": {
+        "name": "Brooke Lynn Hytes"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "akeria-chanel-davenport",
+      "queens": {
+        "name": "A'Keria Chanel Davenport"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "silky-nutmeg-gnache",
+      "queens": {
+        "name": "Silky Nutmeg Gnache"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "ariel-versace",
+      "queens": {
+        "name": "Ariel Versace"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "mercedes-iman-diamond",
+      "queens": {
+        "name": "Mercedes Iman Diamond"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "honey-davenport",
+      "queens": {
+        "name": "Honey Davenport"
+      }
+    },
+    {
+      "season_id": "us-regular-s11",
+      "queen_id": "soju",
+      "queens": {
+        "name": "Soju"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "gigi-goode",
+      "queens": {
+        "name": "Gigi Goode"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "sherry-pie",
+      "queens": {
+        "name": "Sherry Pie"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "widow-vondu",
+      "queens": {
+        "name": "Widow Von'Du"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "brita",
+      "queens": {
+        "name": "Brita"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "aiden-zhane",
+      "queens": {
+        "name": "Aiden Zhane"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "nicky-doll",
+      "queens": {
+        "name": "Nicky Doll"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "rock-m-sakura",
+      "queens": {
+        "name": "Rock M. Sakura"
+      }
+    },
+    {
+      "season_id": "us-regular-s12",
+      "queen_id": "dahlia-sin",
+      "queens": {
+        "name": "Dahlia Sin"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "symone",
+      "queens": {
+        "name": "Symone"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "ros",
+      "queens": {
+        "name": "Rosé"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "utica",
+      "queens": {
+        "name": "Utica"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "elliott-with-2-ts",
+      "queens": {
+        "name": "Elliott With 2 T's"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "tamisha-iman",
+      "queens": {
+        "name": "Tamisha Iman"
+      }
+    },
+    {
+      "season_id": "us-regular-s13",
+      "queen_id": "kahmora-hall",
+      "queens": {
+        "name": "Kahmora Hall"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "willow-pill",
+      "queens": {
+        "name": "Willow Pill"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "lady-camden",
+      "queens": {
+        "name": "Lady Camden"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "miranda-lebrao",
+      "queens": {
+        "name": "Miranda Lebrão"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "brigiding",
+      "queens": {
+        "name": "Brigiding"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "vinas-deluxe",
+      "queens": {
+        "name": "Viñas Deluxe"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "arizona-brandy",
+      "queens": {
+        "name": "Arizona Brandy"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "suki-doll",
+      "queens": {
+        "name": "Suki Doll"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "khianna",
+      "queens": {
+        "name": "Khianna"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "yuhua",
+      "queens": {
+        "name": "Yuhua"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "maddy-morphosis",
+      "queens": {
+        "name": "Maddy Morphosis"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "orion-story",
+      "queens": {
+        "name": "Orion Story"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "kornbread-the-snack-jet",
+      "queens": {
+        "name": "Kornbread 'The Snack' Jeté"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "siam-phusri",
+      "queens": {
+        "name": "Siam Phusri"
+      }
+    },
+    {
+      "season_id": "us-regular-s14",
+      "queen_id": "june-jambalaya",
+      "queens": {
+        "name": "June Jambalaya"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "sasha-colby",
+      "queens": {
+        "name": "Sasha Colby"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "anetra",
+      "queens": {
+        "name": "Anetra"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "luxx-noir-london",
+      "queens": {
+        "name": "Luxx Noir London"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "bernie",
+      "queens": {
+        "name": "Bernie"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "loosey-laduca",
+      "queens": {
+        "name": "Loosey LaDuca"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "kitty-space",
+      "queens": {
+        "name": "Kitty Space"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "marcia-marcia-marcia",
+      "queens": {
+        "name": "Marcia Marcia Marcia"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "malaysia-babydoll-foxx",
+      "queens": {
+        "name": "Malaysia Babydoll Foxx"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "spice",
+      "queens": {
+        "name": "Spice"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "jax",
+      "queens": {
+        "name": "Jax"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "ivory-glaze",
+      "queens": {
+        "name": "Ivory Glaze"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "robin-fierce",
+      "queens": {
+        "name": "Robin Fierce"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "amethyst",
+      "queens": {
+        "name": "Amethyst"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "sugar",
+      "queens": {
+        "name": "Sugar"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "princess-poppy",
+      "queens": {
+        "name": "Princess Poppy"
+      }
+    },
+    {
+      "season_id": "us-regular-s15",
+      "queen_id": "irene-dubois",
+      "queens": {
+        "name": "Irene Dubois"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "nymphia-wind",
+      "queens": {
+        "name": "Nymphia Wind"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "sapphira-cristl",
+      "queens": {
+        "name": "Sapphira Cristál"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "plane-jane",
+      "queens": {
+        "name": "Plane Jane"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "q",
+      "queens": {
+        "name": "Q"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "sum-ting-wong",
+      "queens": {
+        "name": "Sum Ting Wong"
+      }
+    },
+    {
+      "season_id": "philippines-slaysian-s1",
+      "queen_id": "madame-yoko",
+      "queens": {
+        "name": "Madame Yoko"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "mhiya-iman-lepaige",
+      "queens": {
+        "name": "Mhi'ya Iman Le'Paige"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "plasma",
+      "queens": {
+        "name": "Plasma"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "xunami-muse",
+      "queens": {
+        "name": "Xunami Muse"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "megami",
+      "queens": {
+        "name": "Megami"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "geneva-karr",
+      "queens": {
+        "name": "Geneva Karr"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "amanda-tori-meating",
+      "queens": {
+        "name": "Amanda Tori Meating"
+      }
+    },
+    {
+      "season_id": "us-regular-s16",
+      "queen_id": "mirage",
+      "queens": {
+        "name": "Mirage"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "hornella-gongora",
+      "queens": {
+        "name": "Hornella Góngora"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "onya-nurve",
+      "queens": {
+        "name": "Onya Nurve"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "jewels-sparkles",
+      "queens": {
+        "name": "Jewels Sparkles"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "lexi-love",
+      "queens": {
+        "name": "Lexi Love"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "alexis-mateo",
+      "queens": {
+        "name": "Alexis Mateo"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "suzie-toot",
+      "queens": {
+        "name": "Suzie Toot"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "lana-jarae",
+      "queens": {
+        "name": "Lana Ja'Rae"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "barbie-q",
+      "queens": {
+        "name": "Barbie Q"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "arrietty",
+      "queens": {
+        "name": "Arrietty"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "kori-king",
+      "queens": {
+        "name": "Kori King"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "acacia-forget",
+      "queens": {
+        "name": "Acacia Forget"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "crystal-envy",
+      "queens": {
+        "name": "Crystal Envy"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "hormona-lisa",
+      "queens": {
+        "name": "Hormona Lisa"
+      }
+    },
+    {
+      "season_id": "us-regular-s17",
+      "queen_id": "joella",
+      "queens": {
+        "name": "Joella"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "desiree-beck",
+      "queens": {
+        "name": "DesiRée Beck"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "myki-meeks",
+      "queens": {
+        "name": "Myki Meeks"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "nini-coco",
+      "queens": {
+        "name": "Nini Coco"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "darlene-mitchell",
+      "queens": {
+        "name": "Darlene Mitchell"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "juicy-love-dion",
+      "queens": {
+        "name": "Juicy Love Dion"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "jane-dont",
+      "queens": {
+        "name": "Jane Don't"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "discord-addams",
+      "queens": {
+        "name": "Discord Addams"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "kenya-pleaser",
+      "queens": {
+        "name": "Kenya Pleaser"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "athena-dion",
+      "queens": {
+        "name": "Athena Dion"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "mia-starr",
+      "queens": {
+        "name": "Mia Starr"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "vita-vontesse-starr",
+      "queens": {
+        "name": "Vita VonTesse Starr"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "ciara-myst",
+      "queens": {
+        "name": "Ciara Myst"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "briar-blush",
+      "queens": {
+        "name": "Briar Blush"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "mandy-mango",
+      "queens": {
+        "name": "Mandy Mango"
+      }
+    },
+    {
+      "season_id": "us-regular-s18",
+      "queen_id": "dd-fuego",
+      "queens": {
+        "name": "DD Fuego"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s1",
+      "queen_id": "chad-micheals",
+      "queens": {
+        "name": "Chad Micheals"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "elektra-vandergeld",
+      "queens": {
+        "name": "Elektra Vandergeld"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "eva-blunt",
+      "queens": {
+        "name": "Eva Blunt"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "horacio-potasio",
+      "queens": {
+        "name": "Horacio Potasio"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "mariana-stars",
+      "queens": {
+        "name": "Mariana Stars"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "matraka",
+      "queens": {
+        "name": "Matraka"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "miss-abby-omg",
+      "queens": {
+        "name": "Miss Abby OMG"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "regina-voce",
+      "queens": {
+        "name": "Regina Voce"
+      }
+    },
+    {
+      "season_id": "mexico-latina-royale-s1",
+      "queen_id": "xunami-muse",
+      "queens": {
+        "name": "Xunami Muse"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "art-simone",
+      "queens": {
+        "name": "Art Simone"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "coco-jumbo",
+      "queens": {
+        "name": "CoCo Jumbo"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "estrella-xtravaganza",
+      "queens": {
+        "name": "Estrella Xtravaganza"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "flor",
+      "queens": {
+        "name": "Flor"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s2",
+      "queen_id": "phiphi-ohara",
+      "queens": {
+        "name": "PhiPhi O'Hara"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "lala-ri",
+      "queens": {
+        "name": "LaLa Ri"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "m1ss-jade-so",
+      "queens": {
+        "name": "M1ss Jade So"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "michael-marouli",
+      "queens": {
+        "name": "Michael Marouli"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "nicole-paige-brooks",
+      "queens": {
+        "name": "Nicole Paige Brooks"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "nikita-iman",
+      "queens": {
+        "name": "Nikita Iman"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "raven",
+      "queens": {
+        "name": "Raven"
+      }
+    },
+    {
+      "season_id": "down-under-vs-tw-s1",
+      "queen_id": "vybe",
+      "queens": {
+        "name": "Vybe"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "morgan-mcmicheals",
+      "queens": {
+        "name": "Morgan McMicheals"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "mami-watta",
+      "queens": {
+        "name": "Mami Watta"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "elips",
+      "queens": {
+        "name": "Elips"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s3",
+      "queen_id": "chichi-devanyne",
+      "queens": {
+        "name": "ChiChi DeVanyne"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "misty-phoenix",
+      "queens": {
+        "name": "Misty Phoenix"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "piche",
+      "queens": {
+        "name": "Piche"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s4",
+      "queen_id": "monet-x-change",
+      "queens": {
+        "name": "Monet X Change"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "moon",
+      "queens": {
+        "name": "Moon"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "kam-hugh",
+      "queens": {
+        "name": "Kam Hugh"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "la-big-bertha",
+      "queens": {
+        "name": "La Big Bertha"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "punani",
+      "queens": {
+        "name": "Punani"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "soa-de-muse",
+      "queens": {
+        "name": "Soa de Muse"
+      }
+    },
+    {
+      "season_id": "france-all-stars-s1",
+      "queen_id": "magnetica",
+      "queens": {
+        "name": "Magnetica"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "shea-coulee",
+      "queens": {
+        "name": "Shea Coulee"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s5",
+      "queen_id": "blair-st-clair",
+      "queens": {
+        "name": "Blair St Clair"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "trinity-k-bonet",
+      "queens": {
+        "name": "Trinity K Bonet"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s6",
+      "queen_id": "akeria-chanel-davenport",
+      "queens": {
+        "name": "A'Keria Chanel Davenport"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "monet-x-change",
+      "queens": {
+        "name": "Monet X Change"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s7",
+      "queen_id": "shea-coulee",
+      "queens": {
+        "name": "Shea Coulee"
+      }
+    },
+    {
+      "season_id": "us-regular-s1",
+      "queen_id": "bebe-zahara-benet",
+      "queens": {
+        "name": "Bebe Zahara Benet"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s8",
+      "queen_id": "mrs-kasha-davis",
+      "queens": {
+        "name": "Mrs Kasha Davis"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s9",
+      "queen_id": "vanessa-vanjie",
+      "queens": {
+        "name": "Vanessa Vanjie"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "irene-the-alien",
+      "queens": {
+        "name": "Irene the Alien"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "cynthia-lee-fontaine",
+      "queens": {
+        "name": "Cynthia Lee Fontaine"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "akeria-c-davenport",
+      "queens": {
+        "name": "A'Keria C. Davenport"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "april-carrin",
+      "queens": {
+        "name": "April Carrión"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "vicacious",
+      "queens": {
+        "name": "Vicacious"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "morgan-mcmichaels",
+      "queens": {
+        "name": "Morgan McMichaels"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "mystique-summers",
+      "queens": {
+        "name": "Mystique Summers"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "athena-likis",
+      "queens": {
+        "name": "Athena Likis"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "divina-de-campo",
+      "queens": {
+        "name": "Divina De Campo"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "crystal",
+      "queens": {
+        "name": "Crystal"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "sum-ting-wong",
+      "queens": {
+        "name": "Sum Ting Wong"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "vinagear-stroke",
+      "queens": {
+        "name": "Vinagear Stroke"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "scardey-kat",
+      "queens": {
+        "name": "Scardey Kat"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "lawrence-chaney",
+      "queens": {
+        "name": "Lawrence Chaney"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "bimini-bon-boulash",
+      "queens": {
+        "name": "Bimini Bon Boulash"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "tayce",
+      "queens": {
+        "name": "Tayce"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "ellie-diamond",
+      "queens": {
+        "name": "Ellie Diamond"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "awhora",
+      "queens": {
+        "name": "A'Whora"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "sister-sister",
+      "queens": {
+        "name": "Sister Sister"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "joe-black",
+      "queens": {
+        "name": "Joe Black"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "ginny-lemon",
+      "queens": {
+        "name": "Ginny Lemon"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "asttina-mandella",
+      "queens": {
+        "name": "Asttina Mandella"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "cherry-valentine",
+      "queens": {
+        "name": "Cherry Valentine"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "krystal-versace",
+      "queens": {
+        "name": "Krystal Versace"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "ella-vaday",
+      "queens": {
+        "name": "Ella Vaday"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "scarlett-harlett",
+      "queens": {
+        "name": "Scarlett Harlett"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "river-medway",
+      "queens": {
+        "name": "River Medway"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "charity-kase",
+      "queens": {
+        "name": "Charity Kase"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "elektra-fence",
+      "queens": {
+        "name": "Elektra Fence"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "anubis",
+      "queens": {
+        "name": "Anubis"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "danny-beard",
+      "queens": {
+        "name": "Danny Beard"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "cheddar-gorgeus",
+      "queens": {
+        "name": "Cheddar Gorgeus"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "black-peppa",
+      "queens": {
+        "name": "Black Peppa"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "pixie-polite",
+      "queens": {
+        "name": "Pixie Polite"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "dakota-schiffer",
+      "queens": {
+        "name": "Dakota Schiffer"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "baby",
+      "queens": {
+        "name": "Baby"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "copper-topp",
+      "queens": {
+        "name": "Copper Topp"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "starlet",
+      "queens": {
+        "name": "Starlet"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "just-may",
+      "queens": {
+        "name": "Just May"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "ginger-johnson",
+      "queens": {
+        "name": "Ginger Johnson"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "michael-marouli",
+      "queens": {
+        "name": "Michael Marouli"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "tomara-thomas",
+      "queens": {
+        "name": "Tomara Thomas"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "dedelicious",
+      "queens": {
+        "name": "DeDeLicious"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "cara-melle",
+      "queens": {
+        "name": "Cara Melle"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "vicki-vivacious",
+      "queens": {
+        "name": "Vicki Vivacious"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "banksie",
+      "queens": {
+        "name": "Banksie"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "miss-naomi-carter",
+      "queens": {
+        "name": "Miss Naomi Carter"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "alexis-saint-pete",
+      "queens": {
+        "name": "Alexis Saint-Pete"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "kryan-thrax",
+      "queens": {
+        "name": "Kryan Thrax"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "la-voix",
+      "queens": {
+        "name": "La Voix"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "marmalade",
+      "queens": {
+        "name": "Marmalade"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "rileasa-slaves",
+      "queens": {
+        "name": "Rileasa Slaves"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "lill",
+      "queens": {
+        "name": "Lill"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "charra-tea",
+      "queens": {
+        "name": "Charra Tea"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "actavia",
+      "queens": {
+        "name": "Actavia"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "chanel-oconor",
+      "queens": {
+        "name": "Chanel O'Conor"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "kiki-snatch",
+      "queens": {
+        "name": "Kiki Snatch"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "dita-garbo",
+      "queens": {
+        "name": "Dita Garbo"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "saki-yew",
+      "queens": {
+        "name": "Saki Yew"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "bones",
+      "queens": {
+        "name": "Bones"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "elle-vosque",
+      "queens": {
+        "name": "Elle Vosque"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "catrin-feelings",
+      "queens": {
+        "name": "Catrin Feelings"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "silllexa-diction",
+      "queens": {
+        "name": "Silllexa Diction"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "tayris-mongardi",
+      "queens": {
+        "name": "Tayris Mongardi"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "bonnie-ann-clyde",
+      "queens": {
+        "name": "Bonnie Ann Clyde"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "paige-three",
+      "queens": {
+        "name": "Paige Three"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "sally",
+      "queens": {
+        "name": "Sally™"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "chai-t-grande",
+      "queens": {
+        "name": "Chai T Grande"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "nyongbella",
+      "queens": {
+        "name": "Nyongbella"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "viola",
+      "queens": {
+        "name": "Viola"
+      }
+    },
+    {
+      "season_id": "uk-regular-s7",
+      "queen_id": "pasty",
+      "queens": {
+        "name": "Pasty"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "blu-hydrangea",
+      "queens": {
+        "name": "Blu Hydrangea"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "mo-heart",
+      "queens": {
+        "name": "Mo Heart"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "jujubee",
+      "queens": {
+        "name": "Jujubee"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "baga-chipz",
+      "queens": {
+        "name": "Baga Chipz"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "janey-jack",
+      "queens": {
+        "name": "Janey Jacké"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "pangina-heals",
+      "queens": {
+        "name": "Pangina Heals"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "jimbo",
+      "queens": {
+        "name": "Jimbo"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "cheryl-hole",
+      "queens": {
+        "name": "Cheryl Hole"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s1",
+      "queen_id": "lemon",
+      "queens": {
+        "name": "Lemon"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "tia-kofi",
+      "queens": {
+        "name": "Tia Kofi"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "hannah-conda",
+      "queens": {
+        "name": "Hannah Conda"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "la-grande-dame",
+      "queens": {
+        "name": "La Grande Dame"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "marina-summers",
+      "queens": {
+        "name": "Marina Summers"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "scarlet-envy",
+      "queens": {
+        "name": "Scarlet Envy"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "choriza-may",
+      "queens": {
+        "name": "Choriza May"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "gothy-kendoll",
+      "queens": {
+        "name": "Gothy Kendoll"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "keta-minaj",
+      "queens": {
+        "name": "Keta Minaj"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "jonbers-blonde",
+      "queens": {
+        "name": "Jonbers Blonde"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "arantxa-castilla-la-mancha",
+      "queens": {
+        "name": "Arantxa Castilla La Mancha"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s2",
+      "queen_id": "mayhem-miller",
+      "queens": {
+        "name": "Mayhem Miller"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "gawdland",
+      "queens": {
+        "name": "Gawdland"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "kate-butch",
+      "queens": {
+        "name": "Kate Butch"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "fontana",
+      "queens": {
+        "name": "Fontana"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "mariah-balenciaga",
+      "queens": {
+        "name": "Mariah Balenciaga"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "the-only-naomy",
+      "queens": {
+        "name": "The Only Naomy"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "zahirah-zapanta",
+      "queens": {
+        "name": "Zahirah Zapanta"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "serena-morena",
+      "queens": {
+        "name": "Serena Morena"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "sminty-drop",
+      "queens": {
+        "name": "Sminty Drop"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "minty-fresh",
+      "queens": {
+        "name": "Minty Fresh"
+      }
+    },
+    {
+      "season_id": "uk-vs-tw-s3",
+      "queen_id": "melinda-verga",
+      "queens": {
+        "name": "Melinda Verga"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "priyanka",
+      "queens": {
+        "name": "Priyanka"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "scarlett-bobo",
+      "queens": {
+        "name": "Scarlett BoBo"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "ilona-verley",
+      "queens": {
+        "name": "Ilona Verley"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "boa",
+      "queens": {
+        "name": "BOA"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "kiara",
+      "queens": {
+        "name": "Kiara"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "anastarzia-anaquway",
+      "queens": {
+        "name": "Anastarzia Anaquway"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "kyne",
+      "queens": {
+        "name": "Kyne"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "gia-metric",
+      "queens": {
+        "name": "Gia Metric"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "adriana",
+      "queens": {
+        "name": "Adriana"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "kimora-amour",
+      "queens": {
+        "name": "Kimora Amour"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "synthia-kiss",
+      "queens": {
+        "name": "Synthia Kiss"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "eve-6000",
+      "queens": {
+        "name": "Eve 6000"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "suki-doll",
+      "queens": {
+        "name": "Suki Doll"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "ocane-aqua-black",
+      "queens": {
+        "name": "Océane Aqua-Black"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "beth",
+      "queens": {
+        "name": "Beth"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "gisle-lullaby",
+      "queens": {
+        "name": "Gisèle Lullaby"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "kimmy-couture",
+      "queens": {
+        "name": "Kimmy Couture"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "vivian-vanderpuss",
+      "queens": {
+        "name": "Vivian Vanderpuss"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "irma-gerd",
+      "queens": {
+        "name": "Irma Gerd"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "bombae",
+      "queens": {
+        "name": "Bombae"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "lady-boom-boom",
+      "queens": {
+        "name": "Lady Boom Boom"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "kaos",
+      "queens": {
+        "name": "Kaos"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "chelazon-leroux",
+      "queens": {
+        "name": "Chelazon Leroux"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "miss-moo",
+      "queens": {
+        "name": "Miss Moço"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "halal-bae",
+      "queens": {
+        "name": "Halal Bae"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "venus",
+      "queens": {
+        "name": "Venus"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "denim",
+      "queens": {
+        "name": "Denim"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "kiki-coe",
+      "queens": {
+        "name": "Kiki Coe"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "aimee-yonce-shennel",
+      "queens": {
+        "name": "Aimee Yonce Shennel"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "kitten-kaboodle",
+      "queens": {
+        "name": "Kitten Kaboodle"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "luna-dubois",
+      "queens": {
+        "name": "Luna DuBois"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "the-girlfriend-experience",
+      "queens": {
+        "name": "The Girlfriend Experience"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "sisi-superstar",
+      "queens": {
+        "name": "Sisi Superstar"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "the-virgo-queen",
+      "queens": {
+        "name": "The Virgo Queen"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "helena-poison",
+      "queens": {
+        "name": "Helena Poison"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "minhi-wang",
+      "queens": {
+        "name": "Minhi Wang"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "perla",
+      "queens": {
+        "name": "Perla"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "xana",
+      "queens": {
+        "name": "Xana"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "uma-gahd",
+      "queens": {
+        "name": "Uma Gahd"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "jaylene-tyme",
+      "queens": {
+        "name": "Jaylene Tyme"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "sanjina-dabish-queen",
+      "queens": {
+        "name": "Sanjina Dabish Queen"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "tara-nova",
+      "queens": {
+        "name": "Tara Nova"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "van-goth",
+      "queens": {
+        "name": "Van Goth"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "eboni-labelle",
+      "queens": {
+        "name": "Eboni La'Belle"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "pm",
+      "queens": {
+        "name": "PM"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "karamilk",
+      "queens": {
+        "name": "Karamilk"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "saltina-shaker",
+      "queens": {
+        "name": "Saltina Shaker"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "mya-foxx",
+      "queens": {
+        "name": "Mya Foxx"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "velma-jones",
+      "queens": {
+        "name": "Velma Jones"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "dulce",
+      "queens": {
+        "name": "Dulce"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "hazel",
+      "queens": {
+        "name": "Hazel"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "star-doll",
+      "queens": {
+        "name": "Star Doll"
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "paolo-perfeccin",
+      "queens": {
+        "name": "Paolo Perfección"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "rajah-ohara",
+      "queens": {
+        "name": "Ra'Jah O'Hara"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "silky-nutmeg-ganache",
+      "queens": {
+        "name": "Silky Nutmeg Ganache"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "rita-baga",
+      "queens": {
+        "name": "Rita Baga"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "victoria-scone",
+      "queens": {
+        "name": "Victoria Scone"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "vanity-milan",
+      "queens": {
+        "name": "Vanity Milan"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "icesis-couture",
+      "queens": {
+        "name": "Icesis Couture"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "anita-wiglit",
+      "queens": {
+        "name": "Anita Wig'lit"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "stephanie-prince",
+      "queens": {
+        "name": "Stephanie Prince"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "kendall-gender",
+      "queens": {
+        "name": "Kendall Gender"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "lemon",
+      "queens": {
+        "name": "Lemon"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "alexis-mateo",
+      "queens": {
+        "name": "Alexis Mateo"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "cheryl",
+      "queens": {
+        "name": "Cheryl"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "kennedy-davenport",
+      "queens": {
+        "name": "Kennedy Davenport"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "miss-fiercalicious",
+      "queens": {
+        "name": "Miss Fiercalicious"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "eureka",
+      "queens": {
+        "name": "Eureka"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "tynomi-banks",
+      "queens": {
+        "name": "Tynomi Banks"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "le-fil",
+      "queens": {
+        "name": "Le Fil"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s2",
+      "queen_id": "la-kahena",
+      "queens": {
+        "name": "La Kahena"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "nearah-nuff",
+      "queens": {
+        "name": "Nearah Nuff"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "jada-shada-hudson",
+      "queens": {
+        "name": "Jada Shada Hudson"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "sami-landri",
+      "queens": {
+        "name": "Sami Landri"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "tiffany-ann-co",
+      "queens": {
+        "name": "Tiffany Ann Co."
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "aurora-matrix",
+      "queens": {
+        "name": "Aurora Matrix"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "makayla-couture",
+      "queens": {
+        "name": "Makayla Couture"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "juice-boxx",
+      "queens": {
+        "name": "Juice Boxx"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "pythia",
+      "queens": {
+        "name": "Pythia"
+      }
+    },
+    {
+      "season_id": "can-all-stars-s1",
+      "queen_id": "jackie-cox",
+      "queens": {
+        "name": "Jackie Cox"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "carmen-farala",
+      "queens": {
+        "name": "Carmen Farala"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "killer-queen",
+      "queens": {
+        "name": "Killer Queen"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "dovima-nurmi",
+      "queens": {
+        "name": "Dovima Nurmi"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "hugceo-crujiente",
+      "queens": {
+        "name": "Hugáceo Crujiente"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "inti",
+      "queens": {
+        "name": "Inti"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "drag-vulcano",
+      "queens": {
+        "name": "Drag Vulcano"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "the-macerana",
+      "queens": {
+        "name": "The Macerana"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "sharonne",
+      "queens": {
+        "name": "Sharonne"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "estrella-xtravaganza",
+      "queens": {
+        "name": "Estrella Xtravaganza"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "venedita-von-dsh",
+      "queens": {
+        "name": "Venedita Von Däsh"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "marina",
+      "queens": {
+        "name": "Marina"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "diamante-merybrown",
+      "queens": {
+        "name": "Diamante Merybrown"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "onyx",
+      "queens": {
+        "name": "Onyx"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "jota-carajota",
+      "queens": {
+        "name": "Jota Carajota"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "ariel-rec",
+      "queens": {
+        "name": "Ariel Rec"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "marisa-prisa",
+      "queens": {
+        "name": "Marisa Prisa"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "pitita",
+      "queens": {
+        "name": "Pitita"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "vania-vainilla",
+      "queens": {
+        "name": "Vania Vainilla"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "kelly-roller",
+      "queens": {
+        "name": "Kelly Roller"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "clover-bish",
+      "queens": {
+        "name": "Clover Bish"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "bestiah",
+      "queens": {
+        "name": "Bestiah"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "visa",
+      "queens": {
+        "name": "Visa"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "the-macerana",
+      "queens": {
+        "name": "The Macerana"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "chanel-anorex",
+      "queens": {
+        "name": "Chanel Anorex"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "drag-chuchi",
+      "queens": {
+        "name": "Drag Chuchi"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "mara-edlia",
+      "queens": {
+        "name": "María Edília"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "le-coc",
+      "queens": {
+        "name": "Le Cocó"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "la-bella-vampi",
+      "queens": {
+        "name": "La Bella Vampi"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "chloe-vittu",
+      "queens": {
+        "name": "Chloe Vittu"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "la-nia-delantro",
+      "queens": {
+        "name": "La Niña Delantro"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "mariana-stars",
+      "queens": {
+        "name": "Mariana Stars"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "megui-yeillow",
+      "queens": {
+        "name": "Megui Yeillow"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "angelita-la-perversa",
+      "queens": {
+        "name": "Angelita la Perversa"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "miss-khristo",
+      "queens": {
+        "name": "Miss Khristo"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "kelly-passal",
+      "queens": {
+        "name": "Kelly Passal!?"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "dita-dubois",
+      "queens": {
+        "name": "Dita Dubois"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "porca-theclubkid",
+      "queens": {
+        "name": "Porca Theclubkid"
+      }
+    },
+    {
+      "season_id": "espana-s4",
+      "queen_id": "shani-lasanta",
+      "queens": {
+        "name": "Shani LaSanta"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "satn-greco",
+      "queens": {
+        "name": "Satín Greco"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "margarita-kalifata",
+      "queens": {
+        "name": "Margarita Kalifata"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "laca-udilla",
+      "queens": {
+        "name": "Laca Udilla"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "nix",
+      "queens": {
+        "name": "Nix"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "dafne-mugler",
+      "queens": {
+        "name": "Dafne Mugler"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "alexandra-del-raval",
+      "queens": {
+        "name": "Alexandra del Raval"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "ferrxn",
+      "queens": {
+        "name": "Ferrxn"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "denbola-murnau",
+      "queens": {
+        "name": "Denébola Murnau"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "krystal-forever",
+      "queens": {
+        "name": "Krystal Forever"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "eva-harrington",
+      "queens": {
+        "name": "Eva Harrington"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "la-escndalo",
+      "queens": {
+        "name": "La Escándalo"
+      }
+    },
+    {
+      "season_id": "espana-s5",
+      "queen_id": "nori",
+      "queens": {
+        "name": "Nori"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "drag-sethlas",
+      "queens": {
+        "name": "Drag Sethlas"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "samantha-ballentines",
+      "queens": {
+        "name": "Samantha Ballentines"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "hornella-gngora",
+      "queens": {
+        "name": "Hornella Góngora"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "juriji-der-klee",
+      "queens": {
+        "name": "Juriji Der Klee"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "pupi-poisson",
+      "queens": {
+        "name": "Pupi Poisson"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "sagittaria",
+      "queens": {
+        "name": "Sagittaria"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "pakita",
+      "queens": {
+        "name": "Pakita"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "onyx-unleashed",
+      "queens": {
+        "name": "Onyx Unleashed"
+      }
+    },
+    {
+      "season_id": "espana-all-stars-s1",
+      "queen_id": "pink-chadora",
+      "queens": {
+        "name": "Pink Chadora"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "paloma",
+      "queens": {
+        "name": "Paloma"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "lolita-banana",
+      "queens": {
+        "name": "Lolita Banana"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "la-big-bertha",
+      "queens": {
+        "name": "La Big Bertha"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "elips",
+      "queens": {
+        "name": "Elips"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "kam-hugh",
+      "queens": {
+        "name": "Kam Hugh"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "la-briochee",
+      "queens": {
+        "name": "La Briochee"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "lova-ladiva",
+      "queens": {
+        "name": "Lova Ladiva"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "keiona",
+      "queens": {
+        "name": "Keiona"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "sara-forever",
+      "queens": {
+        "name": "Sara Forever"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "mami-watta",
+      "queens": {
+        "name": "Mami Watta"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "punani",
+      "queens": {
+        "name": "Punani"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "piche",
+      "queens": {
+        "name": "Piche"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "cookie-kunty",
+      "queens": {
+        "name": "Cookie Kunty"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "moon",
+      "queens": {
+        "name": "Moon"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "ginger-bitch",
+      "queens": {
+        "name": "Ginger Bitch"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "kitty-space",
+      "queens": {
+        "name": "Kitty Space"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "vespi",
+      "queens": {
+        "name": "Vespi"
+      }
+    },
+    {
+      "season_id": "france-s2",
+      "queen_id": "rose",
+      "queens": {
+        "name": "Rose"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "le-filip",
+      "queens": {
+        "name": "Le Filip"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "ruby-on-the-nail",
+      "queens": {
+        "name": "Ruby On The Nail"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "leona-winter",
+      "queens": {
+        "name": "Leona Winter"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "lula-strega",
+      "queens": {
+        "name": "Lula Strega"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "misty-phoenix",
+      "queens": {
+        "name": "Misty Phoenix"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "perseo",
+      "queens": {
+        "name": "Perseo"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "norma-bell",
+      "queens": {
+        "name": "Norma Bell"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "edeha-noire",
+      "queens": {
+        "name": "Edeha Noire"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "magnetica",
+      "queens": {
+        "name": "Magnetica"
+      }
+    },
+    {
+      "season_id": "france-s3",
+      "queen_id": "afrodite-amour",
+      "queens": {
+        "name": "Afrodite Amour"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "lana-cotta",
+      "queens": {
+        "name": "Lana Cotta"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "daisy-superbitch",
+      "queens": {
+        "name": "Daisy Superbitch"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "sublyme",
+      "queens": {
+        "name": "Sublyme"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "la-harpie",
+      "queens": {
+        "name": "La Harpie"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "fluffy-bidule",
+      "queens": {
+        "name": "Fluffy Bidule"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "azemylia",
+      "queens": {
+        "name": "Azemylia"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "holly-white",
+      "queens": {
+        "name": "Holly White"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "margarette",
+      "queens": {
+        "name": "Margarette"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "malawitte",
+      "queens": {
+        "name": "Malawitte"
+      }
+    },
+    {
+      "season_id": "france-s4",
+      "queen_id": "creatine-price",
+      "queens": {
+        "name": "Creatine Price"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "precious-paula-nicole",
+      "queens": {
+        "name": "Precious Paula Nicole"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "xilhouete",
+      "queens": {
+        "name": "Xilhouete"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "brigiding",
+      "queens": {
+        "name": "Brigiding"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "vias-deluxe",
+      "queens": {
+        "name": "Viñas Deluxe"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "lady-morgana",
+      "queens": {
+        "name": "Lady Morgana"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "turing",
+      "queens": {
+        "name": "Turing"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "gigi-era",
+      "queens": {
+        "name": "Gigi Era"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "corazon",
+      "queens": {
+        "name": "Corazon"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "prince",
+      "queens": {
+        "name": "Prince"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "captivating-katkat",
+      "queens": {
+        "name": "Captivating Katkat"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "arizona-brandy",
+      "queens": {
+        "name": "Arizona Brandy"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "m1ss-jade-so",
+      "queens": {
+        "name": "M1ss Jade So"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "bernie",
+      "queens": {
+        "name": "Bernie"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "hana-beshie",
+      "queens": {
+        "name": "Hana Beshie"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "v-cnt",
+      "queens": {
+        "name": "ØV Cünt"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "dee-dee-mari-holliday",
+      "queens": {
+        "name": "Dee Dee Marié Holliday"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "matilduh",
+      "queens": {
+        "name": "Matilduh"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "veruschka-levels",
+      "queens": {
+        "name": "Veruschka Levels"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "tiny-deluxe",
+      "queens": {
+        "name": "Tiny Deluxe"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "astrid-mercury",
+      "queens": {
+        "name": "Astrid Mercury"
+      }
+    },
+    {
+      "season_id": "philippines-s2",
+      "queen_id": "nicole-pardaux",
+      "queens": {
+        "name": "Nicole Pardaux"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "maxie",
+      "queens": {
+        "name": "Maxie"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "khianna",
+      "queens": {
+        "name": "Khianna"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "angel",
+      "queens": {
+        "name": "Angel"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "tita-baby",
+      "queens": {
+        "name": "Tita Baby"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "zymba-ding",
+      "queens": {
+        "name": "Zymba Ding"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "myx-chanel",
+      "queens": {
+        "name": "Myx Chanel"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "popstar-bench",
+      "queens": {
+        "name": "Popstar Bench"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "john-fedellaga",
+      "queens": {
+        "name": "John Fedellaga"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "j-quinn",
+      "queens": {
+        "name": "J Quinn"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "yudipota",
+      "queens": {
+        "name": "Yudipota"
+      }
+    },
+    {
+      "season_id": "philippines-s3",
+      "queen_id": "versex",
+      "queens": {
+        "name": "Versex"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "kita-mean",
+      "queens": {
+        "name": "Kita Mean"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "art-simone",
+      "queens": {
+        "name": "Art Simone"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "karen-from-finance",
+      "queens": {
+        "name": "Karen From Finance"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "scarlet-adams",
+      "queens": {
+        "name": "Scarlet Adams"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "elektra-shock",
+      "queens": {
+        "name": "Elektra Shock"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "maxi-sheilds",
+      "queens": {
+        "name": "Maxi Sheilds"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "etcetera-ectetera",
+      "queens": {
+        "name": "Etcetera Ectetera"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "anita-wiglit",
+      "queens": {
+        "name": "Anita Wig'lit"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "coco-jumbo",
+      "queens": {
+        "name": "CoCo Jumbo"
+      }
+    },
+    {
+      "season_id": "down-under-s1",
+      "queen_id": "jojo-zaho",
+      "queens": {
+        "name": "JoJo Zaho"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "spankie-jackzon",
+      "queens": {
+        "name": "Spankie Jackzon"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "molly-poppinz",
+      "queens": {
+        "name": "Molly Poppinz"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "beverly-kills",
+      "queens": {
+        "name": "Beverly Kills"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "yuri-guaii",
+      "queens": {
+        "name": "Yuri Guaii"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "minnie-cooper",
+      "queens": {
+        "name": "Minnie Cooper"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "pomara-fifth",
+      "queens": {
+        "name": "Pomara Fifth"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "aubrey-haive",
+      "queens": {
+        "name": "Aubrey Haive"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "fax-fr",
+      "queens": {
+        "name": "Faúx Fúr"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "isis-avis-loren",
+      "queens": {
+        "name": "Isis Avis Loren"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "gabriella-labucci",
+      "queens": {
+        "name": "Gabriella Labucci"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "flor",
+      "queens": {
+        "name": "Flor"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "hollywould-star",
+      "queens": {
+        "name": "Hollywould Star"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "bumpa-love",
+      "queens": {
+        "name": "Bumpa Love"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "ashley-madison",
+      "queens": {
+        "name": "Ashley Madison"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "rita-menu",
+      "queens": {
+        "name": "Rita Menu"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "ivanna-drink",
+      "queens": {
+        "name": "Ivanna Drink"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "ivory-glaze",
+      "queens": {
+        "name": "Ivory Glaze"
+      }
+    },
+    {
+      "season_id": "down-under-s3",
+      "queen_id": "amyl",
+      "queens": {
+        "name": "Amyl"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "lazy-susan",
+      "queens": {
+        "name": "Lazy Susan"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "mandy-moobs",
+      "queens": {
+        "name": "Mandy Moobs"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "vybe",
+      "queens": {
+        "name": "Vybe"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "freya-armani",
+      "queens": {
+        "name": "Freya Armani"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "nikita-iman",
+      "queens": {
+        "name": "Nikita Iman"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "max-drag-queen",
+      "queens": {
+        "name": "Max Drag Queen"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "brenda-bressed",
+      "queens": {
+        "name": "Brenda Bressed"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "lucina-innocence",
+      "queens": {
+        "name": "Lucina Innocence"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "karna-ford",
+      "queens": {
+        "name": "Karna Ford"
+      }
+    },
+    {
+      "season_id": "down-under-s4",
+      "queen_id": "olivia-dreams",
+      "queens": {
+        "name": "Olivia Dreams"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "cristian-peralta",
+      "queens": {
+        "name": "Cristian Peralta"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "matraka",
+      "queens": {
+        "name": "Matraka"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "regina-voce",
+      "queens": {
+        "name": "Regina Voce"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "lady-kero",
+      "queens": {
+        "name": "Lady Kero"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "margaret-y-ya",
+      "queens": {
+        "name": "Margaret Y Ya"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "argennis",
+      "queens": {
+        "name": "Argennis"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "pixie-pixie",
+      "queens": {
+        "name": "Pixie Pixie"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "vermelha-noir",
+      "queens": {
+        "name": "Vermelha Noir"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "miss-vallarta",
+      "queens": {
+        "name": "Miss Vallarta"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "leexa-fox",
+      "queens": {
+        "name": "Leexa Fox"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "eva-blunt",
+      "queens": {
+        "name": "Eva Blunt"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "horacio-potasio",
+      "queens": {
+        "name": "Horacio Potasio"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "jenary-bloom",
+      "queens": {
+        "name": "Jenary Bloom"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "elektra-vandergeld",
+      "queens": {
+        "name": "Elektra Vandergeld"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "unique",
+      "queens": {
+        "name": "Unique"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "luna-lansman",
+      "queens": {
+        "name": "Luna Lansman"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "suculenta",
+      "queens": {
+        "name": "Suculenta"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "ava-pocket",
+      "queens": {
+        "name": "Ava Pocket"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "garonne",
+      "queens": {
+        "name": "Garçonne"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "mara-bonita",
+      "queens": {
+        "name": "María Bonita"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "nina-de-la-fuenta",
+      "queens": {
+        "name": "Nina de la Fuenta"
+      }
+    },
+    {
+      "season_id": "mexico-s2",
+      "queen_id": "ignus-ars",
+      "queens": {
+        "name": "Ignus Ars"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "natalia-pliacam",
+      "queens": {
+        "name": "Natalia Pliacam"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "anne-maywong",
+      "queens": {
+        "name": "Anneé Maywong"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "dearis-doll",
+      "queens": {
+        "name": "Dearis Doll"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "b-ella",
+      "queens": {
+        "name": "B Ella"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "amadiva",
+      "queens": {
+        "name": "Amadiva"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "jaja",
+      "queens": {
+        "name": "JAJA"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "petchra",
+      "queens": {
+        "name": "Petchra"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "morrigan",
+      "queens": {
+        "name": "Morrigan"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "bunny-be-fly",
+      "queens": {
+        "name": "Bunny Be Fly"
+      }
+    },
+    {
+      "season_id": "thailand-s1",
+      "queen_id": "meannie-minaj",
+      "queens": {
+        "name": "Meannie Minaj"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "angele-anang",
+      "queens": {
+        "name": "Angele Anang"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "kana-warrior",
+      "queens": {
+        "name": "Kana Warrior"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "kandy-zyanide",
+      "queens": {
+        "name": "Kandy Zyanide"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "bandit",
+      "queens": {
+        "name": "Bandit"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "vanda-miss-joaquim",
+      "queens": {
+        "name": "Vanda Miss Joaquim"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "srimala",
+      "queens": {
+        "name": "Srimala"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "tormai",
+      "queens": {
+        "name": "Tormai"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "genie",
+      "queens": {
+        "name": "Genie"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "miss-gimhuay",
+      "queens": {
+        "name": "Miss Gimhuay"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "mocha-diva",
+      "queens": {
+        "name": "Mocha Diva"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "maya-bharo",
+      "queens": {
+        "name": "Maya B'Haro"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "katy-killer",
+      "queens": {
+        "name": "Katy Killer"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "silver-sonic",
+      "queens": {
+        "name": "Silver Sonic"
+      }
+    },
+    {
+      "season_id": "thailand-s2",
+      "queen_id": "m-stranger-fox",
+      "queens": {
+        "name": "M Stranger Fox"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "frankie-wonga",
+      "queens": {
+        "name": "Frankie Wonga"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "zepee",
+      "queens": {
+        "name": "Zepee"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "spicy-sunshine",
+      "queens": {
+        "name": "Spicy Sunshine"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "nane-sphera",
+      "queens": {
+        "name": "Nane Sphera"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "gigi-ferocious",
+      "queens": {
+        "name": "Gigi Ferocious"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "siam-phursi",
+      "queens": {
+        "name": "Siam Phursi"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "benze-diva",
+      "queens": {
+        "name": "Benze Diva"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "shortgun",
+      "queens": {
+        "name": "Shortgun"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "kara-might",
+      "queens": {
+        "name": "Kara Might"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "srirasha-hotsauce",
+      "queens": {
+        "name": "Srirasha Hotsauce"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "envy-peru",
+      "queens": {
+        "name": "Envy Peru"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "mama-queen",
+      "queens": {
+        "name": "Ma'Ma Queen"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "miss-abby-omg",
+      "queens": {
+        "name": "Miss Abby OMG"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "chelseaboy",
+      "queens": {
+        "name": "ChelseaBoy"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "sederginne",
+      "queens": {
+        "name": "Sederginne"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "madame-madness",
+      "queens": {
+        "name": "Madame Madness"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "megan-schoonbrood",
+      "queens": {
+        "name": "Megan Schoonbrood"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "patty-pam-pam",
+      "queens": {
+        "name": "Patty Pam Pam"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "roem",
+      "queens": {
+        "name": "Roem"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "vanessa-van-cartier",
+      "queens": {
+        "name": "Vanessa Van Cartier"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "my-little-puny",
+      "queens": {
+        "name": "My Little Puny"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "vivaldi",
+      "queens": {
+        "name": "Vivaldi"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "tabitha",
+      "queens": {
+        "name": "Tabitha"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "the-countess",
+      "queens": {
+        "name": "The Countess"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "ivy-elise",
+      "queens": {
+        "name": "Ivy-Elise"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "love-masisi",
+      "queens": {
+        "name": "Love Masisi"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "reggy-b",
+      "queens": {
+        "name": "Reggy B"
+      }
+    },
+    {
+      "season_id": "holland-s2",
+      "queen_id": "juicy-kouture",
+      "queens": {
+        "name": "Juicy Kouture"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "elektra-bionic",
+      "queens": {
+        "name": "Elektra Bionic"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "farida-kant",
+      "queens": {
+        "name": "Farida Kant"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "le-riche",
+      "queens": {
+        "name": "Le Riche"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "luquisha-lubamba",
+      "queens": {
+        "name": "Luquisha Lubamba"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "ava-hangar",
+      "queens": {
+        "name": "Ava Hangar"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "divinity",
+      "queens": {
+        "name": "Divinity"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "enorma-jean",
+      "queens": {
+        "name": "Enorma Jean"
+      }
+    },
+    {
+      "season_id": "italia-s1",
+      "queen_id": "ivana-vamp",
+      "queens": {
+        "name": "Ivana Vamp"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "la-diamond",
+      "queens": {
+        "name": "La Diamond"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "aura-eternal",
+      "queens": {
+        "name": "Aura Eternal"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "la-petite-noire",
+      "queens": {
+        "name": "La Petite Noire"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "skandalove",
+      "queens": {
+        "name": "Skandalove"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "gioffr",
+      "queens": {
+        "name": "Gioffré"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "panthera-virus",
+      "queens": {
+        "name": "Panthera Virus"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "obama",
+      "queens": {
+        "name": "Obama"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "tanissa-yonc",
+      "queens": {
+        "name": "Tanissa Yoncè"
+      }
+    },
+    {
+      "season_id": "italia-s2",
+      "queen_id": "narciso",
+      "queens": {
+        "name": "Narciso"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "lina-galore",
+      "queens": {
+        "name": "Lina Galore"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "melissa-bianchini",
+      "queens": {
+        "name": "Melissa Bianchini"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "la-sheeva",
+      "queens": {
+        "name": "La Sheeva"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "silvana-della-magliana",
+      "queens": {
+        "name": "Silvana della Magliana"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "sypario",
+      "queens": {
+        "name": "Sypario"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "leila-yarn",
+      "queens": {
+        "name": "Leila Yarn"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "la-prada",
+      "queens": {
+        "name": "La Prada"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "sissy-lea",
+      "queens": {
+        "name": "Sissy Lea"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "morgana-cosmica",
+      "queens": {
+        "name": "Morgana Cosmica"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "lightning-aurora",
+      "queens": {
+        "name": "Lightning Aurora"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "vezirja",
+      "queens": {
+        "name": "Vezirja"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "amy-krania",
+      "queens": {
+        "name": "Amy Krania"
+      }
+    },
+    {
+      "season_id": "italia-s3",
+      "queen_id": "adriana-picasso",
+      "queens": {
+        "name": "Adriana Picasso"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "admira-thunderpussy",
+      "queens": {
+        "name": "Admira Thunderpussy"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "elecktra",
+      "queens": {
+        "name": "Elecktra"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "antonina-nutshell",
+      "queens": {
+        "name": "Antonina Nutshell"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "santana-sexmachine",
+      "queens": {
+        "name": "Santana Sexmachine"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "imaa-queen",
+      "queens": {
+        "name": "Imaa Queen"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "endigo",
+      "queens": {
+        "name": "Endigo"
+      }
+    },
+    {
+      "season_id": "sverige-s1",
+      "queen_id": "almighty-aphroditey",
+      "queens": {
+        "name": "Almighty Aphroditey"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "drag-couenne",
+      "queens": {
+        "name": "Drag Couenne"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "athena-sorgelikis",
+      "queens": {
+        "name": "Athena Sorgelikis"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "susan",
+      "queens": {
+        "name": "Susan"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "mademoiselle-boop",
+      "queens": {
+        "name": "Mademoiselle Boop"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "peach",
+      "queens": {
+        "name": "Peach"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "valenciaga",
+      "queens": {
+        "name": "Valenciaga"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "mocca-bone",
+      "queens": {
+        "name": "Mocca Bone"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "edna-sorgelsen",
+      "queens": {
+        "name": "Edna Sorgelsen"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "amanda-tears",
+      "queens": {
+        "name": "Amanda Tears"
+      }
+    },
+    {
+      "season_id": "belgique-s1",
+      "queen_id": "brittany-von-bottoks",
+      "queens": {
+        "name": "Brittany Von Bottoks"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "alvilda",
+      "queens": {
+        "name": "Alvilda"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "la-veuve",
+      "queens": {
+        "name": "La Veuve"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "gabanna",
+      "queens": {
+        "name": "Gabanna"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "loulou-velvet",
+      "queens": {
+        "name": "Loulou Velvet"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "chloe-clarke",
+      "queens": {
+        "name": "Chloe Clarke"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "star",
+      "queens": {
+        "name": "Star"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "morphae",
+      "queens": {
+        "name": "Morphae"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "madame-yoko",
+      "queens": {
+        "name": "Madame Yoko"
+      }
+    },
+    {
+      "season_id": "belgique-s2",
+      "queen_id": "sarah-logan",
+      "queens": {
+        "name": "Sarah Logan"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "organzza",
+      "queens": {
+        "name": "Organzza"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "betina-polaroid",
+      "queens": {
+        "name": "Betina Polaroid"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "hellena-malditta",
+      "queens": {
+        "name": "Hellena Malditta"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "shannon-skarllet",
+      "queens": {
+        "name": "Shannon Skarllet"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "naza",
+      "queens": {
+        "name": "Naza"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "dallas-de-vil",
+      "queens": {
+        "name": "Dallas de Vil"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "rubi-ocean",
+      "queens": {
+        "name": "Rubi Ocean"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "aquarela",
+      "queens": {
+        "name": "Aquarela"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "melusine-sparkle",
+      "queens": {
+        "name": "Melusine Sparkle"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "tristan-soledade",
+      "queens": {
+        "name": "Tristan Soledade"
+      }
+    },
+    {
+      "season_id": "brasil-s1",
+      "queen_id": "diva-more",
+      "queens": {
+        "name": "Diva More"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "ruby-nox",
+      "queens": {
+        "name": "Ruby Nox"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "mellody-queen",
+      "queens": {
+        "name": "Mellody Queen"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "poseidon-drag",
+      "queens": {
+        "name": "Poseidon Drag"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "melina-blley",
+      "queens": {
+        "name": "Melina Blley"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "bhelchi",
+      "queens": {
+        "name": "Bhelchi"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "adora-black",
+      "queens": {
+        "name": "Adora Black"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "desire-beck",
+      "queens": {
+        "name": "DesiRée Beck"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "mercedez-vulco",
+      "queens": {
+        "name": "Mercedez Vulcão"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "paola-hoffman-van-cartier",
+      "queens": {
+        "name": "Paola Hoffman Van Cartier"
+      }
+    },
+    {
+      "season_id": "brasil-s2",
+      "queen_id": "chanel",
+      "queens": {
+        "name": "Chanel"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "pandora-nox",
+      "queens": {
+        "name": "Pandora Nox"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "metamorkid",
+      "queens": {
+        "name": "Metamorkid"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "yvonne-nightstand",
+      "queens": {
+        "name": "Yvonne Nightstand"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "kelly-heelton",
+      "queens": {
+        "name": "Kelly Heelton"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "loreley-rivers",
+      "queens": {
+        "name": "Loreley Rivers"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "victoria-shakespears",
+      "queens": {
+        "name": "Victoria Shakespears"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "nikita-vegaz",
+      "queens": {
+        "name": "Nikita Vegaz"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "ll-cocoon",
+      "queens": {
+        "name": "LéLé Cocoon"
+      }
+    },
+    {
+      "season_id": "germany-s1",
+      "queen_id": "barbie-q",
+      "queens": {
+        "name": "Barbie Q"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "tina-burner",
+      "queens": {
+        "name": "Tina Burner"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "nicole-paige-brooks",
+      "queens": {
+        "name": "Nicole Paige Brooks"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "deja-skye",
+      "queens": {
+        "name": "DeJa Skye"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "olivia-lux",
+      "queens": {
+        "name": "Olivia Lux"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s10",
+      "queen_id": "phoenix",
+      "queens": {
+        "name": "Phoenix"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "crystal-methyd",
+      "queens": {
+        "name": "Crystal Methyd"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "joey-jay",
+      "queens": {
+        "name": "Joey Jay"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "jasmine-kennedie",
+      "queens": {
+        "name": "Jasmine Kennedie"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "silky-nutmeg-ganache",
+      "queens": {
+        "name": "Silky Nutmeg Ganache"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "dawn",
+      "queens": {
+        "name": "Dawn"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "sam-star",
+      "queens": {
+        "name": "Sam Star"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "kennedy-davenport",
+      "queens": {
+        "name": "Kennedy Davenport"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "hershii-liqcour-jet",
+      "queens": {
+        "name": "Hershii LiqCour-Jeté"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "shuga-cain",
+      "queens": {
+        "name": "Shuga Cain"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "aura-mayari",
+      "queens": {
+        "name": "Aura Mayari"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "salina-estitties",
+      "queens": {
+        "name": "Salina EsTitties"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "lucky-starzzz",
+      "queens": {
+        "name": "Lucky Starzzz"
+      }
+    },
+    {
+      "season_id": "us-all-stars-s11",
+      "queen_id": "morphine-love-dion",
+      "queens": {
+        "name": "Morphine Love Dion"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "alyssa-edwards",
+      "queens": {
+        "name": "Alyssa Edwards"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "kitty-scott-claus",
+      "queens": {
+        "name": "Kitty Scott-Claus"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "kween-kong",
+      "queens": {
+        "name": "Kween Kong"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "nehellenia",
+      "queens": {
+        "name": "Nehellenia"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "tessa-testicle",
+      "queens": {
+        "name": "Tessa Testicle"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "vanity-vain",
+      "queens": {
+        "name": "Vanity Vain"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "pythia",
+      "queens": {
+        "name": "Pythia"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "gala-varo",
+      "queens": {
+        "name": "Gala Varo"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "soa-de-muse",
+      "queens": {
+        "name": "Soa de Muse"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "eva-le-queen",
+      "queens": {
+        "name": "Eva Le Queen"
+      }
+    },
+    {
+      "season_id": "global-all-stars-s1",
+      "queen_id": "miranda-lebro",
+      "queens": {
+        "name": "Miranda Lebrão"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "the-vivienne",
+      "queens": {
+        "name": "The Vivienne"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "baga-chipz",
+      "queens": {
+        "name": "Baga Chipz"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "cheryl-hole",
+      "queens": {
+        "name": "Cheryl Hole"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "blu-hydrangea",
+      "queens": {
+        "name": "Blu Hydrangea"
+      }
+    },
+    {
+      "season_id": "uk-regular-s1",
+      "queen_id": "gothy-kendoll",
+      "queens": {
+        "name": "Gothy Kendoll"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "tia-kofi",
+      "queens": {
+        "name": "Tia Kofi"
+      }
+    },
+    {
+      "season_id": "uk-regular-s2",
+      "queen_id": "veronica-green",
+      "queens": {
+        "name": "Veronica Green"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "kitty-scott-claus",
+      "queens": {
+        "name": "Kitty Scott-Claus"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "vanity-milan",
+      "queens": {
+        "name": "Vanity Milan"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "choriza-may",
+      "queens": {
+        "name": "Choriza May"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "veronica-green",
+      "queens": {
+        "name": "Veronica Green"
+      }
+    },
+    {
+      "season_id": "uk-regular-s3",
+      "queen_id": "victoria-scone",
+      "queens": {
+        "name": "Victoria Scone"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "jonbers-blonde",
+      "queens": {
+        "name": "Jonbers Blonde"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "le-fil",
+      "queens": {
+        "name": "Le Fil"
+      }
+    },
+    {
+      "season_id": "uk-regular-s4",
+      "queen_id": "sminty-drop",
+      "queens": {
+        "name": "Sminty Drop"
+      }
+    },
+    {
+      "season_id": "uk-regular-s5",
+      "queen_id": "kate-butch",
+      "queens": {
+        "name": "Kate Butch"
+      }
+    },
+    {
+      "season_id": "uk-regular-s6",
+      "queen_id": "zahirah-zapanta",
+      "queens": {
+        "name": "Zahirah Zapanta"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "rita-baga",
+      "queens": {
+        "name": "Rita Baga"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "jimbo",
+      "queens": {
+        "name": "Jimbo"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "lemon",
+      "queens": {
+        "name": "Lemon"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "tynomi-banks",
+      "queens": {
+        "name": "Tynomi Banks"
+      }
+    },
+    {
+      "season_id": "can-regular-s1",
+      "queen_id": "juice-boxx",
+      "queens": {
+        "name": "Juice Boxx"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "icesis-couture",
+      "queens": {
+        "name": "Icesis Couture"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "kendall-gender",
+      "queens": {
+        "name": "Kendall Gender"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "pythia",
+      "queens": {
+        "name": "Pythia"
+      }
+    },
+    {
+      "season_id": "can-regular-s2",
+      "queen_id": "stephanie-prince",
+      "queens": {
+        "name": "Stephanie Prince"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "jada-shada-hudson",
+      "queens": {
+        "name": "Jada Shada Hudson"
+      }
+    },
+    {
+      "season_id": "can-regular-s3",
+      "queen_id": "miss-fiercalicious",
+      "queens": {
+        "name": "Miss Fiercalicious"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "aurora-matrix",
+      "queens": {
+        "name": "Aurora Matrix"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "nearah-nuff",
+      "queens": {
+        "name": "Nearah Nuff"
+      }
+    },
+    {
+      "season_id": "can-regular-s4",
+      "queen_id": "melinda-verga",
+      "queens": {
+        "name": "Melinda Verga"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "makayla-couture",
+      "queens": {
+        "name": "Makayla Couture"
+      }
+    },
+    {
+      "season_id": "can-regular-s5",
+      "queen_id": "tiffany-ann-co",
+      "queens": {
+        "name": "Tiffany Ann Co."
+      }
+    },
+    {
+      "season_id": "can-regular-s6",
+      "queen_id": "sami-landri",
+      "queens": {
+        "name": "Sami Landri"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "sagittaria",
+      "queens": {
+        "name": "Sagittaria"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "pupi-poisson",
+      "queens": {
+        "name": "Pupi Poisson"
+      }
+    },
+    {
+      "season_id": "espana-s1",
+      "queen_id": "arantxa-castilla-la-mancha",
+      "queens": {
+        "name": "Arantxa Castilla La Mancha"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "juriji-der-klee",
+      "queens": {
+        "name": "Juriji Der Klee"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "drag-sethlas",
+      "queens": {
+        "name": "Drag Sethlas"
+      }
+    },
+    {
+      "season_id": "espana-s2",
+      "queen_id": "samantha-ballentines",
+      "queens": {
+        "name": "Samantha Ballentines"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "hornella-gngora",
+      "queens": {
+        "name": "Hornella Góngora"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "pakita",
+      "queens": {
+        "name": "Pakita"
+      }
+    },
+    {
+      "season_id": "espana-s3",
+      "queen_id": "pink-chadora",
+      "queens": {
+        "name": "Pink Chadora"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "la-grande-dame",
+      "queens": {
+        "name": "La Grande Dame"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "soa-de-muse",
+      "queens": {
+        "name": "Soa de Muse"
+      }
+    },
+    {
+      "season_id": "france-s1",
+      "queen_id": "la-kahena",
+      "queens": {
+        "name": "La Kahena"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "marina-summers",
+      "queens": {
+        "name": "Marina Summers"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "eva-le-queen",
+      "queens": {
+        "name": "Eva Le Queen"
+      }
+    },
+    {
+      "season_id": "philippines-s1",
+      "queen_id": "minty-fresh",
+      "queens": {
+        "name": "Minty Fresh"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "hannah-conda",
+      "queens": {
+        "name": "Hannah Conda"
+      }
+    },
+    {
+      "season_id": "down-under-s2",
+      "queen_id": "kween-kong",
+      "queens": {
+        "name": "Kween Kong"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "gala-varo",
+      "queens": {
+        "name": "Gala Varo"
+      }
+    },
+    {
+      "season_id": "mexico-s1",
+      "queen_id": "serena-morena",
+      "queens": {
+        "name": "Serena Morena"
+      }
+    },
+    {
+      "season_id": "thailand-s3",
+      "queen_id": "gawdland",
+      "queens": {
+        "name": "Gawdland"
+      }
+    },
+    {
+      "season_id": "holland-s1",
+      "queen_id": "janey-jack",
+      "queens": {
+        "name": "Janey Jacké"
+      }
+    }
+  ]
+}

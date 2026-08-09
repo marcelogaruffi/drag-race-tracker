@@ -52,8 +52,8 @@ export default async function Home() {
                         sizes="(max-width: 768px) 25vw, 150px"
                         style={{ objectFit: 'cover' }}
                         className="poster-img"
-                        priority={idx < 6}
-                        loading={idx < 6 ? undefined : 'lazy'}
+                        priority={idx < 24}
+                        loading={idx < 24 ? undefined : 'lazy'}
                         quality={50}
                       />
                     </div>

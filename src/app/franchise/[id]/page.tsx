@@ -92,8 +92,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                             transition: 'filter 0.5s ease'
                           }}
                           className="poster-img"
-                          priority={idx < 4}
-                          loading={idx < 4 ? undefined : 'lazy'}
+                          priority={idx < 20}
+                          loading={idx < 20 ? undefined : 'lazy'}
                           quality={50}
                         />
                       </div>
