@@ -3,7 +3,7 @@ import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 export default async function Home() {
   const supabase = await createClient();
