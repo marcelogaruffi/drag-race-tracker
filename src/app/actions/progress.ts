@@ -2,11 +2,12 @@
 
 import { createClient } from "@/utils/supabase/server";
 import { revalidatePath } from "next/cache";
+import { getCustomUser } from "@/app/actions/auth";
 
 // Marca um único episódio como visto
 export async function markEpisodeWatched(episodeId: string, seasonId: string) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   if (!user) return;
   
   const { error } = await supabase
@@ -21,7 +22,7 @@ export async function markEpisodeWatched(episodeId: string, seasonId: string) {
 // Desmarca um único episódio
 export async function unmarkEpisodeWatched(episodeId: string, seasonId: string) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   if (!user) return;
   
   await supabase
@@ -35,7 +36,7 @@ export async function unmarkEpisodeWatched(episodeId: string, seasonId: string) 
 // Marca todos os episódios de uma temporada como vistos
 export async function markSeasonWatched(seasonId: string, episodeIds: string[]) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   if (!user) return;
   
   const inserts = episodeIds.map(id => ({ user_id: user.id, episode_id: id }));
@@ -50,7 +51,7 @@ export async function markSeasonWatched(seasonId: string, episodeIds: string[]) 
 // Desmarca todos os episódios de uma temporada
 export async function unmarkSeasonWatched(seasonId: string, episodeIds: string[]) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   if (!user) return;
   
   await supabase

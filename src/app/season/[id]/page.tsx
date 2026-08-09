@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EpisodeList from '@/components/EpisodeList';
 import CastList from '@/components/CastList';
+import { getCustomUser } from '@/app/actions/auth';
 
 export const revalidate = 0;
 
@@ -49,7 +50,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   }) || [];
 
   // Busca o progresso do usuário
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   let progress = null;
   if (user) {
     const { data } = await supabase

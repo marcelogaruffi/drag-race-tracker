@@ -1,13 +1,8 @@
-import { createClient } from "@/utils/supabase/server";
+import { getCustomUser, logout } from "@/app/actions/auth";
 import Link from "next/link";
-import { logout } from "@/app/actions/auth";
 
 export default async function AuthButton() {
-  const supabase = await createClient();
-  
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const user = await getCustomUser();
 
   if (user) {
     return (

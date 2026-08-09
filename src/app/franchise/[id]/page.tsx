@@ -2,6 +2,7 @@ import React from 'react';
 import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getCustomUser } from '@/app/actions/auth';
 
 export const revalidate = 0;
 
@@ -28,7 +29,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
   }
 
   // Lógica Cross-Season Anti-Spoilers (Robô)
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
   let lockedSeasonsMap = new Map<string, { required_season_name: string }>();
   if (user && seasons && seasons.length > 0) {
     const seasonIds = seasons.map(s => s.id);

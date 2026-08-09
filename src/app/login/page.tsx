@@ -25,7 +25,7 @@ export default async function LoginPage({
         borderRadius: '8px',
         padding: '2rem',
         width: '100%',
-        maxWidth: '400px'
+        maxWidth: '450px'
       }}>
         <form className="flex flex-col w-full gap-4" style={{ color: '#fff' }}>
           
@@ -64,6 +64,45 @@ export default async function LoginPage({
             />
           </div>
 
+          {/* Novos campos exigidos apenas para cadastro */}
+          <div style={{ padding: '1rem', backgroundColor: '#331122', borderRadius: '8px', marginTop: '1rem' }}>
+            <p className="gold-text" style={{ fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
+              Somente preencha os campos abaixo se for **Criar uma Conta**:
+            </p>
+            <div className="flex flex-col gap-2 mb-4">
+              <label htmlFor="confirmPassword" style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>Confirmar Senha</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                placeholder="••••••••"
+                style={{
+                  padding: '0.75rem',
+                  borderRadius: '4px',
+                  border: '1px solid rgba(255, 0, 127, 0.5)',
+                  backgroundColor: '#2a1111',
+                  color: '#fff',
+                  outline: 'none'
+                }}
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="securityCode" style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>Código Secreto (Para Cadastro)</label>
+              <input
+                name="securityCode"
+                placeholder="Ex: 123456"
+                style={{
+                  padding: '0.75rem',
+                  borderRadius: '4px',
+                  border: '1px solid rgba(255, 0, 127, 0.5)',
+                  backgroundColor: '#2a1111',
+                  color: '#fff',
+                  outline: 'none'
+                }}
+              />
+            </div>
+          </div>
+
           <div className="flex flex-col gap-4 mt-4">
             <button
               formAction={login}
@@ -95,7 +134,7 @@ export default async function LoginPage({
                 transition: 'all 0.2s ease',
               }}
             >
-              Cadastrar-se
+              Cadastrar-se com Código
             </button>
           </div>
 
