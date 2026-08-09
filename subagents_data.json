@@ -1,0 +1,146 @@
+[
+  {
+    "season_id": "global-all-stars-s1",
+    "queens": [
+      { "name": "Alyssa Edwards", "placement": "Winner" },
+      { "name": "Kitty Scott-Claus", "placement": "Runner-up" },
+      { "name": "Kween Kong", "placement": "Runner-up" },
+      { "name": "Nehellenia", "placement": "Runner-up" },
+      { "name": "Tessa Testicle", "placement": "5th Place" },
+      { "name": "Vanity Vain", "placement": "6th Place" },
+      { "name": "Pythia", "placement": "7th Place" },
+      { "name": "Gala Varo", "placement": "8th Place" },
+      { "name": "Soa de Muse", "placement": "9th Place" },
+      { "name": "Eva Le Queen", "placement": "10th Place" },
+      { "name": "Miranda Lebrão", "placement": "11th Place" },
+      { "name": "Athena Likis", "placement": "12th Place" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Global Talent Extravaganza", "date": "August 16, 2024" },
+      { "number": 2, "title": "Global Talent Extravaganza: Part 2", "date": "August 16, 2024" },
+      { "number": 3, "title": "International Queen Of Mystery Ball", "date": "August 23, 2024" },
+      { "number": 4, "title": "Everybody Say Love Girl Groups", "date": "August 30, 2024" },
+      { "number": 5, "title": "Boobie: The Shequels", "date": "September 6, 2024" },
+      { "number": 6, "title": "It's 5 O'Clock Somewhere", "date": "September 13, 2024" },
+      { "number": 7, "title": "Snatch Game Of Love", "date": "September 20, 2024" },
+      { "number": 8, "title": "Mmm... A Rich International Roast", "date": "September 27, 2024" },
+      { "number": 9, "title": "Re-United Nations Make-Overs", "date": "October 4, 2024" },
+      { "number": 10, "title": "There's No Place Like Home", "date": "October 11, 2024" },
+      { "number": 11, "title": "Global Lip-Sync Lalaparuza", "date": "October 18, 2024" },
+      { "number": 12, "title": "Dance Like The World Is Watching", "date": "October 25, 2024" }
+    ]
+  },
+  {
+    "season_id": "down-under-s4",
+    "queens": [
+      { "name": "Lazy Susan", "placement": "Winner" },
+      { "name": "Mandy Moobs", "placement": "Runner-up" },
+      { "name": "Vybe", "placement": "Runner-up" },
+      { "name": "Freya Armani", "placement": "4th Place" },
+      { "name": "Nikita Iman", "placement": "5th Place" },
+      { "name": "Max Drag Queen", "placement": "6th Place" },
+      { "name": "Brenda Bressed", "placement": "7th Place" },
+      { "name": "Lucina Innocence", "placement": "8th Place" },
+      { "name": "Karna Ford", "placement": "9th Place" },
+      { "name": "Olivia Dreams", "placement": "10th Place" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Doubling Down", "date": "November 1, 2024" },
+      { "number": 2, "title": "Mr. Right or Mr. Right Now?", "date": "November 8, 2024" },
+      { "number": 3, "title": "Snatch Game", "date": "November 15, 2024" },
+      { "number": 4, "title": "Fierce Fabulous Fashion", "date": "November 22, 2024" },
+      { "number": 5, "title": "Booked and Beautiful", "date": "November 29, 2024" },
+      { "number": 6, "title": "Platy-Pussies On Fire", "date": "December 6, 2024" },
+      { "number": 7, "title": "The Rhys Roast", "date": "December 13, 2024" },
+      { "number": 8, "title": "Grand Finale", "date": "December 20, 2024" }
+    ]
+  },
+  {
+    "season_id": "philippines-slaysian-s1",
+    "queens": [
+      { "name": "Brigiding", "placement": "Winner" },
+      { "name": "Viñas DeLuxe", "placement": "Runner-up" },
+      { "name": "Arizona Brandy", "placement": "3rd/4th Place" },
+      { "name": "Suki Doll", "placement": "3rd/4th Place" },
+      { "name": "Khianna", "placement": "5th Place" },
+      { "name": "Yuhua", "placement": "6th Place" },
+      { "name": "Siam Phusri", "placement": "7th Place" },
+      { "name": "Bernie", "placement": "8th Place" },
+      { "name": "Kitty Space", "placement": "9th Place" },
+      { "name": "Ivory Glaze", "placement": "10th Place" },
+      { "name": "Sum Ting Wong", "placement": "11th Place" },
+      { "name": "Madame Yoko", "placement": "12th Place" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Miss Shutacca: Slaysian Edition", "date": "August 13, 2025" },
+      { "number": 2, "title": "Asian Eyyy!", "date": "August 20, 2025" },
+      { "number": 3, "title": "Holy Cacao!", "date": "August 27, 2025" },
+      { "number": 4, "title": "Crazy Bitch Slaysians: The Musical", "date": "September 3, 2025" },
+      { "number": 5, "title": "Homecoming Queens", "date": "September 10, 2025" },
+      { "number": 6, "title": "Snatch Election", "date": "September 17, 2025" },
+      { "number": 7, "title": "Lip Sync Lalaparuza Smackdown", "date": "September 24, 2025" },
+      { "number": 8, "title": "DragCon Slaysia!", "date": "October 1, 2025" },
+      { "number": 9, "title": "High Time", "date": "October 8, 2025" },
+      { "number": 10, "title": "Slaysian Grand T.I.T.E.! (Totally Impressive Talent Extravaganza!)", "date": "October 15, 2025" }
+    ]
+  },
+  {
+    "season_id": "espana-all-stars-s1",
+    "queens": [
+      { "name": "Drag Sethlas", "placement": "Winner" },
+      { "name": "Samantha Ballentines", "placement": "Runner-up" },
+      { "name": "Hornella Góngora", "placement": "3rd/4th" },
+      { "name": "Juriji der Klee", "placement": "3rd/4th" },
+      { "name": "Pupi Poisson", "placement": "5th" },
+      { "name": "Sagittaria", "placement": "6th" },
+      { "name": "Pakita", "placement": "7th" },
+      { "name": "Onyx Unleashed", "placement": "8th" },
+      { "name": "Pink Chadora", "placement": "9th" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Supremme Eleganza Olé Stars Extravaganza", "date": "February 4, 2024" },
+      { "number": 2, "title": "Snatch Game", "date": "February 11, 2024" },
+      { "number": 3, "title": "The Ball: Heaven, Hell, and Capital Sins", "date": "February 18, 2024" },
+      { "number": 4, "title": "Girl Bands Battle", "date": "February 25, 2024" },
+      { "number": 5, "title": "The Hairdresser's Salon", "date": "March 3, 2024" },
+      { "number": 6, "title": "The Reunion", "date": "March 10, 2024" },
+      { "number": 7, "title": "Grand Finale", "date": "March 17, 2024" }
+    ]
+  },
+  {
+    "season_id": "mexico-latina-royale-s1",
+    "queens": [
+      { "name": "Alexis Mateo", "placement": "TBA" }, { "name": "Barbie Q", "placement": "TBA" }, { "name": "DesiRée Beck", "placement": "TBA" }, { "name": "Elektra Vandergeld", "placement": "TBA" }, { "name": "Eva Blunt", "placement": "TBA" }, { "name": "Horacio Potasio", "placement": "TBA" }, { "name": "Mariana Stars", "placement": "TBA" }, { "name": "Matraka", "placement": "TBA" }, { "name": "Miss Abby OMG", "placement": "TBA" }, { "name": "Regina Voce", "placement": "TBA" }, { "name": "Xunami Muse", "placement": "TBA" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "United By a Language, Separated By a Crown", "date": "July 30, 2026" }
+    ]
+  },
+  {
+    "season_id": "france-s4",
+    "queens": [
+      { "name": "Azemylia", "placement": "Contestant" }, { "name": "Creatine Price", "placement": "10th Place" }, { "name": "Daisy Superbitch", "placement": "Contestant" }, { "name": "Fluffy Bidule", "placement": "Contestant" }, { "name": "Holly White", "placement": "7th Place" }, { "name": "La Harpie", "placement": "Contestant" }, { "name": "Lana Cotta", "placement": "Contestant" }, { "name": "Malawitte", "placement": "9th Place" }, { "name": "Margarette", "placement": "8th Place" }, { "name": "Sublyme", "placement": "Contestant" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Drag Academy", "date": "July 8, 2026" }, { "number": 2, "title": "La Boulangerie Est Ouverte", "date": "July 16, 2026" }, { "number": 3, "title": "Drag Vinci Code, The Musidrag", "date": "July 23, 2026" }, { "number": 4, "title": "Le Grand Snatch Game", "date": "July 30, 2026" }, { "number": 5, "title": "Pop Couture", "date": "August 6, 2026" }
+    ]
+  },
+  {
+    "season_id": "down-under-vs-tw-s1",
+    "queens": [
+      { "name": "Art Simone", "placement": "TBA" }, { "name": "Coco Jumbo", "placement": "TBA" }, { "name": "Estrella Xtravaganza", "placement": "TBA" }, { "name": "Flor", "placement": "TBA" }, { "name": "LaLa Ri", "placement": "TBA" }, { "name": "M1ss Jade So", "placement": "TBA" }, { "name": "Michael Marouli", "placement": "TBA" }, { "name": "Nicole Paige Brooks", "placement": "10th Place" }, { "name": "Nikita Iman", "placement": "TBA" }, { "name": "Raven", "placement": "Mole" }, { "name": "VYBE", "placement": "TBA" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Look Who's Back In The House!", "date": "July 24, 2026" }, { "number": 2, "title": "Better The Diva You Know", "date": "July 31, 2026" }, { "number": 3, "title": "TBA", "date": "August 7, 2026" }, { "number": 4, "title": "TBA", "date": "August 14, 2026" }, { "number": 5, "title": "TBA", "date": "August 21, 2026" }, { "number": 6, "title": "TBA", "date": "August 28, 2026" }, { "number": 7, "title": "TBA", "date": "September 4, 2026" }, { "number": 8, "title": "TBA", "date": "September 11, 2026" }
+    ]
+  },
+  {
+    "season_id": "france-all-stars-s1",
+    "queens": [
+      { "name": "Mami Watta", "placement": "Winner" }, { "name": "Elips", "placement": "Runner-up" }, { "name": "Misty Phoenix", "placement": "3rd/4th Place" }, { "name": "Piche", "placement": "3rd/4th Place" }, { "name": "Moon", "placement": "5th Place" }, { "name": "Kam Hugh", "placement": "6th Place" }, { "name": "La Big Bertha", "placement": "7th Place" }, { "name": "Punani", "placement": "8th Place" }, { "name": "Soa de Muse", "placement": "9th Place" }, { "name": "Magnetica", "placement": "10th Place" }
+    ],
+    "episodes": [
+      { "number": 1, "title": "Abracada-Drag", "date": "July 10, 2025" }, { "number": 2, "title": "Super Ball", "date": "July 17, 2025" }, { "number": 3, "title": "Golden Snatch Game", "date": "July 24, 2025" }, { "number": 4, "title": "Superstars", "date": "July 31, 2025" }, { "number": 5, "title": "VIP Makeover", "date": "August 7, 2025" }, { "number": 6, "title": "Queenovision", "date": "August 14, 2025" }, { "number": 7, "title": "The Nicky d'Or", "date": "August 21, 2025" }, { "number": 8, "title": "The Finale", "date": "August 28, 2025" }
+    ]
+  }
+]

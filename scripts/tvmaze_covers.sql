@@ -1,0 +1,23 @@
+-- TVMaze Posters
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/607/1517980.jpg' WHERE id = 'us-regular';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/625/1563396.jpg' WHERE id = 'us-all-stars';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/606/1516443.jpg' WHERE id = 'us-untucked';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/594/1485880.jpg' WHERE id = 'can-regular';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/528/1320535.jpg' WHERE id = 'can-vs-tw';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/502/1256206.jpg' WHERE id = 'belgique';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/571/1429849.jpg' WHERE id = 'brasil';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/537/1344954.jpg' WHERE id = 'down-under';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/599/1497550.jpg' WHERE id = 'espana';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/497/1244427.jpg' WHERE id = 'espana-all-stars';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/521/1302858.jpg' WHERE id = 'france';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/475/1188868.jpg' WHERE id = 'germany';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/385/964974.jpg' WHERE id = 'holland';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/474/1186713.jpg' WHERE id = 'italia';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/521/1302860.jpg' WHERE id = 'mexico';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/527/1318666.jpg' WHERE id = 'philippines';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/450/1127292.jpg' WHERE id = 'sverige';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/535/1339945.jpg' WHERE id = 'thailand';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/527/1318852.jpg' WHERE id = 'global-all-stars';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/589/1473218.jpg' WHERE id = 'uk-regular';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/614/1535737.jpg' WHERE id = 'uk-vs-tw';
+UPDATE franchises SET cover_image = 'https://static.tvmaze.com/uploads/images/original_untouched/418/1046456.jpg' WHERE id = 'secret-celebrity';

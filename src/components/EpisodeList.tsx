@@ -1,0 +1,290 @@
+"use client";
+
+import React, { useState, useTransition } from 'react';
+import Image from 'next/image';
+import { markEpisodeWatched, unmarkEpisodeWatched, markSeasonWatched, unmarkSeasonWatched } from '@/app/actions/progress';
+import ImageModal from './ImageModal';
+
+type Episode = {
+  id: string;
+  season_id: string;
+  title: string;
+  episode_number: number;
+  duration: number;
+  air_date: string;
+  thumb_image: string;
+};
+
+export default function EpisodeList({ episodes, seasonId, initialWatched, episodeResults }: { episodes: Episode[], seasonId: string, initialWatched: string[], episodeResults?: any[] }) {
+  const [watched, setWatched] = useState<Set<string>>(new Set(initialWatched));
+  const [isPending, startTransition] = useTransition();
+  const [selectedImage, setSelectedImage] = useState<{ url: string; name: string } | null>(null);
+
+  const toggleEpisode = (id: string) => {
+    const newWatched = new Set(watched);
+    if (newWatched.has(id)) {
+      newWatched.delete(id);
+      startTransition(() => {
+        unmarkEpisodeWatched(id, seasonId);
+      });
+    } else {
+      newWatched.add(id);
+      startTransition(() => {
+        markEpisodeWatched(id, seasonId);
+      });
+    }
+    setWatched(newWatched);
+  };
+
+  const handleMarkAllWatched = () => {
+    const allIds = episodes.map(ep => ep.id);
+    setWatched(new Set(allIds));
+    startTransition(() => {
+      markSeasonWatched(seasonId, allIds);
+    });
+  };
+
+  const handleUnmarkAllWatched = () => {
+    const allIds = episodes.map(ep => ep.id);
+    setWatched(new Set());
+    startTransition(() => {
+      unmarkSeasonWatched(seasonId, allIds);
+    });
+  };
+
+  const isAllWatched = watched.size === episodes.length && episodes.length > 0;
+  const isNoneWatched = watched.size === 0;
+
+  // Encontra o índice do primeiro episódio não assistido
+  let firstUnwatchedIndex = -1;
+  for (let i = 0; i < episodes.length; i++) {
+    if (!watched.has(episodes[i].id)) {
+      firstUnwatchedIndex = i;
+      break;
+    }
+  }
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
+      
+      {/* Botões em massa */}
+      {episodes.length > 0 && (
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginBottom: '-0.5rem' }}>
+          <button 
+            onClick={handleUnmarkAllWatched}
+            disabled={isNoneWatched || isPending}
+            style={{
+              backgroundColor: isNoneWatched ? '#1a1a1a' : '#555',
+              color: '#fff',
+              border: 'none',
+              padding: '0.5rem 1rem',
+              borderRadius: '4px',
+              cursor: isNoneWatched ? 'not-allowed' : 'pointer',
+              fontWeight: 'bold',
+              textTransform: 'uppercase',
+              fontSize: '0.8rem',
+              transition: 'all 0.2s ease',
+              opacity: isNoneWatched ? 0.5 : 1
+            }}
+          >
+            Desmarcar Toda a Temporada
+          </button>
+
+          <button 
+            onClick={handleMarkAllWatched}
+            disabled={isAllWatched || isPending}
+            style={{
+              backgroundColor: isAllWatched ? '#2a1111' : '#ff007f',
+              color: '#fff',
+              border: 'none',
+              padding: '0.5rem 1rem',
+              borderRadius: '4px',
+              cursor: isAllWatched ? 'not-allowed' : 'pointer',
+              fontWeight: 'bold',
+              textTransform: 'uppercase',
+              fontSize: '0.8rem',
+              transition: 'all 0.2s ease',
+              opacity: isAllWatched ? 0.5 : 1
+            }}
+          >
+            {isAllWatched ? '✓ Temporada Completa' : 'Marcar Toda a Temporada como Vista'}
+          </button>
+        </div>
+      )}
+
+      {episodes && episodes.length > 0 ? (
+        episodes.map((ep, index) => {
+          const isWatched = watched.has(ep.id);
+          // É spoiler se for posterior ao primeiro episódio não assistido
+          const isSpoiler = firstUnwatchedIndex !== -1 && index > firstUnwatchedIndex;
+          const resultsForEpisode = episodeResults?.filter(r => r.episode_id === ep.id) || [];
+
+          return (
+            <article key={ep.id} style={{
+              display: 'flex',
+              flexDirection: 'row',
+              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
+              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
+              borderRadius: '8px',
+              overflow: 'hidden',
+              minHeight: '120px',
+              transition: 'all 0.3s ease',
+              opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
+            }}>
+              {/* Thumbnail */}
+              <div style={{ width: '213px', minWidth: '213px', position: 'relative', backgroundColor: '#2a1111' }}>
+                {ep.thumb_image ? (
+                  <Image 
+                    src={ep.thumb_image} 
+                    alt={isSpoiler ? "Imagem Oculta por Spoiler" : (ep.title || `Episode ${ep.episode_number}`)} 
+                    fill
+                    sizes="213px"
+                    style={{ 
+                      objectFit: 'cover',
+                      filter: isSpoiler ? 'blur(15px) grayscale(100%)' : 'none',
+                      transition: 'filter 0.5s ease'
+                    }}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+                    <span style={{ fontSize: '2rem', opacity: 0.5 }}>{isSpoiler ? '🔒' : '🎬'}</span>
+                  </div>
+                )}
+                {/* Overlay verde se estiver visto */}
+                {isWatched && (
+                  <div style={{
+                    position: 'absolute',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundColor: 'rgba(255, 0, 127, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <span style={{ fontSize: '3rem', textShadow: '0 0 10px #000' }}>✔️</span>
+                  </div>
+                )}
+                {/* Overlay cadeado se for spoiler */}
+                {isSpoiler && !isWatched && (
+                  <div style={{
+                    position: 'absolute',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <span style={{ fontSize: '2rem', textShadow: '0 0 10px #000' }}>🔒</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Detalhes do Episódio */}
+              <div style={{ 
+                padding: '1rem', 
+                display: 'flex', 
+                flexDirection: 'column', 
+                justifyContent: 'center',
+                flexGrow: 1
+              }}>
+                <h3 style={{ 
+                  color: isWatched ? '#aaa' : (isSpoiler ? '#666' : '#fff'), 
+                  margin: '0 0 0.5rem 0', 
+                  fontSize: '1.2rem', 
+                  textDecoration: isWatched ? 'line-through' : 'none' 
+                }}>
+                  <span className="gold-text" style={{ marginRight: '0.5rem', opacity: isWatched || isSpoiler ? 0.5 : 1 }}>
+                    {ep.episode_number}.
+                  </span> 
+                  {isSpoiler ? <span style={{ fontStyle: 'italic' }}>Conteúdo Bloqueado (Spoiler)</span> : ep.title}
+                </h3>
+                <div style={{ display: 'flex', gap: '1rem', color: '#666', fontSize: '0.9rem' }}>
+                  {ep.duration && <span>⏱️ {ep.duration} min</span>}
+                  {ep.air_date && <span>📅 {ep.air_date}</span>}
+                </div>
+              </div>
+
+              {/* Spoiler Revelado - Resultados do Episódio */}
+              {isWatched && resultsForEpisode.length > 0 && (
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  padding: '0 1.5rem', 
+                  gap: '1.5rem', 
+                  borderLeft: '1px dashed #4a1122',
+                  backgroundColor: '#050102'
+                }}>
+                  {resultsForEpisode.map((res: any, idx: number) => (
+                    <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
+                      {res.queens?.image_url ? (
+                        <div 
+                          className="zoom-hover"
+                          onClick={() => setSelectedImage({ url: res.queens.image_url, name: res.queens.name })}
+                          style={{ 
+                            width: '45px', 
+                            height: '45px', 
+                            borderRadius: '50%', 
+                            overflow: 'hidden', 
+                            position: 'relative', 
+                            border: `2px solid ${res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)'}`
+                          }}
+                        >
+                          <Image src={res.queens.image_url} alt={res.queens.name} fill style={{ objectFit: 'cover' }} sizes="45px" />
+                        </div>
+                      ) : (
+                        <div style={{ width: '45px', height: '45px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#222', fontSize: '1.5rem' }}>
+                          👑
+                        </div>
+                      )}
+                      <span style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
+                      <span style={{ 
+                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)', 
+                        fontSize: '0.65rem', 
+                        fontWeight: 'bold', 
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        marginTop: '-4px'
+                      }}>
+                        {res.status === 'eliminated' ? 'Eliminada' : 
+                         res.status === 'winner' ? 'Vencedora' : 
+                         res.status === 'runner_up' ? 'Finalista' : 'Miss Simpatia'}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Checkbox */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 1.5rem',
+                borderLeft: `1px solid ${isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)'}`
+              }}>
+                <input 
+                  type="checkbox" 
+                  checked={isWatched}
+                  onChange={() => toggleEpisode(ep.id)}
+                  style={{ width: '24px', height: '24px', cursor: 'pointer', accentColor: '#ff007f' }}
+                  title="Marcar como visto"
+                />
+              </div>
+            </article>
+          );
+        })
+      ) : (
+        <div style={{ textAlign: 'center', color: '#ff007f' }}>
+          Nenhum episódio cadastrado.
+        </div>
+      )}
+      
+      <ImageModal 
+        isOpen={!!selectedImage} 
+        onClose={() => setSelectedImage(null)} 
+        imageUrl={selectedImage?.url || ''} 
+        altText={selectedImage?.name || ''} 
+      />
+    </div>
+  );
+}

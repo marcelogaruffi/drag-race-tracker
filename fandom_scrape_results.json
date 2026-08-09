@@ -1,0 +1,694 @@
+[
+  {
+    "season": {
+      "id": "down-under-vs-tw-s1",
+      "franchise": "down-under-vs-tw",
+      "page": "Drag_Race_Down_Under_vs_The_World_(Season_1)"
+    },
+    "queens": [
+      {
+        "id": "design",
+        "name": "Design",
+        "outcome": "SnatchGame",
+        "img": ""
+      },
+      {
+        "id": "down-underseason-1",
+        "name": "Down UnderSeason 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/57/ArtSimoneDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204154"
+      },
+      {
+        "id": "down-underseason-3",
+        "name": "Down UnderSeason 3",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/2/24/FlorDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623203934"
+      },
+      {
+        "id": "espanaseason-2",
+        "name": "EspañaSeason 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/0a/EstrellaXtravaganzaDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623203950"
+      },
+      {
+        "id": "usaseason-13",
+        "name": "USASeason 13",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/4/43/LaLaRiDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204118"
+      },
+      {
+        "id": "usa-all-starsseason-8",
+        "name": "USA All StarsSeason 8",
+        "outcome": "5th",
+        "img": ""
+      },
+      {
+        "id": "philippinesseason-2",
+        "name": "PhilippinesSeason 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/a/a2/M1ssJadeSoDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204207"
+      },
+      {
+        "id": "ukseason-5",
+        "name": "UKSeason 5",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/b/b4/MichaelMarouliDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204019"
+      },
+      {
+        "id": "down-underseason-4",
+        "name": "Down UnderSeason 4",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/c/c2/VYBEDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623203915"
+      },
+      {
+        "id": "down-underseason-4",
+        "name": "Down UnderSeason 4",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/6/6c/NikitaImanDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204036"
+      },
+      {
+        "id": "down-underseason-1",
+        "name": "Down UnderSeason 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/e/ed/CocoJumboDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204226"
+      },
+      {
+        "id": "usaseason-2",
+        "name": "USASeason 2",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/c/c5/NicolePaigeBrooksDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204005"
+      },
+      {
+        "id": "usa-all-starsseason-10",
+        "name": "USA All StarsSeason 10",
+        "outcome": "11th-18th",
+        "img": ""
+      },
+      {
+        "id": "usaseason-2",
+        "name": "USASeason 2",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/50/RavenDUvsTW1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260623204141"
+      },
+      {
+        "id": "usa-all-starsseason-1",
+        "name": "USA All StarsSeason 1",
+        "outcome": "Runner-Up",
+        "img": ""
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "mexico-latina-royale-s1",
+      "franchise": "mexico-latina-royale",
+      "page": "Drag_Race_M%C3%A9xico:_Latina_Royale_(Season_1)"
+    },
+    "queens": [
+      {
+        "id": "runway",
+        "name": "Runway",
+        "outcome": "TalentShow",
+        "img": ""
+      },
+      {
+        "id": "mexico-season-2",
+        "name": "México Season 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/10/ElektraVandergeldDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200537"
+      },
+      {
+        "id": "mexico-season-2",
+        "name": "México Season 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/8/80/EvaBluntDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200602"
+      },
+      {
+        "id": "usa-season-16",
+        "name": "USA Season 16",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/1b/XunamiMuseDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200854"
+      },
+      {
+        "id": "usa-season-3",
+        "name": "USA Season 3",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/94/AlexisMateoDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200348"
+      },
+      {
+        "id": "usa-all-stars-season-1",
+        "name": "USA All Stars Season 1",
+        "outcome": "5th/6th",
+        "img": ""
+      },
+      {
+        "id": "usa-all-stars-season-5",
+        "name": "USA All Stars Season 5",
+        "outcome": "5th",
+        "img": ""
+      },
+      {
+        "id": "canada-vs-the-world-season-2",
+        "name": "Canada vs The World Season 2",
+        "outcome": "Runner-Up",
+        "img": ""
+      },
+      {
+        "id": "mexico-season-2",
+        "name": "México Season 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/14/HoracioPotasioDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200624"
+      },
+      {
+        "id": "mexico-season-1",
+        "name": "México Season 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/93/MatrakaDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200747"
+      },
+      {
+        "id": "holland-season-1",
+        "name": "Holland Season 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/2/20/MissAbbyOMGDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200813"
+      },
+      {
+        "id": "mexico-season-1",
+        "name": "México Season 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/f/f9/ReginaVoceDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200830"
+      },
+      {
+        "id": "germany-season-1",
+        "name": "Germany Season 1",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/16/BarbieQDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200418"
+      },
+      {
+        "id": "brasil-season-2",
+        "name": "Brasil Season 2",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/4/4f/Desir%C3%A9eBeckDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200515"
+      },
+      {
+        "id": "espana-season-4",
+        "name": "España Season 4",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/f/ff/MarianaStarsDRMXLR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260626200646"
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "philippines-slaysian-s1",
+      "franchise": "philippines-slaysian",
+      "page": "Drag_Race_Philippines:_Slaysian_Royale_(Season_1)"
+    },
+    "queens": [
+      {
+        "id": "runway",
+        "name": "Runway",
+        "outcome": "Finale",
+        "img": ""
+      },
+      {
+        "id": "philippinesseason-1",
+        "name": "PhilippinesSeason 1",
+        "outcome": "WINNER",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/4/44/BrigidingDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716034043"
+      },
+      {
+        "id": "philippinesseason-1",
+        "name": "PhilippinesSeason 1",
+        "outcome": "RUNNERUP",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/6/64/Vi%C3%B1asDeLuxeDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716035043"
+      },
+      {
+        "id": "philippinesseason-2",
+        "name": "PhilippinesSeason 2",
+        "outcome": "ELIM",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/95/ArizonaBrandyDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716033524"
+      },
+      {
+        "id": "canadaseason-2",
+        "name": "CanadaSeason 2",
+        "outcome": "MISSCON+ELIM",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/7/7c/SukiDollDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716025017"
+      },
+      {
+        "id": "philippinesseason-3",
+        "name": "PhilippinesSeason 3",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/6/6c/KhiannaDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716034310"
+      },
+      {
+        "id": "usaseason-10",
+        "name": "USASeason 10",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/a/a3/YuhuaDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716024651"
+      },
+      {
+        "id": "thailandseason-3",
+        "name": "ThailandSeason 3",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/dc/SiamPhusriDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250824044944"
+      },
+      {
+        "id": "philippinesseason-2",
+        "name": "PhilippinesSeason 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/4/48/BernieDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716033915"
+      },
+      {
+        "id": "franceseason-2",
+        "name": "FranceSeason 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/7/7b/KittySpaceDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716034424"
+      },
+      {
+        "id": "down-underseason-3",
+        "name": "Down UnderSeason 3",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/08/IvoryGlazeDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716024450"
+      },
+      {
+        "id": "ukseason-1",
+        "name": "UKSeason 1",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/4/4f/SumTingWongDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716034958"
+      },
+      {
+        "id": "belgiqueseason-2",
+        "name": "BelgiqueSeason 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/13/MadameYokoDRPHSR1CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20250716034608"
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "france-s4",
+      "franchise": "france",
+      "page": "Drag_Race_France_(Season_4)"
+    },
+    "queens": [
+      {
+        "id": "rumix",
+        "name": "Rumix",
+        "outcome": "GirlGroups",
+        "img": ""
+      },
+      {
+        "id": "design",
+        "name": "Design",
+        "outcome": "Design",
+        "img": ""
+      },
+      {
+        "id": "tba",
+        "name": "TBA",
+        "outcome": "TBA",
+        "img": ""
+      },
+      {
+        "id": "22",
+        "name": "22",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/d9/LanaCottaDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260731002209"
+      },
+      {
+        "id": "33",
+        "name": "33",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/02/DaisySuperbitchDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173115"
+      },
+      {
+        "id": "31",
+        "name": "31",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/18/SublymeDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173355"
+      },
+      {
+        "id": "27",
+        "name": "27",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/3/35/LaHarpieDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173240"
+      },
+      {
+        "id": "27",
+        "name": "27",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/96/FluffyBiduleDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173137"
+      },
+      {
+        "id": "27",
+        "name": "27",
+        "outcome": "TBA",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/e/e4/AzemyliaDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173038"
+      },
+      {
+        "id": "40",
+        "name": "40",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/6/69/HollyWhiteDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173213"
+      },
+      {
+        "id": "26",
+        "name": "26",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/15/MargaretteDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173337"
+      },
+      {
+        "id": "26",
+        "name": "26",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/7/7e/MalawitteDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173317"
+      },
+      {
+        "id": "35",
+        "name": "35",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/97/CreatinePriceDRFR4CastMug.jpg/revision/latest/scale-to-width-down/400?cb=20260615173059"
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "espana-all-stars-s1",
+      "franchise": "espana-all-stars",
+      "page": "Drag_Race_Espa%C3%B1a:_All_Stars_(Season_1)"
+    },
+    "queens": [
+      {
+        "id": "talentshow",
+        "name": "TalentShow",
+        "outcome": "Finale",
+        "img": ""
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "WINNER",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/d0/DragSethlasDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114200121"
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "LOST3RDROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/d2/SamanthaBallentinesDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114205341"
+      },
+      {
+        "id": "season-3",
+        "name": "Season 3",
+        "outcome": "LOST2NDROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/06/HornellaG%C3%B3ngoraDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114200853"
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "LOST1STROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/f/ff/JurijiDerKleeDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114201649"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/c/c9/PupiPoissonDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114204011"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/df/SagittariaDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114204553"
+      },
+      {
+        "id": "the-switchseason-2",
+        "name": "The SwitchSeason 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/5f/PakitaDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114203048"
+      },
+      {
+        "id": "season-3",
+        "name": "Season 3",
+        "outcome": "7th/8th",
+        "img": ""
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/56/OnyxUnleashedDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114202229"
+      },
+      {
+        "id": "season-3",
+        "name": "Season 3",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/2/22/PinkChadoraDRESAS1PromoAlt.jpg/revision/latest/scale-to-width-down/400?cb=20240114203505"
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "france-all-stars-s1",
+      "franchise": "france-all-stars",
+      "page": "Drag_Race_France_All_Stars_(Season_1)"
+    },
+    "queens": [
+      {
+        "id": "talentshow",
+        "name": "TalentShow",
+        "outcome": "Finale",
+        "img": ""
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "WINNER",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/6/6c/MamiWattaFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221616"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "LOST3RDROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/e/e8/ElipsFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221612"
+      },
+      {
+        "id": "season-3",
+        "name": "Season 3",
+        "outcome": "LOST2NDROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/0a/MistyPhoenixFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221618"
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "LOST1STROUND",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/52/PicheFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221620"
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/5/52/MoonFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221619"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "MISSCON",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/03/KamHughFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221613"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/d6/LaBigBerthaFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221614"
+      },
+      {
+        "id": "season-2",
+        "name": "Season 2",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/8/8c/PunaniFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221621"
+      },
+      {
+        "id": "season-1",
+        "name": "Season 1",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/2/2c/SoadeMuseFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221622"
+      },
+      {
+        "id": "global-allstarsseason-1",
+        "name": "Global AllStarsSeason 1",
+        "outcome": "9th",
+        "img": ""
+      },
+      {
+        "id": "season-3",
+        "name": "Season 3",
+        "outcome": "GUEST",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/1/15/MagneticaFRAS1MiniPromo.jpg/revision/latest/scale-to-width-down/400?cb=20250613221615"
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "global-all-stars-s1",
+      "franchise": "global-all-stars",
+      "page": "RuPaul%27s_Drag_Race_Global_All_Stars"
+    },
+    "queens": [
+      {
+        "id": "usa",
+        "name": "USA",
+        "outcome": "Alyssa Edwards",
+        "img": ""
+      },
+      {
+        "id": "uk",
+        "name": "UK",
+        "outcome": "Kitty Scott-Claus",
+        "img": ""
+      },
+      {
+        "id": "canada",
+        "name": "Canada",
+        "outcome": "Pythia",
+        "img": ""
+      },
+      {
+        "id": "downunder",
+        "name": "DownUnder",
+        "outcome": "Kween Kong",
+        "img": ""
+      },
+      {
+        "id": "italia",
+        "name": "Italia",
+        "outcome": "Nehellenia",
+        "img": ""
+      },
+      {
+        "id": "france",
+        "name": "France",
+        "outcome": "Soa de Muse",
+        "img": ""
+      },
+      {
+        "id": "philippines",
+        "name": "Philippines",
+        "outcome": "Eva Le Queen",
+        "img": ""
+      },
+      {
+        "id": "belgique",
+        "name": "Belgique",
+        "outcome": "Athena Likis",
+        "img": ""
+      },
+      {
+        "id": "sverige",
+        "name": "Sverige",
+        "outcome": "Vanity Vain",
+        "img": ""
+      },
+      {
+        "id": "mexico",
+        "name": "México",
+        "outcome": "Gala Varo",
+        "img": ""
+      },
+      {
+        "id": "brasil",
+        "name": "Brasil",
+        "outcome": "Miranda Lebrão",
+        "img": ""
+      },
+      {
+        "id": "germany",
+        "name": "Germany",
+        "outcome": "Tessa Testicle",
+        "img": ""
+      }
+    ],
+    "episodes": []
+  },
+  {
+    "season": {
+      "id": "down-under-s4",
+      "franchise": "down-under",
+      "page": "Drag_Race_Down_Under_(Season_4)"
+    },
+    "queens": [
+      {
+        "id": "runway",
+        "name": "Runway",
+        "outcome": "Finale",
+        "img": ""
+      },
+      {
+        "id": "32",
+        "name": "32",
+        "outcome": "WINNER",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/0/0e/LazySusanDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203822"
+      },
+      {
+        "id": "33",
+        "name": "33",
+        "outcome": "RUNNERUP",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/91/MandyMoobsDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203648"
+      },
+      {
+        "id": "32",
+        "name": "32",
+        "outcome": "RUNNERUP",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/d/dc/VybeDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203736"
+      },
+      {
+        "id": "24",
+        "name": "24",
+        "outcome": "ELIM",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/7/7f/FreyaArmaniDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203848"
+      },
+      {
+        "id": "27-6",
+        "name": "27[6]",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/8/88/NikitaImanDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203903"
+      },
+      {
+        "id": "24",
+        "name": "24",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/e/e8/MaxDragQueenDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203720"
+      },
+      {
+        "id": "24",
+        "name": "24",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/2/21/BrendaBressedDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203806"
+      },
+      {
+        "id": "28",
+        "name": "28",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/9b/LucinaInnocenceDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203835"
+      },
+      {
+        "id": "27",
+        "name": "27",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/9/9a/KarnaFordDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203750"
+      },
+      {
+        "id": "26",
+        "name": "26",
+        "outcome": "",
+        "img": "https://static.wikia.nocookie.net/logosrupaulsdragrace/images/8/8e/OliviaDreamsDRDU4MiniPromo.png/revision/latest/scale-to-width-down/400?cb=20241009203704"
+      }
+    ],
+    "episodes": []
+  }
+]
