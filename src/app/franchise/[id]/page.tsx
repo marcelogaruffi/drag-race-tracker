@@ -70,7 +70,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
         width: '100%' 
       }}>
         {seasons && seasons.length > 0 ? (
-          seasons.map((season) => {
+          seasons.map((season, idx) => {
             const lock = lockedSeasonsMap.get(season.id);
             const isLocked = !!lock;
 
@@ -91,7 +91,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                             transition: 'filter 0.5s ease'
                           }}
                           className="poster-img"
-                          loading="lazy"
+                          priority={idx < 4}
+                          loading={idx < 4 ? undefined : 'lazy'}
                           quality={50}
                         />
                       </div>

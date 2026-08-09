@@ -45,6 +45,8 @@ export default function CastList({ castData }: { castData: any[] }) {
           altText={currentQueen.queens?.name || ''} 
           onNext={() => setSelectedIndex(((selectedIndex ?? 0) + 1) % castData.length)}
           onPrev={() => setSelectedIndex(((selectedIndex ?? 0) - 1 + castData.length) % castData.length)}
+          preloadNextUrl={castData[((selectedIndex ?? 0) + 1) % castData.length]?.image_url || castData[((selectedIndex ?? 0) + 1) % castData.length]?.queens?.image_url || ''}
+          preloadPrevUrl={castData[((selectedIndex ?? 0) - 1 + castData.length) % castData.length]?.image_url || castData[((selectedIndex ?? 0) - 1 + castData.length) % castData.length]?.queens?.image_url || ''}
         />
       )}
     </>

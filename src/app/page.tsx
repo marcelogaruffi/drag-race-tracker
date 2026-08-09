@@ -3,7 +3,7 @@ import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 export default async function Home() {
   const supabase = await createClient();
@@ -39,7 +39,7 @@ export default async function Home() {
         width: '100%' 
       }}>
         {franchises && franchises.length > 0 ? (
-          franchises.map((franchise) => (
+          franchises.map((franchise, idx) => (
             <Link href={`/franchise/${franchise.id}`} key={franchise.id} style={{ textDecoration: 'none', display: 'block' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', height: '100%' }}>
                 <article className="poster-card">
@@ -52,7 +52,8 @@ export default async function Home() {
                         sizes="(max-width: 768px) 25vw, 150px"
                         style={{ objectFit: 'cover' }}
                         className="poster-img"
-                        loading="lazy"
+                        priority={idx < 6}
+                        loading={idx < 6 ? undefined : 'lazy'}
                         quality={50}
                       />
                     </div>

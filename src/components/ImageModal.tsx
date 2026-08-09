@@ -10,9 +10,11 @@ interface ImageModalProps {
   altText: string;
   onNext?: () => void;
   onPrev?: () => void;
+  preloadNextUrl?: string;
+  preloadPrevUrl?: string;
 }
 
-export default function ImageModal({ isOpen, onClose, imageUrl, altText, onNext, onPrev }: ImageModalProps) {
+export default function ImageModal({ isOpen, onClose, imageUrl, altText, onNext, onPrev, preloadNextUrl, preloadPrevUrl }: ImageModalProps) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -115,6 +117,18 @@ export default function ImageModal({ isOpen, onClose, imageUrl, altText, onNext,
              {altText}
            </span>
         </div>
+        
+        {/* Preload Next/Prev Images invisibly */}
+        {preloadNextUrl && (
+          <div style={{ display: 'none' }}>
+            <Image src={preloadNextUrl} alt="preload next" fill priority sizes="1px" />
+          </div>
+        )}
+        {preloadPrevUrl && (
+          <div style={{ display: 'none' }}>
+            <Image src={preloadPrevUrl} alt="preload prev" fill priority sizes="1px" />
+          </div>
+        )}
       </div>
 
       {onNext && (

@@ -1,1 +1,0 @@
-INSERT INTO public.user_progress (user_id, episode_id) SELECT u.id, e.id FROM auth.users u CROSS JOIN public.episodes e ON CONFLICT (user_id, episode_id) DO NOTHING;
