@@ -69,8 +69,7 @@ export default async function SignupPage({
                 outline: 'none',
                 transition: 'all 0.3s ease'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-gold)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 215, 0, 0.2)'}
+
             />
           </div>
 
@@ -90,8 +89,7 @@ export default async function SignupPage({
                 outline: 'none',
                 transition: 'all 0.3s ease'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-gold)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 215, 0, 0.2)'}
+
             />
           </div>
 
@@ -111,8 +109,7 @@ export default async function SignupPage({
                 outline: 'none',
                 transition: 'all 0.3s ease'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-gold)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 215, 0, 0.2)'}
+
             />
           </div>
 
@@ -135,8 +132,7 @@ export default async function SignupPage({
                 textAlign: 'center',
                 fontSize: '1.2rem'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-gold)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 215, 0, 0.5)'}
+
             />
           </div>
 
@@ -154,14 +150,6 @@ export default async function SignupPage({
                 textTransform: 'uppercase',
                 letterSpacing: '2px',
                 transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'var(--color-gold)';
-                e.currentTarget.style.color = '#000';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.color = 'var(--color-gold)';
               }}
             >
               Criar Conta

@@ -70,8 +70,7 @@ export default async function LoginPage({
                 transition: 'all 0.3s ease',
                 fontSize: '1rem'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-neon-pink)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 0, 127, 0.2)'}
+
             />
           </div>
 
@@ -92,8 +91,7 @@ export default async function LoginPage({
                 transition: 'all 0.3s ease',
                 fontSize: '1rem'
               }}
-              onFocus={(e) => e.target.style.border = '1px solid var(--color-neon-pink)'}
-              onBlur={(e) => e.target.style.border = '1px solid rgba(255, 0, 127, 0.2)'}
+
             />
           </div>
 
@@ -113,8 +111,6 @@ export default async function LoginPage({
                 transition: 'all 0.3s ease',
                 boxShadow: '0 0 20px rgba(255, 0, 127, 0.4)'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
             >
               Entrar
             </button>
