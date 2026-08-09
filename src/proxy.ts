@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // O nome do cookie que definimos no auth.ts
   const cookieName = 'drag_race_user_id';
   const hasCookie = request.cookies.has(cookieName);
