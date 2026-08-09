@@ -43,8 +43,8 @@ export default function CastList({ castData }: { castData: any[] }) {
           onClose={() => setSelectedIndex(null)} 
           imageUrl={currentQueen.image_url || currentQueen.queens?.image_url || ''} 
           altText={currentQueen.queens?.name || ''} 
-          onNext={() => setSelectedIndex((selectedIndex + 1) % castData.length)}
-          onPrev={() => setSelectedIndex((selectedIndex - 1 + castData.length) % castData.length)}
+          onNext={() => setSelectedIndex(((selectedIndex ?? 0) + 1) % castData.length)}
+          onPrev={() => setSelectedIndex(((selectedIndex ?? 0) - 1 + castData.length) % castData.length)}
         />
       )}
     </>

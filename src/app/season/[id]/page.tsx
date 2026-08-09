@@ -42,8 +42,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
     return {
       ...res,
       queens: {
-        ...res.queens,
-        image_url: castInfo?.image_url || res.queens?.image_url
+        ...(res.queens as any),
+        image_url: castInfo?.image_url || (res.queens as any)?.image_url
       }
     };
   }) || [];
