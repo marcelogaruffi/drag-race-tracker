@@ -44,7 +44,7 @@ export async function signup(formData: FormData) {
   const securityCode = formData.get("securityCode") as string;
 
   if (password !== confirmPassword) {
-    return redirect("/login?message=As senhas não coincidem");
+    return redirect("/signup?message=As senhas não coincidem");
   }
 
   const { data: userId, error } = await supabase.rpc("custom_signup", {
@@ -54,20 +54,11 @@ export async function signup(formData: FormData) {
   });
 
   if (error || !userId) {
-    return redirect(`/login?message=${encodeURIComponent(error?.message || "Erro ao criar usuário")}`);
+    return redirect(`/signup?message=${encodeURIComponent(error?.message || "Erro ao criar usuário")}`);
   }
 
-  const cookieStore = await cookies();
-  cookieStore.set(COOKIE_NAME, userId, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-    path: "/",
-    maxAge: 60 * 60 * 24 * 365,
-  });
-
-  revalidatePath("/", "layout");
-  redirect("/");
+  // Se deu sucesso, redireciona para o login informando o sucesso
+  redirect("/login?success=true");
 }
 
 export async function logout() {
