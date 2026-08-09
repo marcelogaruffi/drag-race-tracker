@@ -18,15 +18,26 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-bg);
-  /* Brick pattern background minimalista */
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Brick pattern background minimalista e com alta performance de scroll */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
   background-image: 
     linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), 
     repeating-linear-gradient(to bottom, transparent, transparent 48px, var(--color-brick-dark) 48px, var(--color-brick-dark) 50px),
     repeating-linear-gradient(to right, transparent, transparent 98px, var(--color-brick-dark) 98px, var(--color-brick-dark) 100px);
   background-size: 100% 100%, 100px 50px, 100px 50px;
-  background-attachment: fixed;
-  color: var(--color-text);
-  font-family: 'Inter', sans-serif;
+  pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
