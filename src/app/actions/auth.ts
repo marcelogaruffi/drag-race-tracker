@@ -23,7 +23,9 @@ export async function login(formData: FormData) {
   }
 
   const cookieStore = await cookies();
-  cookieStore.set(COOKIE_NAME, userId, {
+  const sessionData = JSON.stringify({ id: userId, email });
+  
+  cookieStore.set(COOKIE_NAME, sessionData, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
@@ -70,16 +72,20 @@ export async function logout() {
 
 export async function getCustomUser() {
   const cookieStore = await cookies();
-  const userId = cookieStore.get(COOKIE_NAME)?.value;
+  const sessionString = cookieStore.get(COOKIE_NAME)?.value;
   
-  if (!userId) return null;
+  if (!sessionString) return null;
 
-  const supabase = await createClient();
-  const { data } = await supabase
-    .from("custom_users")
-    .select("id, email")
-    .eq("id", userId)
-    .single();
+  try {
+    const data = JSON.parse(sessionString);
+    if (data && data.id && data.email) {
+      return data;
+    }
+  } catch (e) {
+    // Se falhar no parse, é porque é o cookie antigo que só tinha o UUID.
+    // Retornamos um objeto compatível para não quebrar.
+    return { id: sessionString, email: "Usuário Vip" };
+  }
 
-  return data;
+  return null;
 }
