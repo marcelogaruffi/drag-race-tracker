@@ -12,8 +12,8 @@ export default async function Home() {
   return (
     <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
       <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '1rem' }}>
-        <h1 className="neon-text text-4xl md:text-6xl" style={{ letterSpacing: '2px', textTransform: 'uppercase' }}>Drag Race Tracker</h1>
-        <p className="gold-text text-sm md:text-base" style={{ letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '1rem' }}>
+        <h1 className="neon-text" style={{ fontSize: 'clamp(3rem, 10vw, 5rem)', letterSpacing: '2px', textTransform: 'uppercase', margin: 0, wordBreak: 'break-word', lineHeight: '1.1' }}>Drag Race Tracker</h1>
+        <p className="gold-text" style={{ fontSize: 'clamp(1rem, 4vw, 1.5rem)', letterSpacing: '1px', textTransform: 'uppercase', margin: '0.5rem 0 1rem 0' }}>
           Escolha a sua franquia (Sem Spoilers)
         </p>
         <Link href="/timeline" style={{
