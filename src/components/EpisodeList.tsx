@@ -2,7 +2,7 @@
 
 import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
-import { markEpisodeWatched, unmarkEpisodeWatched, markSeasonWatched, unmarkSeasonWatched } from '@/app/actions/progress';
+import { markEpisodeWatched, unmarkEpisodeWatched, markSeasonWatched, unmarkSeasonWatched, rateSeason } from '@/app/actions/progress';
 import ImageModal from './ImageModal';
 
 type Episode = {
@@ -15,8 +15,9 @@ type Episode = {
   thumb_image: string;
 };
 
-export default function EpisodeList({ episodes, seasonId, initialWatched, episodeResults }: { episodes: Episode[], seasonId: string, initialWatched: string[], episodeResults?: any[] }) {
+export default function EpisodeList({ episodes, seasonId, initialWatched, episodeResults, initialRating = 0 }: { episodes: Episode[], seasonId: string, initialWatched: string[], episodeResults?: any[], initialRating?: number }) {
   const [watched, setWatched] = useState<Set<string>>(new Set(initialWatched));
+  const [rating, setRating] = useState<number>(initialRating);
   const [isPending, startTransition] = useTransition();
   const [selectedImage, setSelectedImage] = useState<{ url: string; name: string } | null>(null);
 
@@ -52,8 +53,16 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
     });
   };
 
+  const handleRate = (star: number) => {
+    setRating(star);
+    startTransition(() => {
+      rateSeason(seasonId, star);
+    });
+  };
+
   const isAllWatched = watched.size === episodes.length && episodes.length > 0;
   const isNoneWatched = watched.size === 0;
+  const progressPercent = episodes.length > 0 ? (watched.size / episodes.length) * 100 : 0;
 
   // Encontra o índice do primeiro episódio não assistido
   let firstUnwatchedIndex = -1;
@@ -66,6 +75,55 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
+      
+      {/* Barra de Progresso Visual */}
+      {episodes.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Progresso da Temporada</span>
+            <span style={{ color: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)', fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
+          </div>
+          <div style={{ width: '100%', height: '8px', backgroundColor: '#222', borderRadius: '4px', overflow: 'hidden' }}>
+            <div style={{ 
+              width: `${progressPercent}%`, 
+              height: '100%', 
+              backgroundColor: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)',
+              transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s'
+            }}></div>
+          </div>
+        </div>
+      )}
+
+      {/* Sistema de Avaliação (Só visível se completo) */}
+      {isAllWatched && (
+        <div style={{ 
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', 
+          backgroundColor: '#1a1a1a', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-gold)'
+        }}>
+          <h3 style={{ color: 'var(--color-gold)', margin: 0, textTransform: 'uppercase', fontSize: '1rem', letterSpacing: '1px' }}>Avalie esta Temporada</h3>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            {[1, 2, 3, 4, 5].map((star) => (
+              <button
+                key={star}
+                onClick={() => handleRate(star)}
+                disabled={isPending}
+                style={{
+                  background: 'none', border: 'none', cursor: 'pointer',
+                  fontSize: '2rem', padding: 0,
+                  color: star <= rating ? 'var(--color-gold)' : '#333',
+                  transition: 'color 0.2s, transform 0.2s',
+                  transform: star <= rating ? 'scale(1.1)' : 'scale(1)'
+                }}
+                className="hover:scale-125"
+                title={`Dar ${star} estrela${star > 1 ? 's' : ''}`}
+              >
+                ★
+              </button>
+            ))}
+          </div>
+          {rating > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Você avaliou com {rating} estrela{rating > 1 ? 's' : ''}</span>}
+        </div>
+      )}
       
       {/* Botões em massa */}
       {episodes.length > 0 && (

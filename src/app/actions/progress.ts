@@ -62,3 +62,18 @@ export async function unmarkSeasonWatched(seasonId: string, episodeIds: string[]
     
   revalidatePath(`/season/${seasonId}`);
 }
+
+// Salva a nota da temporada
+export async function rateSeason(seasonId: string, rating: number) {
+  const supabase = await createClient();
+  const user = await getCustomUser();
+  if (!user) return;
+  
+  await supabase.rpc('save_season_rating', { 
+    p_user_id: user.id, 
+    p_season_id: seasonId, 
+    p_rating: rating 
+  });
+  
+  revalidatePath(`/season/${seasonId}`);
+}

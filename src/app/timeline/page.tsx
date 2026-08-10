@@ -110,13 +110,24 @@ export default async function TimelinePage() {
                           <span style={{ fontSize: '0.8rem', color: '#888' }}>Estreia: {new Date(season.premiere_date).toLocaleDateString('pt-BR')}</span>
                         </div>
 
-                        <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem' }}>
+                        <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem', minWidth: '100px' }}>
                           {isCompleted ? (
-                            <span style={{ color: '#00ff88', fontSize: '1.5rem' }}>✓</span>
+                            <span style={{ color: '#00ff88', fontSize: '1.5rem', lineHeight: 1 }}>✓</span>
                           ) : (
-                            <span style={{ color: isStarted ? 'var(--color-gold)' : '#555', fontSize: '0.85rem' }}>
-                              {season.watched_episodes} / {season.total_episodes} eps
-                            </span>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.3rem', width: '100%' }}>
+                              <span style={{ color: isStarted ? 'var(--color-gold)' : '#555', fontSize: '0.75rem', fontWeight: 'bold' }}>
+                                {season.watched_episodes} / {season.total_episodes} eps
+                              </span>
+                              {season.total_episodes > 0 && (
+                                <div style={{ width: '100%', height: '4px', backgroundColor: '#222', borderRadius: '2px', overflow: 'hidden' }}>
+                                  <div style={{ 
+                                    width: `${(season.watched_episodes / season.total_episodes) * 100}%`, 
+                                    height: '100%', 
+                                    backgroundColor: isStarted ? 'var(--color-gold)' : '#555' 
+                                  }}></div>
+                                </div>
+                              )}
+                            </div>
                           )}
                         </div>
 

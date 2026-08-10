@@ -49,9 +49,11 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
     };
   }) || [];
 
-  // Busca o progresso do usuário
+  // Busca o progresso do usuário e a nota
   const user = await getCustomUser();
   let progress = null;
+  let initialRating = 0;
+  
   if (user) {
     const { data } = await supabase
       .from('user_progress')
@@ -59,6 +61,13 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
       .eq('user_id', user.id)
       .in('episode_id', episodes?.map(ep => ep.id) || []);
     progress = data;
+    
+    const { data: ratingData } = await supabase.rpc('get_season_rating', {
+      p_user_id: user.id,
+      p_season_id: season.id
+    });
+    
+    if (ratingData) initialRating = ratingData;
   }
 
   const watchedSet = new Set(progress?.map(p => p.episode_id) || []);
@@ -176,6 +185,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
         seasonId={season.id}
         initialWatched={Array.from(watchedSet)} 
         episodeResults={episodeResults || []}
+        initialRating={initialRating}
       />
     </main>
   );
