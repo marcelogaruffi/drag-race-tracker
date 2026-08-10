@@ -139,7 +139,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh', maxWidth: '1400px', margin: '0 auto', paddingTop: '6rem' }}>
+    <main className="container flex flex-col items-center gap-8" style={{ minHeight: '100vh', padding: '6rem 4rem 3rem 4rem', maxWidth: '1200px', margin: '0 auto' }}>
       <header className="flex flex-col items-center gap-4" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', width: '100%' }}>
           {prevSeasonId ? (

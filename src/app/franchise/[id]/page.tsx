@@ -52,7 +52,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
   }
 
   return (
-    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-8 md:py-12" style={{ minHeight: '100vh', maxWidth: '1400px', margin: '0 auto', paddingTop: '6rem' }}>
+    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh', maxWidth: '1200px', margin: '0 auto', paddingTop: '6rem' }}>
       <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '1rem' }}>
         <h1 className="neon-text text-3xl md:text-5xl" style={{ letterSpacing: '1px', textTransform: 'uppercase' }}>
           {franchise.name}
@@ -65,7 +65,12 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
         </Link>
       </header>
 
-      <section className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+      <section style={{ 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', 
+        gap: '1.5rem', 
+        width: '100%' 
+      }}>
         {seasons && seasons.length > 0 ? (
           seasons.map((season, idx) => {
             const lock = lockedSeasonsMap.get(season.id);
