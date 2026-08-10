@@ -76,23 +76,57 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
       
-      {/* Barra de Progresso Visual */}
-      {episodes.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Progresso da Temporada</span>
-            <span style={{ color: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)', fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
+      {/* Container do Topo (Progresso e Avaliação) */}
+      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2rem', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+        
+        {/* Barra de Progresso Visual */}
+        {episodes.length > 0 && (
+          <div style={{ flex: 1, minWidth: '200px', display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Progresso da Temporada</span>
+              <span style={{ color: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)', fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
+            </div>
+            <div style={{ width: '100%', height: '8px', backgroundColor: '#222', borderRadius: '4px', overflow: 'hidden' }}>
+              <div style={{ 
+                width: `${progressPercent}%`, 
+                height: '100%', 
+                backgroundColor: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)',
+                transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s'
+              }}></div>
+            </div>
           </div>
-          <div style={{ width: '100%', height: '8px', backgroundColor: '#222', borderRadius: '4px', overflow: 'hidden' }}>
-            <div style={{ 
-              width: `${progressPercent}%`, 
-              height: '100%', 
-              backgroundColor: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)',
-              transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s'
-            }}></div>
+        )}
+
+        {/* Sistema de Avaliação (Só visível se completo) */}
+        {isAllWatched && (
+          <div style={{ 
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', 
+            backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-gold)'
+          }}>
+            <h3 style={{ color: 'var(--color-gold)', margin: 0, textTransform: 'uppercase', fontSize: '0.9rem', letterSpacing: '1px' }}>Avalie a Temporada</h3>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              {[1, 2, 3, 4, 5].map((star) => (
+                <button
+                  key={star}
+                  onClick={() => handleRate(star)}
+                  disabled={isPending}
+                  style={{
+                    background: 'none', border: 'none', cursor: 'pointer',
+                    fontSize: '1.8rem', padding: 0,
+                    color: star <= rating ? 'var(--color-gold)' : '#333',
+                    transition: 'color 0.2s, transform 0.2s',
+                    transform: star <= rating ? 'scale(1.1)' : 'scale(1)'
+                  }}
+                  className="hover:scale-125"
+                  title={`Dar ${star} estrela${star > 1 ? 's' : ''}`}
+                >
+                  ★
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Botões em massa */}
       {episodes.length > 0 && (

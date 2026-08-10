@@ -10,7 +10,7 @@ export default async function Home() {
   const { data: franchises } = await supabase.from('franchises').select('*').order('sort_order');
 
   return (
-    <main className="container mx-auto flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
+    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
       <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '1rem' }}>
         <h1 className="neon-text text-4xl md:text-6xl" style={{ letterSpacing: '2px', textTransform: 'uppercase' }}>Drag Race Tracker</h1>
         <p className="gold-text text-sm md:text-base" style={{ letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '1rem' }}>

@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EpisodeList from '@/components/EpisodeList';
 import CastList from '@/components/CastList';
-import SeasonRating from '@/components/SeasonRating';
 import { getCustomUser } from '@/app/actions/auth';
 
 export const revalidate = 0;
@@ -139,11 +138,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
     );
   }
 
-  // Define isAllWatched para mostrar o SeasonRating
-  const isAllWatched = episodes && episodes.length > 0 && watchedSet.size === episodes.length;
-
   return (
-    <main className="container mx-auto flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
+    <main className="container flex flex-col items-center gap-8" style={{ minHeight: '100vh', padding: '3rem 4rem' }}>
       <header className="flex flex-col items-center gap-4" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', width: '100%' }}>
           {prevSeasonId ? (
@@ -158,14 +154,9 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
             )
           ) : <span style={{ width: '4.5rem' }}></span>}
           
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h1 className="neon-text text-3xl md:text-5xl" style={{ letterSpacing: '2px', textTransform: 'uppercase', margin: 0 }}>
-              {season.franchises?.name} - {season.name}
-            </h1>
-            {isAllWatched && (
-              <SeasonRating seasonId={season.id} initialRating={initialRating} />
-            )}
-          </div>
+          <h1 className="neon-text" style={{ fontSize: '3rem', letterSpacing: '2px', textTransform: 'uppercase', margin: 0, flex: 1 }}>
+            {season.franchises?.name} - {season.name}
+          </h1>
 
           {nextSeasonId ? (
             nextLocked ? (
