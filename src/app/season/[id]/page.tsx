@@ -107,9 +107,9 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
       const nextLock = nextSeasonId ? locks.find((l: any) => l.season_id === nextSeasonId) : null;
       const currentLock = locks.find((l: any) => l.season_id === season.id);
 
-      if (prevLock) { prevLocked = true; prevReason = prevLock.required_season_name; }
-      if (nextLock) { nextLocked = true; nextReason = nextLock.required_season_name; }
-      if (currentLock) { currentLocked = true; currentReason = currentLock.required_season_name; }
+      if (prevLock) { prevLocked = true; prevReason = `${prevLock.required_franchise_name} - ${prevLock.required_season_name}`; }
+      if (nextLock) { nextLocked = true; nextReason = `${nextLock.required_franchise_name} - ${nextLock.required_season_name}`; }
+      if (currentLock) { currentLocked = true; currentReason = `${currentLock.required_franchise_name} - ${currentLock.required_season_name}`; }
     }
   }
 

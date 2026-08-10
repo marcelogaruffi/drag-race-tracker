@@ -7,7 +7,7 @@ export const revalidate = 0;
 
 export default async function TimelinePage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const user = await getCustomUser();
 
   // Se não estiver logado, manda uma string vazia como uuid para não quebrar a RPC
   const userId = user ? user.id : '00000000-0000-0000-0000-000000000000';

@@ -30,7 +30,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
 
   // Lógica Cross-Season Anti-Spoilers (Robô)
   const user = await getCustomUser();
-  let lockedSeasonsMap = new Map<string, { required_season_name: string }>();
+  let lockedSeasonsMap = new Map<string, { required_season_name: string, required_franchise_name: string }>();
   if (user && seasons && seasons.length > 0) {
     const seasonIds = seasons.map(s => s.id);
     const { data: locks, error } = await supabase.rpc('get_locked_seasons', { 
@@ -43,7 +43,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
         // Guarda a primeira razão de bloqueio encontrada para a temporada
         if (!lockedSeasonsMap.has(l.season_id)) {
           lockedSeasonsMap.set(l.season_id, {
-            required_season_name: l.required_season_name
+            required_season_name: l.required_season_name,
+            required_franchise_name: l.required_franchise_name
           });
         }
       });
@@ -51,12 +52,12 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
   }
 
   return (
-    <main className="container flex flex-col items-center gap-8" style={{ minHeight: '100vh', padding: '3rem 2rem' }}>
-      <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <h1 className="neon-text" style={{ fontSize: '3rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
+    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
+      <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '1rem' }}>
+        <h1 className="neon-text text-3xl md:text-5xl" style={{ letterSpacing: '1px', textTransform: 'uppercase' }}>
           {franchise.name}
         </h1>
-        <p className="gold-text" style={{ fontSize: '1rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
+        <p className="gold-text text-sm md:text-base" style={{ letterSpacing: '1px', textTransform: 'uppercase' }}>
           Selecione a Temporada
         </p>
         <Link href="/" style={{ color: 'var(--color-neon-pink)', marginTop: '1rem', textDecoration: 'underline' }}>
@@ -126,7 +127,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                     {isLocked ? (
                       <span style={{ fontSize: '0.65rem', color: '#ff007f', marginTop: '0.2rem', lineHeight: '1.2' }}>
                         Para não tomar spoilers, assista antes:<br/>
-                        <strong>{lock.required_season_name}</strong>
+                        <strong>{lock.required_franchise_name} - {lock.required_season_name}</strong>
                       </span>
                     ) : (
                       <span className="gold-text" style={{ fontSize: '0.75rem', marginTop: '0.1rem' }}>{season.release_year}</span>
