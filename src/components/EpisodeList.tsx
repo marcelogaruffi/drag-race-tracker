@@ -94,37 +94,6 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
         </div>
       )}
 
-      {/* Sistema de Avaliação (Só visível se completo) */}
-      {isAllWatched && (
-        <div style={{ 
-          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', 
-          backgroundColor: '#1a1a1a', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-gold)'
-        }}>
-          <h3 style={{ color: 'var(--color-gold)', margin: 0, textTransform: 'uppercase', fontSize: '1rem', letterSpacing: '1px' }}>Avalie esta Temporada</h3>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            {[1, 2, 3, 4, 5].map((star) => (
-              <button
-                key={star}
-                onClick={() => handleRate(star)}
-                disabled={isPending}
-                style={{
-                  background: 'none', border: 'none', cursor: 'pointer',
-                  fontSize: '2rem', padding: 0,
-                  color: star <= rating ? 'var(--color-gold)' : '#333',
-                  transition: 'color 0.2s, transform 0.2s',
-                  transform: star <= rating ? 'scale(1.1)' : 'scale(1)'
-                }}
-                className="hover:scale-125"
-                title={`Dar ${star} estrela${star > 1 ? 's' : ''}`}
-              >
-                ★
-              </button>
-            ))}
-          </div>
-          {rating > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Você avaliou com {rating} estrela{rating > 1 ? 's' : ''}</span>}
-        </div>
-      )}
-      
       {/* Botões em massa */}
       {episodes.length > 0 && (
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginBottom: '-0.5rem' }}>
@@ -178,19 +147,16 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
           const resultsForEpisode = episodeResults?.filter(r => r.episode_id === ep.id) || [];
 
           return (
-            <article key={ep.id} style={{
-              display: 'flex',
-              flexDirection: 'row',
-              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
-              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
-              borderRadius: '8px',
-              overflow: 'hidden',
-              minHeight: '120px',
-              transition: 'all 0.3s ease',
-              opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
-            }}>
+            <article key={ep.id} 
+              className="flex flex-col md:flex-row w-full rounded-lg overflow-hidden transition-all duration-300"
+              style={{
+                backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
+                border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
+                minHeight: '120px',
+                opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
+              }}>
               {/* Thumbnail */}
-              <div style={{ width: '213px', minWidth: '213px', position: 'relative', backgroundColor: '#2a1111' }}>
+              <div className="relative bg-[#2a1111] w-full md:w-[213px] md:min-w-[213px] h-[150px] md:h-auto flex-shrink-0">
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 

@@ -52,7 +52,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
   }
 
   return (
-    <main className="container flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
+    <main className="container mx-auto flex flex-col items-center gap-8 px-4 py-8 md:px-16 md:py-12" style={{ minHeight: '100vh' }}>
       <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center', marginBottom: '1rem' }}>
         <h1 className="neon-text text-3xl md:text-5xl" style={{ letterSpacing: '1px', textTransform: 'uppercase' }}>
           {franchise.name}
