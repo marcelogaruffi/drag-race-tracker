@@ -2,6 +2,7 @@ import React from 'react';
 import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getCustomUser } from '@/app/actions/auth';
 
 export const revalidate = 0;
 
