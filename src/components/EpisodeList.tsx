@@ -147,22 +147,25 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
           const resultsForEpisode = episodeResults?.filter(r => r.episode_id === ep.id) || [];
 
           return (
-            <article key={ep.id} 
-              className="flex flex-row flex-wrap md:flex-nowrap w-full rounded-lg overflow-hidden transition-all duration-300"
-              style={{
-                backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
-                border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
-                minHeight: '120px',
-                opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
-              }}>
+            <article key={ep.id} style={{
+              display: 'flex',
+              flexDirection: 'row',
+              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
+              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
+              borderRadius: '8px',
+              overflow: 'hidden',
+              minHeight: '120px',
+              transition: 'all 0.3s ease',
+              opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
+            }}>
               {/* Thumbnail */}
-              <div className="relative bg-[#2a1111] w-[140px] min-w-[140px] md:w-[213px] md:min-w-[213px] flex-shrink-0 aspect-[16/9] md:aspect-auto self-start md:self-stretch">
+              <div style={{ width: '213px', minWidth: '213px', position: 'relative', backgroundColor: '#2a1111' }}>
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
                     alt={isSpoiler ? "Imagem Oculta por Spoiler" : (ep.title || `Episode ${ep.episode_number}`)} 
                     fill
-                    sizes="(max-width: 768px) 140px, 213px"
+                    sizes="213px"
                     style={{ 
                       objectFit: 'cover',
                       filter: isSpoiler ? 'blur(15px) grayscale(100%)' : 'none',
@@ -204,10 +207,17 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               </div>
 
               {/* Detalhes do Episódio */}
-              <div className="p-3 md:p-4 flex flex-col justify-center flex-grow" style={{ minWidth: '150px' }}>
-                <h3 className="text-[1rem] md:text-[1.2rem] font-bold" style={{ 
+              <div style={{ 
+                padding: '1rem', 
+                display: 'flex', 
+                flexDirection: 'column', 
+                justifyContent: 'center',
+                flexGrow: 1
+              }}>
+                <h3 style={{ 
                   color: isWatched ? '#aaa' : (isSpoiler ? '#666' : '#fff'), 
                   margin: '0 0 0.5rem 0', 
+                  fontSize: '1.2rem', 
                   textDecoration: isWatched ? 'line-through' : 'none' 
                 }}>
                   <span className="gold-text" style={{ marginRight: '0.5rem', opacity: isWatched || isSpoiler ? 0.5 : 1 }}>
@@ -215,7 +225,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                   </span> 
                   {isSpoiler ? <span style={{ fontStyle: 'italic' }}>Conteúdo Bloqueado (Spoiler)</span> : ep.title}
                 </h3>
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', color: '#666', fontSize: '0.8rem' }}>
+                <div style={{ display: 'flex', gap: '1rem', color: '#666', fontSize: '0.9rem' }}>
                   {ep.duration && <span>⏱️ {ep.duration} min</span>}
                   {ep.air_date && <span>📅 {ep.air_date}</span>}
                 </div>
@@ -223,7 +233,14 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
 
               {/* Spoiler Revelado - Resultados do Episódio */}
               {isWatched && resultsForEpisode.length > 0 && (
-                <div className="w-full md:w-auto px-4 py-3 md:px-6 md:py-0 flex items-center justify-center gap-4 md:gap-6 border-t md:border-t-0 md:border-l border-dashed bg-[#050102] overflow-x-auto" style={{ borderColor: '#4a1122' }}>
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  padding: '0 1.5rem', 
+                  gap: '1.5rem', 
+                  borderLeft: '1px dashed #4a1122',
+                  backgroundColor: '#050102'
+                }}>
                   {resultsForEpisode.map((res: any, idx: number) => (
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
                       {res.queens?.image_url ? (
@@ -246,9 +263,14 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                           👑
                         </div>
                       )}
-                      <span className="text-[0.75rem] text-white font-bold max-w-[60px] truncate text-center" title={res.queens?.name}>{res.queens?.name}</span>
-                      <span className="text-[0.55rem] md:text-[0.65rem] tracking-tighter md:tracking-[1px] -mt-1 uppercase text-center font-bold" style={{ 
-                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)'
+                      <span style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
+                      <span style={{ 
+                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)', 
+                        fontSize: '0.65rem', 
+                        fontWeight: 'bold', 
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        marginTop: '-4px'
                       }}>
                         {res.status === 'eliminated' ? 'Eliminada' : 
                          res.status === 'winner' ? 'Vencedora' : 
@@ -260,21 +282,19 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               )}
 
               {/* Checkbox */}
-              <div 
-                className="w-full md:w-auto px-4 py-3 md:px-6 md:py-0 flex items-center justify-center border-t md:border-t-0 md:border-l cursor-pointer hover:bg-[#ff007f11] transition-colors" 
-                style={{ borderColor: isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)' }}
-                onClick={() => toggleEpisode(ep.id)}
-              >
-                <div className="md:hidden text-[#ff007f] font-bold uppercase text-[0.8rem] tracking-[1px] flex-grow text-center">
-                  {isWatched ? 'Desmarcar' : 'Marcar como visto'}
-                </div>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 1.5rem',
+                borderLeft: `1px solid ${isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)'}`
+              }}>
                 <input 
                   type="checkbox" 
                   checked={isWatched}
                   onChange={() => toggleEpisode(ep.id)}
                   style={{ width: '24px', height: '24px', cursor: 'pointer', accentColor: '#ff007f' }}
                   title="Marcar como visto"
-                  onClick={(e) => e.stopPropagation()}
                 />
               </div>
             </article>
