@@ -156,13 +156,13 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                 opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
               }}>
               {/* Thumbnail */}
-              <div className="relative bg-[#2a1111] w-[100px] min-w-[100px] md:w-[213px] md:min-w-[213px] flex-shrink-0" style={{ minHeight: '120px' }}>
+              <div className="relative bg-[#2a1111] w-[140px] min-w-[140px] md:w-[213px] md:min-w-[213px] flex-shrink-0 aspect-[16/9] md:aspect-auto self-start md:self-stretch">
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
                     alt={isSpoiler ? "Imagem Oculta por Spoiler" : (ep.title || `Episode ${ep.episode_number}`)} 
                     fill
-                    sizes="(max-width: 768px) 100px, 213px"
+                    sizes="(max-width: 768px) 140px, 213px"
                     style={{ 
                       objectFit: 'cover',
                       filter: isSpoiler ? 'blur(15px) grayscale(100%)' : 'none',
