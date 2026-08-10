@@ -148,7 +148,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
 
           return (
             <article key={ep.id} 
-              className="flex flex-col md:flex-row w-full rounded-lg overflow-hidden transition-all duration-300"
+              className="flex flex-row w-full rounded-lg overflow-hidden transition-all duration-300"
               style={{
                 backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
                 border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
@@ -156,7 +156,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                 opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
               }}>
               {/* Thumbnail */}
-              <div className="relative bg-[#2a1111] w-full md:w-[213px] md:min-w-[213px] h-[150px] md:h-auto flex-shrink-0">
+              <div className="relative bg-[#2a1111] w-[100px] min-w-[100px] md:w-[213px] md:min-w-[213px] flex-shrink-0">
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
@@ -204,17 +204,10 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               </div>
 
               {/* Detalhes do Episódio */}
-              <div style={{ 
-                padding: '1rem', 
-                display: 'flex', 
-                flexDirection: 'column', 
-                justifyContent: 'center',
-                flexGrow: 1
-              }}>
-                <h3 style={{ 
+              <div className="p-2 md:p-4 flex flex-col justify-center flex-grow">
+                <h3 className="text-[1rem] md:text-[1.2rem]" style={{ 
                   color: isWatched ? '#aaa' : (isSpoiler ? '#666' : '#fff'), 
                   margin: '0 0 0.5rem 0', 
-                  fontSize: '1.2rem', 
                   textDecoration: isWatched ? 'line-through' : 'none' 
                 }}>
                   <span className="gold-text" style={{ marginRight: '0.5rem', opacity: isWatched || isSpoiler ? 0.5 : 1 }}>
@@ -222,7 +215,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                   </span> 
                   {isSpoiler ? <span style={{ fontStyle: 'italic' }}>Conteúdo Bloqueado (Spoiler)</span> : ep.title}
                 </h3>
-                <div style={{ display: 'flex', gap: '1rem', color: '#666', fontSize: '0.9rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', color: '#666', fontSize: '0.8rem' }}>
                   {ep.duration && <span>⏱️ {ep.duration} min</span>}
                   {ep.air_date && <span>📅 {ep.air_date}</span>}
                 </div>
@@ -230,14 +223,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
 
               {/* Spoiler Revelado - Resultados do Episódio */}
               {isWatched && resultsForEpisode.length > 0 && (
-                <div style={{ 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  padding: '0 1.5rem', 
-                  gap: '1.5rem', 
-                  borderLeft: '1px dashed #4a1122',
-                  backgroundColor: '#050102'
-                }}>
+                <div className="px-2 py-2 md:px-6 md:py-0 flex items-center justify-center gap-2 md:gap-6 border-l border-dashed bg-[#050102]" style={{ borderColor: '#4a1122' }}>
                   {resultsForEpisode.map((res: any, idx: number) => (
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
                       {res.queens?.image_url ? (
@@ -260,14 +246,9 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                           👑
                         </div>
                       )}
-                      <span style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
-                      <span style={{ 
-                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)', 
-                        fontSize: '0.65rem', 
-                        fontWeight: 'bold', 
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px',
-                        marginTop: '-4px'
+                      <span className="hidden md:inline" style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
+                      <span className="text-[0.55rem] md:text-[0.65rem] tracking-tighter md:tracking-[1px] -mt-1 uppercase text-center font-bold" style={{ 
+                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)'
                       }}>
                         {res.status === 'eliminated' ? 'Eliminada' : 
                          res.status === 'winner' ? 'Vencedora' : 
@@ -279,13 +260,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               )}
 
               {/* Checkbox */}
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '0 1.5rem',
-                borderLeft: `1px solid ${isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)'}`
-              }}>
+              <div className="px-2 md:px-6 flex items-center justify-center border-l" style={{ borderColor: isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)' }}>
                 <input 
                   type="checkbox" 
                   checked={isWatched}
