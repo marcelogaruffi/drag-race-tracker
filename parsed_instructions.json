@@ -1,0 +1,817 @@
+{
+  "garbage": [
+    "All Starsseason 4",
+    "All Starsseason 5",
+    "Girl Groups",
+    "GirlGroups",
+    "season 10",
+    "Teambrownflowers",
+    "Teamlatrila",
+    "Teammandora",
+    "Teamrujubee",
+    "Teamshad"
+  ],
+  "merges": [
+    {
+      "targetName": "A'Keria C",
+      "aliases": [
+        "A'Keria C. Davenport",
+        "A'Keria Chanel Davenport."
+      ]
+    },
+    {
+      "targetName": "Adore Delano",
+      "aliases": [
+        "Adore Delano",
+        "Adore Delano."
+      ]
+    },
+    {
+      "targetName": "Aiden Zhane",
+      "aliases": [
+        "Aiden Zhane",
+        "Aiden Zhane"
+      ]
+    },
+    {
+      "targetName": "Alyssa Hunter",
+      "aliases": [
+        "Alyssa Hunter",
+        "Alyssa Hunter"
+      ]
+    },
+    {
+      "targetName": "Amanda Tori Meating",
+      "aliases": [
+        "Amanda Tori Meating",
+        "Amanda Tori Meating"
+      ]
+    },
+    {
+      "targetName": "Amethyst",
+      "aliases": [
+        "Amethyst",
+        "Amethyst"
+      ]
+    },
+    {
+      "targetName": "Anetra",
+      "aliases": [
+        "Anetra",
+        "Anetra"
+      ]
+    },
+    {
+      "targetName": "Angeria Paris VanMichaels,",
+      "aliases": [
+        "Angeria Paris VanMichaels,",
+        "Angeria Paris VanMicheals"
+      ]
+    },
+    {
+      "targetName": "Anneé Maywong",
+      "aliases": [
+        "Anneé Maywong",
+        "AnnéeMaywong."
+      ]
+    },
+    {
+      "targetName": "Aquarela",
+      "aliases": [
+        "Aquarela"
+      ]
+    },
+    {
+      "targetName": "Arizona Brandy",
+      "aliases": [
+        "Arizona Brandy"
+      ]
+    },
+    {
+      "targetName": "Astrid Mercury",
+      "aliases": [
+        "Astrid Mercury"
+      ]
+    },
+    {
+      "targetName": "Aura Mayari",
+      "aliases": [
+        "Aura Mayari"
+      ]
+    },
+    {
+      "targetName": "BenDeLaCreme",
+      "aliases": [
+        "BenDeLaCreme"
+      ]
+    },
+    {
+      "targetName": "Bernie",
+      "aliases": [
+        "Bernie"
+      ]
+    },
+    {
+      "targetName": "Betina Polaroid",
+      "aliases": [
+        "Betina Polaroid"
+      ]
+    },
+    {
+      "targetName": "Bianca Del Rio",
+      "aliases": [
+        "Bianca Del Rio"
+      ]
+    },
+    {
+      "targetName": "Bosco",
+      "aliases": [
+        "Bosco"
+      ]
+    },
+    {
+      "targetName": "Brita",
+      "aliases": [
+        "Brita"
+      ]
+    },
+    {
+      "targetName": "Captivating Katkat",
+      "aliases": [
+        "Captivating Katkat"
+      ]
+    },
+    {
+      "targetName": "Chi Chi DeVayne",
+      "aliases": [
+        "Chi Chi DeVayne, ChiChi DeVanyne",
+        "ChiChi DeVayne."
+      ]
+    },
+    {
+      "targetName": "Courtney Act",
+      "aliases": [
+        "Courtney Act"
+      ]
+    },
+    {
+      "targetName": "Crystal Methyd",
+      "aliases": [
+        "Crystal Methyd"
+      ]
+    },
+    {
+      "targetName": "Dahlia Sin",
+      "aliases": [
+        "Dahlia Sin"
+      ]
+    },
+    {
+      "targetName": "Dallas de Vil",
+      "aliases": [
+        "Dallas de Vil"
+      ]
+    },
+    {
+      "targetName": "Darienne Lake",
+      "aliases": [
+        "Darienne Lake"
+      ]
+    },
+    {
+      "targetName": "Cynthia Lee Fontaine",
+      "aliases": [
+        "Cynthia Lee Fontaine"
+      ]
+    },
+    {
+      "targetName": "Dawn",
+      "aliases": [
+        "Dawn"
+      ]
+    },
+    {
+      "targetName": "Dax ExclamationPoint",
+      "aliases": [
+        "Dax ExclamationPoint",
+        "DaxExclamationPoint"
+      ]
+    },
+    {
+      "targetName": "Daya Betty",
+      "aliases": [
+        "Daya Betty"
+      ]
+    },
+    {
+      "targetName": "DeeDee Marié Holliday",
+      "aliases": [
+        "Dee Dee Marié Holliday",
+        "DeeDee Marié Holliday"
+      ]
+    },
+    {
+      "targetName": "DeJa Skye",
+      "aliases": [
+        "DeJa Skye"
+      ]
+    },
+    {
+      "targetName": "DesiRée Beck",
+      "aliases": [
+        "DesiRée Beck"
+      ]
+    },
+    {
+      "targetName": "Diva More",
+      "aliases": [
+        "Diva More"
+      ]
+    },
+    {
+      "targetName": "Etcetera Etcetera",
+      "aliases": [
+        "Etcetera Ectetera, Etcetera Etcetera"
+      ]
+    },
+    {
+      "targetName": "Faúx Fúr",
+      "aliases": [
+        "Faúx Fúr"
+      ]
+    },
+    {
+      "targetName": "Geneva Karr",
+      "aliases": [
+        "Geneva Karr"
+      ]
+    },
+    {
+      "targetName": "Gia Gunn",
+      "aliases": [
+        "Gia Gunn"
+      ]
+    },
+    {
+      "targetName": "Gigi Goode",
+      "aliases": [
+        "Gigi Goode"
+      ]
+    },
+    {
+      "targetName": "Gioffré",
+      "aliases": [
+        "Gioffré"
+      ]
+    },
+    {
+      "targetName": "Gisèle Lullaby",
+      "aliases": [
+        "Gisèle Lullaby"
+      ]
+    },
+    {
+      "targetName": "Hana Beshie",
+      "aliases": [
+        "Hana Beshie"
+      ]
+    },
+    {
+      "targetName": "Heidi N Closet",
+      "aliases": [
+        "Heidi N Closet"
+      ]
+    },
+    {
+      "targetName": "Hershii LiqCour-Jeté",
+      "aliases": [
+        "Hershii LiqCour-Jeté"
+      ]
+    },
+    {
+      "targetName": "Honey Mahogany",
+      "aliases": [
+        "Honey Mahoganey",
+        "Honey Mahogany"
+      ]
+    },
+    {
+      "targetName": "Hornella Góngora",
+      "aliases": [
+        "Hornella Góngora"
+      ]
+    },
+    {
+      "targetName": "Hugáceo Crujiente",
+      "aliases": [
+        "Hugáceo Crujiente"
+      ]
+    },
+    {
+      "targetName": "Irene Dubois",
+      "aliases": [
+        "Irene Dubois"
+      ]
+    },
+    {
+      "targetName": "Ivy-Elyse Monroe",
+      "aliases": [
+        "Ivy-Elise",
+        "Ivy-Elyse"
+      ]
+    },
+    {
+      "targetName": "Jackie Cox",
+      "aliases": [
+        "Jackie Cox"
+      ]
+    },
+    {
+      "targetName": "Jaida Essence Hall",
+      "aliases": [
+        "Jaida Essence Hall"
+      ]
+    },
+    {
+      "targetName": "Jasmine Kennedie",
+      "aliases": [
+        "Jasmine Kennedie"
+      ]
+    },
+    {
+      "targetName": "Janey Jacké",
+      "aliases": [
+        "Janey Jacké"
+      ]
+    },
+    {
+      "targetName": "Jax",
+      "aliases": [
+        "Jax"
+      ]
+    },
+    {
+      "targetName": "Jorgeous",
+      "aliases": [
+        "Jorgeous"
+      ]
+    },
+    {
+      "targetName": "Juicy kutoure",
+      "aliases": [
+        "Juicy Kouture",
+        "Juicy Kutoure"
+      ]
+    },
+    {
+      "targetName": "June Jambalaya",
+      "aliases": [
+        "June Jambalaya"
+      ]
+    },
+    {
+      "targetName": "Juriji der Klee",
+      "aliases": [
+        "Juriji Der Klee",
+        "JurijiDer Klee"
+      ]
+    },
+    {
+      "targetName": "Kalorie Karbdashian-Williams",
+      "aliases": [
+        "Kalorie Karbdashian-Williams",
+        "Kalorie Karbdasian Williams"
+      ]
+    },
+    {
+      "targetName": "Kelly Mantle",
+      "aliases": [
+        "Kelly Mantle"
+      ]
+    },
+    {
+      "targetName": "Kerri Colby",
+      "aliases": [
+        "Kerri Colby"
+      ]
+    },
+    {
+      "targetName": "Kornbread Jeté",
+      "aliases": [
+        "Kornbread 'The Snack' Jeté",
+        "Kornbread \"The Snack\" Jeté"
+      ]
+    },
+    {
+      "targetName": "Lady Camden",
+      "aliases": [
+        "Lady Camden"
+      ]
+    },
+    {
+      "targetName": "Laganja Estranja",
+      "aliases": [
+        "Laganja Estranja"
+      ]
+    },
+    {
+      "targetName": "LéLé Cocoon",
+      "aliases": [
+        "LéLé Cocoon"
+      ]
+    },
+    {
+      "targetName": "Loosey LaDuca",
+      "aliases": [
+        "Loosey LaDuca"
+      ]
+    },
+    {
+      "targetName": "Luxx Noir London",
+      "aliases": [
+        "Luxx Noir London"
+      ]
+    },
+    {
+      "targetName": "M1ss Jade So",
+      "aliases": [
+        "M1ss Jade So"
+      ]
+    },
+    {
+      "targetName": "Maddy Morphosis",
+      "aliases": [
+        "Maddy Morphosis"
+      ]
+    },
+    {
+      "targetName": "Magnolia Crawford",
+      "aliases": [
+        "Magnolia Crawford"
+      ]
+    },
+    {
+      "targetName": "Malaysia Babydoll Foxx",
+      "aliases": [
+        "Malaysia Babydoll Foxx"
+      ]
+    },
+    {
+      "targetName": "Marcia Marcia Marcia",
+      "aliases": [
+        "Marcia Marcia Marcia"
+      ]
+    },
+    {
+      "targetName": "María Edilia",
+      "aliases": [
+        "María Edília",
+        "María Edilia"
+      ]
+    },
+    {
+      "targetName": "Matilduh",
+      "aliases": [
+        "Matilduh"
+      ]
+    },
+    {
+      "targetName": "Maxi Shield",
+      "aliases": [
+        "Maxi Shield",
+        "Maxi Shields"
+      ]
+    },
+    {
+      "targetName": "Meannie Minaj",
+      "aliases": [
+        "Meannie Minaj",
+        "MeannieMinaj"
+      ]
+    },
+    {
+      "targetName": "Melusine Sparkle",
+      "aliases": [
+        "Melusine Sparkle"
+      ]
+    },
+    {
+      "targetName": "Mhi'ya Iman Le'Paige",
+      "aliases": [
+        "Mhi'ya Iman Le'Paige"
+      ]
+    },
+    {
+      "targetName": "Milk",
+      "aliases": [
+        "Milk"
+      ]
+    },
+    {
+      "targetName": "Miranda Lebrão",
+      "aliases": [
+        "Miranda Lebrão"
+      ]
+    },
+    {
+      "targetName": "Miss Moço",
+      "aliases": [
+        "Miss Moço"
+      ]
+    },
+    {
+      "targetName": "Mistress Isabelle Brooks",
+      "aliases": [
+        "Mistress Isabelle Brooks"
+      ]
+    },
+    {
+      "targetName": "Morphine Love Dion",
+      "aliases": [
+        "Morphine Love Dion"
+      ]
+    },
+    {
+      "targetName": "Mystique Summers Madison",
+      "aliases": [
+        "Mystique Summers Madison",
+        "Mystique Summers"
+      ]
+    },
+    {
+      "targetName": "Natalia Pliacam",
+      "aliases": [
+        "Natalia Pliacam",
+        "NataliaPliacam"
+      ]
+    },
+    {
+      "targetName": "Naza",
+      "aliases": [
+        "Naza"
+      ]
+    },
+    {
+      "targetName": "Nicky Doll",
+      "aliases": [
+        "Nicky Doll"
+      ]
+    },
+    {
+      "targetName": "Nicole Pardaux",
+      "aliases": [
+        "Nicole Pardaux"
+      ]
+    },
+    {
+      "targetName": "Nymphia Wind",
+      "aliases": [
+        "Nymphia Wind"
+      ]
+    },
+    {
+      "targetName": "Océane Aqua-Black",
+      "aliases": [
+        "Océane Aqua-Black"
+      ]
+    },
+    {
+      "targetName": "Organzza",
+      "aliases": [
+        "Organzza"
+      ]
+    },
+    {
+      "targetName": "Orion Story",
+      "aliases": [
+        "Orion Story"
+      ]
+    },
+    {
+      "targetName": "ØV Cünt",
+      "aliases": [
+        "ØV Cünt"
+      ]
+    },
+    {
+      "targetName": "Phi Phi O'Hara",
+      "aliases": [
+        "Phi Phi O'Hara",
+        "PhiPhi O'Hara"
+      ]
+    },
+    {
+      "targetName": "Plane Jane",
+      "aliases": [
+        "Plane Jane"
+      ]
+    },
+    {
+      "targetName": "Plasma",
+      "aliases": [
+        "Plasma"
+      ]
+    },
+    {
+      "targetName": "Princess Poppy",
+      "aliases": [
+        "Princess Poppy"
+      ]
+    },
+    {
+      "targetName": "Q fica",
+      "aliases": [
+        "Q fica"
+      ]
+    },
+    {
+      "targetName": "Robin Fierce",
+      "aliases": [
+        "Robin Fierce"
+      ]
+    },
+    {
+      "targetName": "Rock M. Sakura",
+      "aliases": [
+        "Rock M. Sakura"
+      ]
+    },
+    {
+      "targetName": "Rosé",
+      "aliases": [
+        "Rose",
+        "Rosé"
+      ]
+    },
+    {
+      "targetName": "Rubi Ocean",
+      "aliases": [
+        "Rubi Ocean"
+      ]
+    },
+    {
+      "targetName": "Salina EsTitties",
+      "aliases": [
+        "Salina EsTitties"
+      ]
+    },
+    {
+      "targetName": "Samantha Ballentines",
+      "aliases": [
+        "Samantha Ballentines",
+        "SamanthaBallentines"
+      ]
+    },
+    {
+      "targetName": "Sapphira Cristál",
+      "aliases": [
+        "Sapphira Cristál"
+      ]
+    },
+    {
+      "targetName": "Sasha Colby",
+      "aliases": [
+        "Sasha Colby"
+      ]
+    },
+    {
+      "targetName": "Scaredy Kat",
+      "aliases": [
+        "Scardey Kat",
+        "Scaredy Kat"
+      ]
+    },
+    {
+      "targetName": "Shangela",
+      "aliases": [
+        "Shangela",
+        "Shangela Laquifa Wadley"
+      ]
+    },
+    {
+      "targetName": "Shannon Skarllet",
+      "aliases": [
+        "Shannon Skarllet"
+      ]
+    },
+    {
+      "targetName": "Sherry Pie",
+      "aliases": [
+        "Sherry Pie"
+      ]
+    },
+    {
+      "targetName": "Siam Phusri",
+      "aliases": [
+        "Siam Phusri"
+      ]
+    },
+    {
+      "targetName": "Silky Nutmeg Ganache",
+      "aliases": [
+        "Silky Nutmeg Ganache",
+        "Silky Nutmeg Gnache"
+      ]
+    },
+    {
+      "targetName": "Spice",
+      "aliases": [
+        "Spice"
+      ]
+    },
+    {
+      "targetName": "Sugar",
+      "aliases": [
+        "Sugar"
+      ]
+    },
+    {
+      "targetName": "Tanissa Yoncè",
+      "aliases": [
+        "Tanissa Yoncè"
+      ]
+    },
+    {
+      "targetName": "The Macarena",
+      "aliases": [
+        "The Macarena",
+        "The Macerana"
+      ]
+    },
+    {
+      "targetName": "Tiny Deluxe",
+      "aliases": [
+        "Tiny Deluxe"
+      ]
+    },
+    {
+      "targetName": "Trinity K. Bonet",
+      "aliases": [
+        "Trinity K Bonet",
+        "Trinity K. Bonet"
+      ]
+    },
+    {
+      "targetName": "Tristan Soledade",
+      "aliases": [
+        "Tristan Soledade"
+      ]
+    },
+    {
+      "targetName": "Vanessa Vanjie Mateo",
+      "aliases": [
+        "Vanessa Vanjie Mateo",
+        "Vanessa Vanjie"
+      ]
+    },
+    {
+      "targetName": "Venedita Von Däsh",
+      "aliases": [
+        "Venedita Von Däsh"
+      ]
+    },
+    {
+      "targetName": "Veruschka Levels",
+      "aliases": [
+        "Veruschka Levels"
+      ]
+    },
+    {
+      "targetName": "Victoria 'Porkchop' Parker",
+      "aliases": [
+        "Victoria Parker",
+        "Victoria 'Porkchop' Parker"
+      ]
+    },
+    {
+      "targetName": "Viñas Deluxe",
+      "aliases": [
+        "Viñas Deluxe"
+      ]
+    },
+    {
+      "targetName": "Vivacious",
+      "aliases": [
+        "Vivacious"
+      ]
+    },
+    {
+      "targetName": "Widow Von'Du",
+      "aliases": [
+        "Widow Von'Du"
+      ]
+    },
+    {
+      "targetName": "Willow Pill",
+      "aliases": [
+        "Willow Pill"
+      ]
+    },
+    {
+      "targetName": "Xunami Muse",
+      "aliases": [
+        "Xunami Muse"
+      ]
+    }
+  ]
+}

@@ -125,3 +125,68 @@ a:hover .poster-title-below {
   transform: scale(1.1); 
   z-index: 10; 
 }
+/* -------------------------------------------------------------------------- */
+/* MOBILE RESPONSIVE OPTIMIZATIONS                                            */
+/* -------------------------------------------------------------------------- */
+
+/* Container and Page Wrapper */
+.page-wrapper {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 6rem; /* Space for Auth Button on desktop */
+}
+
+/* Grids for Posters */
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Titles */
+.title-main {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 3.75rem; /* ~text-6xl */
+  line-height: 1;
+}
+
+.title-sub {
+  font-size: 2.25rem; /* ~text-4xl */
+}
+
+/* Avatars */
+.cast-avatar-large { width: 64px; height: 64px; }
+.cast-avatar-small { width: 45px; height: 45px; }
+
+/* -------------------------------------------------------------------------- */
+/* MEDIA QUERIES FOR MOBILE (< 768px)                                         */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .poster-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .title-main {
+    font-size: 2rem !important; /* Forces smaller title on mobile */
+  }
+
+  .title-sub {
+    font-size: 1.5rem !important;
+  }
+
+  .cast-avatar-large { width: 50px !important; height: 50px !important; }
+  
+  /* Make episode list avatars slightly smaller to fit text */
+  .cast-avatar-small { width: 40px !important; height: 40px !important; }
+}
+

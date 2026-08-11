@@ -279,11 +279,9 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
                       {res.queens?.image_url ? (
                         <div 
-                          className="zoom-hover"
+                          className="zoom-hover cast-avatar-small"
                           onClick={() => setSelectedImage({ url: res.queens.image_url, name: res.queens.name })}
                           style={{ 
-                            width: '45px', 
-                            height: '45px', 
                             borderRadius: '50%', 
                             overflow: 'hidden', 
                             position: 'relative', 
@@ -293,7 +291,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                           <Image src={res.queens.image_url} alt={res.queens.name} fill style={{ objectFit: 'cover' }} sizes="45px" />
                         </div>
                       ) : (
-                        <div style={{ width: '45px', height: '45px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#222', fontSize: '1.5rem' }}>
+                        <div className="cast-avatar-small" style={{ borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#222', fontSize: '1.5rem' }}>
                           👑
                         </div>
                       )}

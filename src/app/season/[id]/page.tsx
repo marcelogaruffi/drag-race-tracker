@@ -139,7 +139,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <main className="container flex flex-col items-center gap-8" style={{ minHeight: '100vh', padding: '6rem 4rem 3rem 4rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <main className="page-wrapper container flex flex-col items-center gap-8">
       <header className="flex flex-col items-center gap-4" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', width: '100%' }}>
           {prevSeasonId ? (
@@ -154,7 +154,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
             )
           ) : <span style={{ width: '4.5rem' }}></span>}
           
-          <h1 className="neon-text" style={{ fontSize: '3rem', letterSpacing: '2px', textTransform: 'uppercase', margin: 0, flex: 1 }}>
+          <h1 className="neon-text title-sub" style={{ letterSpacing: '2px', textTransform: 'uppercase', margin: 0, flex: 1 }}>
             {season.franchises?.name} - {season.name}
           </h1>
 
