@@ -77,7 +77,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
       
       {/* Container do Topo (Progresso e Avaliação) */}
-      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2rem', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+      <div className="rating-section">
         
         {/* Barra de Progresso Visual */}
         {episodes.length > 0 && (
@@ -181,9 +181,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
           const resultsForEpisode = episodeResults?.filter(r => r.episode_id === ep.id) || [];
 
           return (
-            <article key={ep.id} style={{
-              display: 'flex',
-              flexDirection: 'row',
+            <article key={ep.id} className="ep-card" style={{
               backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
               border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
               borderRadius: '8px',
@@ -193,7 +191,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
             }}>
               {/* Thumbnail */}
-              <div style={{ width: '213px', minWidth: '213px', position: 'relative', backgroundColor: '#2a1111' }}>
+              <div className="ep-thumb" style={{ position: 'relative', backgroundColor: '#2a1111' }}>
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
@@ -241,17 +239,15 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               </div>
 
               {/* Detalhes do Episódio */}
-              <div style={{ 
-                padding: '1rem', 
+              <div className="ep-details" style={{ 
                 display: 'flex', 
                 flexDirection: 'column', 
                 justifyContent: 'center',
                 flexGrow: 1
               }}>
-                <h3 style={{ 
+                <h3 className="ep-title" style={{ 
                   color: isWatched ? '#aaa' : (isSpoiler ? '#666' : '#fff'), 
                   margin: '0 0 0.5rem 0', 
-                  fontSize: '1.2rem', 
                   textDecoration: isWatched ? 'line-through' : 'none' 
                 }}>
                   <span className="gold-text" style={{ marginRight: '0.5rem', opacity: isWatched || isSpoiler ? 0.5 : 1 }}>
@@ -267,14 +263,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
 
               {/* Spoiler Revelado - Resultados do Episódio */}
               {isWatched && resultsForEpisode.length > 0 && (
-                <div style={{ 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  padding: '0 1.5rem', 
-                  gap: '1.5rem', 
-                  borderLeft: '1px dashed #4a1122',
-                  backgroundColor: '#050102'
-                }}>
+                <div className="ep-results-wrapper">
                   {resultsForEpisode.map((res: any, idx: number) => (
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
                       {res.queens?.image_url ? (

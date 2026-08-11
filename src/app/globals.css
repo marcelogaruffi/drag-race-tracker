@@ -135,6 +135,7 @@ a:hover .poster-title-below {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 6rem; /* Space for Auth Button on desktop */
+  padding-bottom: 6rem; /* Empty footer space */
 }
 
 /* Grids for Posters */
@@ -190,3 +191,72 @@ a:hover .poster-title-below {
   .cast-avatar-small { width: 40px !important; height: 40px !important; }
 }
 
+
+/* -------------------------------------------------------------------------- */
+/* EPISODE LIST OPTIMIZATIONS                                                 */
+/* -------------------------------------------------------------------------- */
+
+.ep-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.ep-thumb {
+  width: 213px;
+  min-width: 213px;
+}
+
+.ep-details {
+  padding: 1rem;
+}
+
+.ep-title {
+  font-size: 1.2rem;
+}
+
+.ep-results-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  gap: 1.5rem;
+  border-left: 1px dashed #4a1122;
+  background-color: #050102;
+}
+
+@media (max-width: 768px) {
+  .ep-card {
+    min-height: 80px !important;
+  }
+  .ep-thumb {
+    width: 120px !important;
+    min-width: 120px !important;
+  }
+  .ep-details {
+    padding: 0.5rem !important;
+  }
+  .ep-title {
+    font-size: 1rem !important;
+  }
+  .ep-results-wrapper {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+    border-left: none !important;
+    border-top: 1px dashed #4a1122 !important;
+    justify-content: center !important;
+  }
+}
+.rating-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .rating-section {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+}
