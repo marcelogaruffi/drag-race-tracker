@@ -15,7 +15,7 @@ export default function CastList({ castData }: { castData: any[] }) {
     <>
       <section style={{ width: '100%', marginBottom: '2rem', padding: '1rem', backgroundColor: '#111', borderRadius: '12px', border: '1px solid #331122' }}>
         <h2 className="neon-text" style={{ fontSize: '1.5rem', textAlign: 'center', marginBottom: '1rem' }}>👑 Conheça o Elenco 👑</h2>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'nowrap', overflowX: 'auto', paddingTop: '1rem', paddingBottom: '1rem', scrollbarWidth: 'thin', scrollbarColor: 'var(--color-neon-pink) transparent', WebkitOverflowScrolling: 'touch', width: 'max-content', maxWidth: '100%', margin: '0 auto' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap', paddingTop: '1rem', paddingBottom: '1rem', width: '100%' }}>
           {castData.map((cq: any, idx: number) => (
             <div key={cq.queen_id} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', flexShrink: 0, width: '80px', scrollSnapAlign: 'start' }}>
               {(cq.image_url || cq.queens?.image_url) ? (
