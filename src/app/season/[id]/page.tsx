@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EpisodeList from '@/components/EpisodeList';
 import CastList from '@/components/CastList';
-import { getCustomUser, forceUnlockSeason } from '@/app/actions/auth';
+import { getCustomUser, forceUnlockSeason, reLockSeason } from '@/app/actions/auth';
 import { cookies } from 'next/headers';
 
 export const revalidate = 0;
@@ -104,6 +104,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   let prevReason = '';
   let nextReason = '';
   let currentReason = '';
+  let wasBypassed = false;
 
   if (user && allSeasons) {
     const seasonIds = allSeasons.map(s => s.id);
@@ -126,7 +127,14 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
 
       if (prevLock && !unlockedSeasons.includes(prevSeasonId as string)) { prevLocked = true; prevReason = `${prevLock.required_franchise_name} - ${prevLock.required_season_name}`; }
       if (nextLock && !unlockedSeasons.includes(nextSeasonId as string)) { nextLocked = true; nextReason = `${nextLock.required_franchise_name} - ${nextLock.required_season_name}`; }
-      if (currentLock && !unlockedSeasons.includes(season.id)) { currentLocked = true; currentReason = `${currentLock.required_franchise_name} - ${currentLock.required_season_name}`; }
+      if (currentLock) {
+        if (!unlockedSeasons.includes(season.id)) {
+          currentLocked = true;
+          currentReason = `${currentLock.required_franchise_name} - ${currentLock.required_season_name}`;
+        } else {
+          wasBypassed = true;
+        }
+      }
     }
   }
 
@@ -199,6 +207,25 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
         <Link href={`/franchise/${season.franchise_id}`} className="gold-text hover:text-white transition-colors" style={{ textDecoration: 'underline' }}>
           Voltar para a página da franquia
         </Link>
+        {wasBypassed && (
+          <form action={async () => {
+            "use server";
+            await reLockSeason(season.id);
+          }} style={{ marginTop: '1rem' }}>
+            <button type="submit" style={{
+              backgroundColor: 'transparent',
+              color: '#666',
+              border: '1px dashed #666',
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.7rem',
+              textTransform: 'uppercase'
+            }} className="hover:scale-105">
+              🔒 Bloquear Novamente (Restaurar Alerta)
+            </button>
+          </form>
+        )}
       </header>
 
       {hasWatchedFirstEpisode && castData && castData.length > 0 && (

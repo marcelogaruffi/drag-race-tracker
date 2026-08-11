@@ -113,3 +113,26 @@ export async function forceUnlockSeason(seasonId: string) {
   
   revalidatePath("/", "layout");
 }
+export async function reLockSeason(seasonId: string) {
+  const cookieStore = await cookies();
+  const unlockedCookie = cookieStore.get("unlocked_seasons");
+  let unlockedSeasons: string[] = [];
+  
+  if (unlockedCookie?.value) {
+    try {
+      unlockedSeasons = JSON.parse(unlockedCookie.value);
+    } catch(e) {}
+  }
+  
+  unlockedSeasons = unlockedSeasons.filter(id => id !== seasonId);
+  
+  cookieStore.set("unlocked_seasons", JSON.stringify(unlockedSeasons), {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/",
+    maxAge: 60 * 60 * 24 * 365,
+  });
+  
+  revalidatePath("/", "layout");
+}
