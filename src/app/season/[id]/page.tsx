@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EpisodeList from '@/components/EpisodeList';
 import CastList from '@/components/CastList';
-import { getCustomUser } from '@/app/actions/auth';
+import { getCustomUser, forceUnlockSeason } from '@/app/actions/auth';
+import { cookies } from 'next/headers';
 
 export const revalidate = 0;
 
@@ -116,9 +117,16 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
       const nextLock = nextSeasonId ? locks.find((l: any) => l.season_id === nextSeasonId) : null;
       const currentLock = locks.find((l: any) => l.season_id === season.id);
 
-      if (prevLock) { prevLocked = true; prevReason = `${prevLock.required_franchise_name} - ${prevLock.required_season_name}`; }
-      if (nextLock) { nextLocked = true; nextReason = `${nextLock.required_franchise_name} - ${nextLock.required_season_name}`; }
-      if (currentLock) { currentLocked = true; currentReason = `${currentLock.required_franchise_name} - ${currentLock.required_season_name}`; }
+      const cookieStore = await cookies();
+      const unlockedCookie = cookieStore.get("unlocked_seasons");
+      let unlockedSeasons: string[] = [];
+      if (unlockedCookie?.value) {
+        try { unlockedSeasons = JSON.parse(unlockedCookie.value); } catch(e) {}
+      }
+
+      if (prevLock && !unlockedSeasons.includes(prevSeasonId as string)) { prevLocked = true; prevReason = `${prevLock.required_franchise_name} - ${prevLock.required_season_name}`; }
+      if (nextLock && !unlockedSeasons.includes(nextSeasonId as string)) { nextLocked = true; nextReason = `${nextLock.required_franchise_name} - ${nextLock.required_season_name}`; }
+      if (currentLock && !unlockedSeasons.includes(season.id)) { currentLocked = true; currentReason = `${currentLock.required_franchise_name} - ${currentLock.required_season_name}`; }
     }
   }
 
@@ -134,6 +142,23 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
         <Link href={`/franchise/${season.franchise_id}`} className="gold-text" style={{ textDecoration: 'underline' }}>
           Voltar para as temporadas
         </Link>
+        <form action={async () => {
+          "use server";
+          await forceUnlockSeason(season.id);
+        }} style={{ marginTop: '2rem' }}>
+          <button type="submit" style={{
+            backgroundColor: 'transparent',
+            color: '#666',
+            border: '1px solid #666',
+            padding: '0.5rem 1rem',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '0.8rem',
+            textTransform: 'uppercase'
+          }} className="hover:scale-105">
+            Estou ciente, quero forçar o desbloqueio
+          </button>
+        </form>
       </main>
     );
   }

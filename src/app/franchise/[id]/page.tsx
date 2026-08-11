@@ -3,6 +3,7 @@ import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getCustomUser } from '@/app/actions/auth';
+import { cookies } from 'next/headers';
 
 export const revalidate = 0;
 
@@ -38,14 +39,24 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
       p_season_ids: seasonIds 
     });
     
+      const cookieStore = await cookies();
+      const unlockedCookie = cookieStore.get("unlocked_seasons");
+      let unlockedSeasons: string[] = [];
+      if (unlockedCookie?.value) {
+        try {
+          unlockedSeasons = JSON.parse(unlockedCookie.value);
+        } catch(e) {}
+      }
+
     if (locks && !error) {
       locks.forEach((l: any) => {
-        // Guarda a primeira razão de bloqueio encontrada para a temporada
-        if (!lockedSeasonsMap.has(l.season_id)) {
-          lockedSeasonsMap.set(l.season_id, {
-            required_season_name: l.required_season_name,
-            required_franchise_name: l.required_franchise_name
-          });
+        if (!unlockedSeasons.includes(l.season_id)) {
+          if (!lockedSeasonsMap.has(l.season_id)) {
+            lockedSeasonsMap.set(l.season_id, {
+              required_season_name: l.required_season_name,
+              required_franchise_name: l.required_franchise_name
+            });
+          }
         }
       });
     }
@@ -72,7 +83,7 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
             const isLocked = !!lock;
 
             return (
-              <Link href={isLocked ? '#' : `/season/${season.id}`} key={season.id} style={{ textDecoration: 'none', display: 'block', cursor: isLocked ? 'not-allowed' : 'pointer' }}>
+              <Link href={`/season/${season.id}`} key={season.id} style={{ textDecoration: 'none', display: 'block', cursor: isLocked ? 'help' : 'pointer' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', height: '100%', opacity: isLocked ? 0.6 : 1, transition: 'all 0.3s ease' }}>
                   <article className="poster-card" style={{ borderColor: isLocked ? '#331111' : 'var(--color-neon-pink)', backgroundColor: isLocked ? '#0a0000' : 'transparent' }}>
                     {season.cover_image ? (
