@@ -299,7 +299,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                       )}
                       <span style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
                       <span style={{ 
-                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : 'var(--color-gold)', 
+                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : res.status === 'miss_congeniality' ? '#00d2ff' : 'var(--color-gold)', 
                         fontSize: '0.65rem', 
                         fontWeight: 'bold', 
                         textTransform: 'uppercase',
