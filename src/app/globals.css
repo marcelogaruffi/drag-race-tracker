@@ -197,13 +197,13 @@ a:hover .poster-title-below {
 /* -------------------------------------------------------------------------- */
 
 .ep-card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 213px 1fr auto auto;
 }
 
 .ep-thumb {
-  width: 213px;
-  min-width: 213px;
+  width: 100%;
+  height: 100%;
 }
 
 .ep-details {
@@ -217,33 +217,47 @@ a:hover .poster-title-below {
 .ep-results-wrapper {
   display: flex;
   align-items: center;
-  padding: 0 1.5rem;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
   gap: 1.5rem;
   border-left: 1px dashed #4a1122;
   background-color: #050102;
+  flex-wrap: wrap;
+  max-width: 450px;
 }
 
 @media (max-width: 768px) {
   .ep-card {
     min-height: 80px !important;
+    grid-template-columns: 120px 1fr auto !important;
+    grid-template-rows: auto auto !important;
   }
   .ep-thumb {
-    width: 120px !important;
-    min-width: 120px !important;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
   .ep-details {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     padding: 0.5rem !important;
   }
-  .ep-title {
-    font-size: 1rem !important;
+  .ep-checkbox {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
   }
   .ep-results-wrapper {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     flex-wrap: wrap !important;
     gap: 0.5rem !important;
     padding: 0.5rem !important;
     border-left: none !important;
     border-top: 1px dashed #4a1122 !important;
     justify-content: center !important;
+    max-width: 100% !important;
+  }
+  .ep-title {
+    font-size: 1rem !important;
   }
 }
 .rating-section {

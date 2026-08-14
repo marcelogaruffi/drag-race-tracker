@@ -305,7 +305,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               )}
 
               {/* Checkbox */}
-              <div style={{
+              <div className="ep-checkbox" style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
