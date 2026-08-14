@@ -74,7 +74,9 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   const watchedSet = new Set(progress?.map(p => p.episode_id) || []);
   
   const firstEpisodeId = episodes && episodes.length > 0 ? episodes[0].id : null;
+  const secondEpisodeId = episodes && episodes.length > 1 ? episodes[1].id : null;
   const hasWatchedFirstEpisode = firstEpisodeId ? watchedSet.has(firstEpisodeId) : false;
+  const hasWatchedSecondEpisode = secondEpisodeId ? watchedSet.has(secondEpisodeId) : false;
 
   if (!season) {
     return (
@@ -229,7 +231,11 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
       </header>
 
       {hasWatchedFirstEpisode && castData && castData.length > 0 && (
-        <CastList castData={castData} />
+        <CastList castData={
+          (season.id === 'us-regular-s12' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode) 
+            ? castData.filter((q: any) => ['crystal-methyd', 'gigi-goode', 'jackie-cox', 'heidi-n-closet', 'widow-vondu', 'brita', 'nicky-doll'].includes(q.queens.id))
+            : castData
+        } />
       )}
 
       <EpisodeList 
