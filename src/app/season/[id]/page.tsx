@@ -236,6 +236,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
             ? castData.filter((q: any) => ['crystal-methyd', 'gigi-goode', 'jackie-cox', 'heidi-n-closet', 'widow-vondu', 'brita', 'nicky-doll'].includes(q.queens.id))
             : (season.id === 'us-regular-s14' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
             ? castData.filter((q: any) => ['willow-pill', 'bosco', 'kerri-colby', 'orion-story', 'kornbread-the-snack-jet', 'alyssa-hunter', 'june-jambalaya'].includes(q.queens.id))
+            : (season.id === 'us-regular-s16' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
+            ? castData.filter((q: any) => ['sapphira-cristl', 'q', 'morphine-love-dion', 'dawn', 'xunami-muse', 'amanda-tori-meating', 'mirage'].includes(q.queens.id))
             : castData
         } />
       )}
