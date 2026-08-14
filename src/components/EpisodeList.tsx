@@ -209,15 +209,14 @@ export default function EpisodeList({
 
 
           return (
-            <div key={ep.id} className="ep-card" style={{ 
-              display: 'flex', 
-              gap: '1rem', 
-              backgroundColor: isWatched ? '#1a1a1a' : '#222',
-              borderRadius: '8px', 
-              overflow: 'hidden', 
-              border: isWatched ? '1px solid #ff007f' : '1px solid #333',
+            <article key={ep.id} className="ep-card" style={{
+              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
+              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
+              borderRadius: '8px',
+              overflow: 'hidden',
+              minHeight: '120px',
               transition: 'all 0.3s ease',
-              opacity: (isUntucked && !isUnlocked) ? 0.4 : 1,
+              opacity: (isUntucked && !isUnlocked) ? 0.4 : (isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)),
               position: 'relative'
             }}>
               {isUntucked && !isUnlocked && (
@@ -238,7 +237,7 @@ export default function EpisodeList({
                 </div>
               )}
               {/* Thumbnail (Oculta se houver spoiler) */}
-              <div className="ep-thumb" style={{ width: '213px', position: 'relative', flexShrink: 0, overflow: 'hidden' }}>
+              <div className="ep-thumb" style={{ position: 'relative', backgroundColor: '#2a1111' }}>
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
@@ -370,7 +369,7 @@ export default function EpisodeList({
                   title={isUntucked && !isUnlocked ? "Bloqueado" : "Marcar como visto"}
                 />
               </div>
-            </div>
+            </article>
           );
         })
       ) : (
