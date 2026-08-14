@@ -9,6 +9,19 @@ import { cookies } from 'next/headers';
 
 export const revalidate = 0;
 
+function getParentSeasonId(seasonId: string): string | null {
+  if (seasonId.startsWith('us-untucked-')) {
+    return seasonId.replace('us-untucked-', 'us-regular-');
+  }
+  if (seasonId.startsWith('us-all-stars-untucked-')) {
+    return seasonId.replace('us-all-stars-untucked-', 'us-all-stars-');
+  }
+  if (seasonId.startsWith('philippines-untucked-')) {
+    return seasonId.replace('philippines-untucked-', 'philippines-');
+  }
+  return null;
+}
+
 export default async function SeasonPage({ params }: { params: Promise<{ id: string }> }) {
   const supabase = await createClient();
   const resolvedParams = await params;
@@ -20,6 +33,9 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
     .eq('id', resolvedParams.id)
     .single();
 
+  const isUntucked = season?.franchises?.name?.toLowerCase().includes('untucked');
+  const parentSeasonId = isUntucked && season ? getParentSeasonId(season.id) : null;
+
   // Busca os episódios dessa temporada
   const { data: episodes } = await supabase
     .from('episodes')
@@ -27,22 +43,43 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
     .eq('season_id', resolvedParams.id)
     .order('episode_number');
 
-  // Busca o elenco (Meet the Queens)
+  // Busca o elenco (Meet the Queens) - Se for untucked, puxa da principal
+  const castSeasonId = parentSeasonId || resolvedParams.id;
   const { data: castData } = await supabase
     .from('season_queens')
     .select('queen_id, placement, image_url, queens(*)')
-    .eq('season_id', resolvedParams.id);
+    .eq('season_id', castSeasonId);
 
-  // Busca os resultados dos episódios (eliminações, vencedoras)
+  // Busca os episódios do parente (se houver) para mapear os episode_results
+  let parentEpisodes: any[] = [];
+  if (parentSeasonId) {
+    const { data: pEps } = await supabase
+      .from('episodes')
+      .select('id, episode_number')
+      .eq('season_id', parentSeasonId);
+    if (pEps) parentEpisodes = pEps;
+  }
+
+  // Busca os resultados dos episódios
+  const episodesToFetchResultsFor = parentSeasonId ? parentEpisodes.map(ep => ep.id) : (episodes?.map(ep => ep.id) || []);
   const { data: rawEpisodeResults } = await supabase
     .from('episode_results')
     .select('episode_id, queen_id, status, queens(name, image_url)')
-    .in('episode_id', episodes?.map(ep => ep.id) || []);
+    .in('episode_id', episodesToFetchResultsFor);
     
   const episodeResults = rawEpisodeResults?.map(res => {
     const castInfo = castData?.find(c => c.queen_id === res.queen_id);
+    // Se for untucked, precisamos "traduzir" o episode_id do resultado pai para o episódio filho
+    let mappedEpisodeId = res.episode_id;
+    if (parentSeasonId) {
+      const parentEpNumber = parentEpisodes.find(p => p.id === res.episode_id)?.episode_number;
+      const childEp = episodes?.find(c => c.episode_number === parentEpNumber);
+      if (childEp) mappedEpisodeId = childEp.id;
+    }
+
     return {
       ...res,
+      episode_id: mappedEpisodeId,
       queens: {
         ...(res.queens as any),
         image_url: castInfo?.image_url || (res.queens as any)?.image_url
@@ -53,6 +90,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   // Busca o progresso do usuário e a nota
   const user = await getCustomUser();
   let progress = null;
+  let parentProgress = null;
   let initialRating = 0;
   
   if (user) {
@@ -63,20 +101,41 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
       .in('episode_id', episodes?.map(ep => ep.id) || []);
     progress = data;
     
+    if (parentSeasonId) {
+       const { data: pData } = await supabase
+         .from('user_progress')
+         .select('episode_id')
+         .eq('user_id', user.id)
+         .in('episode_id', episodesToFetchResultsFor);
+       parentProgress = pData;
+    }
+
     const { data: ratingData } = await supabase.rpc('get_season_rating', {
       p_user_id: user.id,
-      p_season_id: season.id
+      p_season_id: season?.id
     });
     
     if (ratingData) initialRating = ratingData;
   }
 
   const watchedSet = new Set(progress?.map(p => p.episode_id) || []);
+  const parentWatchedSet = new Set(parentProgress?.map(p => p.episode_id) || []);
   
-  const firstEpisodeId = episodes && episodes.length > 0 ? episodes[0].id : null;
-  const secondEpisodeId = episodes && episodes.length > 1 ? episodes[1].id : null;
-  const hasWatchedFirstEpisode = firstEpisodeId ? watchedSet.has(firstEpisodeId) : false;
-  const hasWatchedSecondEpisode = secondEpisodeId ? watchedSet.has(secondEpisodeId) : false;
+  // No Untucked, os episódios pais assistidos controlam o unlock
+  const parentWatchedNumbers = parentSeasonId ? parentEpisodes.filter(pe => parentWatchedSet.has(pe.id)).map(pe => pe.episode_number) : [];
+  
+  // A lógica de firstEpisodeWatched deve se basear no parent se for untucked, para revelar o cast
+  const firstEpisodeId = parentSeasonId 
+    ? (parentEpisodes.find(e => e.episode_number === 1)?.id)
+    : (episodes && episodes.length > 0 ? episodes[0].id : null);
+  const secondEpisodeId = parentSeasonId
+    ? (parentEpisodes.find(e => e.episode_number === 2)?.id)
+    : (episodes && episodes.length > 1 ? episodes[1].id : null);
+
+  const hasWatchedFirstEpisode = firstEpisodeId ? (parentSeasonId ? parentWatchedSet.has(firstEpisodeId) : watchedSet.has(firstEpisodeId)) : false;
+  const hasWatchedSecondEpisode = secondEpisodeId ? (parentSeasonId ? parentWatchedSet.has(secondEpisodeId) : watchedSet.has(secondEpisodeId)) : false;
+  
+  const relevantSeasonIdForSplit = parentSeasonId || (season ? season.id : '');
 
   if (!season) {
     return (
@@ -232,11 +291,11 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
 
       {hasWatchedFirstEpisode && castData && castData.length > 0 && (
         <CastList castData={
-          (season.id === 'us-regular-s12' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode) 
+          (relevantSeasonIdForSplit === 'us-regular-s12' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode) 
             ? castData.filter((q: any) => ['crystal-methyd', 'gigi-goode', 'jackie-cox', 'heidi-n-closet', 'widow-vondu', 'brita', 'nicky-doll'].includes(q.queens.id))
-            : (season.id === 'us-regular-s14' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
+            : (relevantSeasonIdForSplit === 'us-regular-s14' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
             ? castData.filter((q: any) => ['willow-pill', 'bosco', 'kerri-colby', 'orion-story', 'kornbread-the-snack-jet', 'alyssa-hunter', 'june-jambalaya'].includes(q.queens.id))
-            : (season.id === 'us-regular-s16' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
+            : (relevantSeasonIdForSplit === 'us-regular-s16' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
             ? castData.filter((q: any) => ['sapphira-cristl', 'q', 'morphine-love-dion', 'dawn', 'xunami-muse', 'amanda-tori-meating', 'mirage'].includes(q.queens.id))
             : castData
         } />
@@ -248,6 +307,9 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
         initialWatched={Array.from(watchedSet)} 
         episodeResults={episodeResults || []}
         initialRating={initialRating}
+        parentWatchedNumbers={parentSeasonId ? parentWatchedNumbers : undefined}
+        parentSeasonId={parentSeasonId || undefined}
+        parentTotalEpisodes={parentSeasonId ? parentEpisodes.length : undefined}
       />
     </main>
   );

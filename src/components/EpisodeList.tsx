@@ -15,7 +15,13 @@ type Episode = {
   thumb_image: string;
 };
 
-export default function EpisodeList({ episodes, seasonId, initialWatched, episodeResults, initialRating = 0 }: { episodes: Episode[], seasonId: string, initialWatched: string[], episodeResults?: any[], initialRating?: number }) {
+export default function EpisodeList({ 
+  episodes, seasonId, initialWatched, episodeResults, initialRating = 0,
+  parentWatchedNumbers, parentSeasonId, parentTotalEpisodes
+}: { 
+  episodes: Episode[], seasonId: string, initialWatched: string[], episodeResults?: any[], initialRating?: number,
+  parentWatchedNumbers?: number[], parentSeasonId?: string, parentTotalEpisodes?: number
+}) {
   const [watched, setWatched] = useState<Set<string>>(new Set(initialWatched));
   const [rating, setRating] = useState<number>(initialRating);
   const [isPending, startTransition] = useTransition();
@@ -176,22 +182,63 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
       {episodes && episodes.length > 0 ? (
         episodes.map((ep, index) => {
           const isWatched = watched.has(ep.id);
+          const isUntucked = !!parentSeasonId;
+          
+          let isUnlocked = true;
+          let lockMessage = '';
+          
+          if (isUntucked) {
+            if (seasonId === 'us-untucked-s1') {
+               isUnlocked = (parentWatchedNumbers && parentTotalEpisodes) ? parentWatchedNumbers.length === parentTotalEpisodes : false;
+               lockMessage = 'Termine a Season 1 principal para liberar';
+            } else {
+               isUnlocked = parentWatchedNumbers?.includes(ep.episode_number) || false;
+               lockMessage = `Assista o episódio ${ep.episode_number} principal para liberar`;
+            }
+          }
+
           // É spoiler se for posterior ao primeiro episódio não assistido
-          const isSpoiler = firstUnwatchedIndex !== -1 && index > firstUnwatchedIndex;
-          const resultsForEpisode = episodeResults?.filter(r => r.episode_id === ep.id) || [];
+          let isSpoiler = firstUnwatchedIndex !== -1 && index > firstUnwatchedIndex;
+          
+          // No Untucked, se estiver destrancado, os resultados aparecem imediatamente
+          if (isUntucked && isUnlocked) {
+            isSpoiler = false;
+          }
+
+          const resultsForEpisode = episodeResults?.filter(res => res.episode_id === ep.id) || [];
+
 
           return (
-            <article key={ep.id} className="ep-card" style={{
-              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
-              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
-              borderRadius: '8px',
-              overflow: 'hidden',
-              minHeight: '120px',
+            <div key={ep.id} className="ep-card" style={{ 
+              display: 'flex', 
+              gap: '1rem', 
+              backgroundColor: isWatched ? '#1a1a1a' : '#222',
+              borderRadius: '8px', 
+              overflow: 'hidden', 
+              border: isWatched ? '1px solid #ff007f' : '1px solid #333',
               transition: 'all 0.3s ease',
-              opacity: isWatched ? 0.7 : (isSpoiler ? 0.5 : 1)
+              opacity: (isUntucked && !isUnlocked) ? 0.4 : 1,
+              position: 'relative'
             }}>
-              {/* Thumbnail */}
-              <div className="ep-thumb" style={{ position: 'relative', backgroundColor: '#2a1111' }}>
+              {isUntucked && !isUnlocked && (
+                <div style={{
+                  position: 'absolute',
+                  top: 0, left: 0, right: 0, bottom: 0,
+                  backgroundColor: 'rgba(0,0,0,0.6)',
+                  zIndex: 10,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexDirection: 'column'
+                }}>
+                  <span style={{ fontSize: '2rem' }}>🔒</span>
+                  <span style={{ color: '#ff007f', fontWeight: 'bold', fontSize: '0.8rem', background: '#000', padding: '2px 6px', borderRadius: '4px' }}>
+                    {lockMessage}
+                  </span>
+                </div>
+              )}
+              {/* Thumbnail (Oculta se houver spoiler) */}
+              <div className="ep-thumb" style={{ width: '213px', position: 'relative', flexShrink: 0, overflow: 'hidden' }}>
                 {ep.thumb_image ? (
                   <Image 
                     src={ep.thumb_image} 
@@ -262,7 +309,7 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
               </div>
 
               {/* Spoiler Revelado - Resultados do Episódio */}
-              {isWatched && resultsForEpisode.length > 0 && (
+              {((isWatched || (isUntucked && isUnlocked)) && resultsForEpisode.length > 0) && (
                 <div className="ep-results-wrapper">
                   {resultsForEpisode.map((res: any, idx: number) => (
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
@@ -318,11 +365,12 @@ export default function EpisodeList({ episodes, seasonId, initialWatched, episod
                   type="checkbox" 
                   checked={isWatched}
                   onChange={() => toggleEpisode(ep.id)}
-                  style={{ width: '24px', height: '24px', cursor: 'pointer', accentColor: '#ff007f' }}
-                  title="Marcar como visto"
+                  disabled={isUntucked && !isUnlocked}
+                  style={{ width: '24px', height: '24px', cursor: (isUntucked && !isUnlocked) ? 'not-allowed' : 'pointer', accentColor: '#ff007f' }}
+                  title={isUntucked && !isUnlocked ? "Bloqueado" : "Marcar como visto"}
                 />
               </div>
-            </article>
+            </div>
           );
         })
       ) : (
