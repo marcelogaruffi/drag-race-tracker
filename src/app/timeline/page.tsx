@@ -21,6 +21,15 @@ export default async function TimelinePage() {
   const timelineByYear = new Map<number, any[]>();
   
   if (timeline && !error) {
+    timeline.sort((a: any, b: any) => {
+      const dateA = new Date(a.premiere_date).getTime();
+      const dateB = new Date(b.premiere_date).getTime();
+      if (dateA !== dateB) return dateA - dateB;
+      const isUntuckedA = a.franchise_id.includes('untucked') ? 1 : 0;
+      const isUntuckedB = b.franchise_id.includes('untucked') ? 1 : 0;
+      return isUntuckedA - isUntuckedB;
+    });
+
     timeline.forEach((season: any) => {
       const year = new Date(season.premiere_date).getFullYear();
       if (!timelineByYear.has(year)) {
