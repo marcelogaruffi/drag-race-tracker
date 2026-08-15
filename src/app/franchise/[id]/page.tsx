@@ -133,8 +133,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                     {isCompleted && (
                       <div style={{
                         position: 'absolute',
-                        top: '12px',
-                        right: '12px',
+                        top: '6px',
+                        right: '6px',
                         backgroundColor: '#00ff88',
                         color: '#000',
                         borderRadius: '50%',
@@ -155,8 +155,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                     {!isCompleted && watchedEps > 0 && !isLocked && (
                       <div style={{
                         position: 'absolute',
-                        top: '12px',
-                        left: '12px',
+                        top: '6px',
+                        left: '6px',
                         backgroundColor: 'rgba(0, 210, 255, 0.9)',
                         color: '#000',
                         padding: '3px 8px',

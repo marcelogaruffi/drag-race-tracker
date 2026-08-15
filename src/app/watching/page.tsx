@@ -121,7 +121,7 @@ export default async function WatchingPage() {
                       
                       <div style={{
                         position: 'absolute',
-                        top: '12px', left: '12px',
+                        top: '6px', left: '6px',
                         backgroundColor: 'rgba(0, 210, 255, 0.9)', color: '#000',
                         padding: '3px 8px', borderRadius: '4px',
                         fontSize: '0.65rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px',
