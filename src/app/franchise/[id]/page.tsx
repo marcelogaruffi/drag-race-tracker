@@ -39,8 +39,16 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
     const seasonIds = seasons.map(s => s.id);
     
     // Fetch progress and episodes for completed checks
-    const { data: up } = await supabase.from('user_progress').select('episode_id').eq('user_id', user.id);
-    if (up) userWatchedSet = new Set(up.map(x => x.episode_id));
+    let upData: any[] = [];
+    let upFrom = 0;
+    while (true) {
+      const { data } = await supabase.from('user_progress').select('episode_id').eq('user_id', user.id).range(upFrom, upFrom + 999);
+      if (!data || data.length === 0) break;
+      upData.push(...data);
+      if (data.length < 1000) break;
+      upFrom += 1000;
+    }
+    userWatchedSet = new Set(upData.map(x => x.episode_id));
     
     const { data: allEps } = await supabase.from('episodes').select('id, season_id').in('season_id', seasonIds);
     if (allEps) {

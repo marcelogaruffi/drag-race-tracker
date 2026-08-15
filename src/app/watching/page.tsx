@@ -15,51 +15,95 @@ export default async function WatchingPage() {
     redirect('/');
   }
 
-  // Fetch all user progress
-  const { data: up } = await supabase.from('user_progress').select('episode_id').eq('user_id', user.id);
-  const userWatchedSet = new Set(up?.map(x => x.episode_id) || []);
-
-  // Fetch all episodes and group by season & franchise
-  const { data: allEps } = await supabase.from('episodes').select('id, season_id, seasons(franchise_id)');
-  const episodesPerSeason: Record<string, string[]> = {};
-  const episodesPerFranchise: Record<string, string[]> = {};
-  
-  if (allEps) {
-    allEps.forEach((ep: any) => {
-      // Season grouping
-      if (!episodesPerSeason[ep.season_id]) episodesPerSeason[ep.season_id] = [];
-      episodesPerSeason[ep.season_id].push(ep.id);
-      
-      // Franchise grouping
-      const fId = ep.seasons?.franchise_id;
-      if (fId) {
-        if (!episodesPerFranchise[fId]) episodesPerFranchise[fId] = [];
-        episodesPerFranchise[fId].push(ep.id);
+  // Helper to fetch all pages from Supabase
+  async function fetchAll(table: string, select: string, eqColumn?: string, eqValue?: string) {
+    let allData: any[] = [];
+    let from = 0;
+    const pageSize = 1000;
+    while (true) {
+      let query = supabase.from(table).select(select).range(from, from + pageSize - 1);
+      if (eqColumn && eqValue) {
+        query = query.eq(eqColumn, eqValue);
       }
-    });
+      const { data } = await query;
+      if (!data || data.length === 0) break;
+      allData.push(...data);
+      if (data.length < pageSize) break;
+      from += pageSize;
+    }
+    return allData;
   }
 
-  // Find seasons in progress
+  // Fetch all user progress
+  const up = await fetchAll('user_progress', 'episode_id', 'user_id', user.id);
+  const userWatchedSet = new Set(up.map(x => x.episode_id));
+
+  // Fetch all episodes
+  const allEps = await fetchAll('episodes', 'id, season_id, duration, seasons(franchise_id)');
+  
+  const episodesPerSeason: Record<string, string[]> = {};
+  const episodesPerFranchise: Record<string, string[]> = {};
+  let totalWatchedMinutes = 0;
+
+  allEps.forEach((ep: any) => {
+    // Season grouping
+    if (!episodesPerSeason[ep.season_id]) episodesPerSeason[ep.season_id] = [];
+    episodesPerSeason[ep.season_id].push(ep.id);
+    
+    // Franchise grouping
+    const fId = ep.seasons?.franchise_id;
+    if (fId) {
+      if (!episodesPerFranchise[fId]) episodesPerFranchise[fId] = [];
+      episodesPerFranchise[fId].push(ep.id);
+    }
+
+    // Duration logic
+    if (userWatchedSet.has(ep.id) && ep.duration) {
+      totalWatchedMinutes += Number(ep.duration) || 0;
+    }
+  });
+
   const inProgressSeasonIds: string[] = [];
+  let completedSeasonsCount = 0;
+  const startedOrCompletedSeasonIds = new Set<string>();
+
   for (const [seasonId, epIds] of Object.entries(episodesPerSeason)) {
     const totalEps = epIds.length;
     const watchedEps = epIds.filter(id => userWatchedSet.has(id)).length;
-    if (watchedEps > 0 && watchedEps < totalEps) {
-      inProgressSeasonIds.push(seasonId);
+    if (watchedEps > 0) {
+      startedOrCompletedSeasonIds.add(seasonId);
+      if (watchedEps < totalEps) {
+        inProgressSeasonIds.push(seasonId);
+      } else if (totalEps > 0) {
+        completedSeasonsCount++;
+      }
     }
   }
 
-  // Find franchises in progress
   const inProgressFranchiseIds: string[] = [];
+  let completedFranchisesCount = 0;
   for (const [franchiseId, epIds] of Object.entries(episodesPerFranchise)) {
     const totalEps = epIds.length;
     const watchedEps = epIds.filter(id => userWatchedSet.has(id)).length;
-    if (watchedEps > 0 && watchedEps < totalEps) {
-      inProgressFranchiseIds.push(franchiseId);
+    if (watchedEps > 0) {
+      if (watchedEps < totalEps) {
+        inProgressFranchiseIds.push(franchiseId);
+      } else if (totalEps > 0) {
+        completedFranchisesCount++;
+      }
     }
   }
 
-  // Fetch details
+  // Fetch all queens to calculate known queens
+  const allQueens = await fetchAll('season_queens', 'queen_id, season_id');
+  const distinctQueens = new Set<string>();
+  allQueens.forEach((q: any) => {
+    if (startedOrCompletedSeasonIds.has(q.season_id)) {
+      distinctQueens.add(q.queen_id);
+    }
+  });
+
+  // Fetch details for display
   const { data: seasons } = await supabase
     .from('seasons')
     .select('*, franchises(name)')
@@ -70,6 +114,20 @@ export default async function WatchingPage() {
     .select('*')
     .in('id', inProgressFranchiseIds.length > 0 ? inProgressFranchiseIds : ['dummy-id']);
 
+  // Format Time
+  const hours = Math.floor(totalWatchedMinutes / 60);
+  const days = Math.floor(hours / 24);
+  const remainingHours = hours % 24;
+
+  let timeString = "";
+  if (days > 0) {
+    timeString = `${days}d e ${remainingHours}h`;
+  } else if (hours > 0) {
+    timeString = `${hours} horas`;
+  } else {
+    timeString = `${totalWatchedMinutes} min`;
+  }
+
   return (
     <main className="page-wrapper container flex flex-col items-center gap-12 px-4 py-8 md:px-16 md:py-12">
       <header className="flex flex-col items-center gap-2" style={{ textAlign: 'center' }}>
@@ -77,12 +135,54 @@ export default async function WatchingPage() {
           O que estou assistindo
         </h1>
         <p className="gold-text text-sm md:text-base" style={{ letterSpacing: '1px', textTransform: 'uppercase' }}>
-          Continue de onde parou
+          Estatísticas & Continue assistindo
         </p>
         <Link href="/" style={{ color: 'var(--color-neon-pink)', marginTop: '1rem', textDecoration: 'underline' }}>
           ← Voltar para o Início
         </Link>
       </header>
+
+      {/* STATS SECTION */}
+      <section style={{ 
+        width: '100%', 
+        backgroundColor: '#111', 
+        borderRadius: '12px', 
+        padding: '2rem',
+        border: '1px solid #331111',
+        boxShadow: '0 0 20px rgba(255,0,127,0.1)'
+      }}>
+        <h2 className="neon-text" style={{ fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Seu Legado Drag
+        </h2>
+        
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '1.5rem',
+          textAlign: 'center'
+        }}>
+          <div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#00d2ff' }}>{userWatchedSet.size}</div>
+            <div className="gold-text" style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Episódios</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#ff007f' }}>{completedSeasonsCount}</div>
+            <div className="gold-text" style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Temporadas Completas</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#00ff88' }}>{completedFranchisesCount}</div>
+            <div className="gold-text" style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Franquias Completas</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#e0b0ff' }}>{distinctQueens.size}</div>
+            <div className="gold-text" style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Queens Conhecidas</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#ffd700' }}>{timeString}</div>
+            <div className="gold-text" style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Tempo Assistido</div>
+          </div>
+        </div>
+      </section>
 
       {/* FRANCHISES IN PROGRESS */}
       <section style={{ width: '100%' }}>
@@ -91,7 +191,7 @@ export default async function WatchingPage() {
         </h2>
         <div className="poster-grid">
           {franchises && franchises.length > 0 ? (
-            franchises.map((franchise, idx) => {
+            franchises.map((franchise) => {
               const totalEps = episodesPerFranchise[franchise.id]?.length || 0;
               const watchedEps = episodesPerFranchise[franchise.id]?.filter(id => userWatchedSet.has(id)).length || 0;
               const progressPercent = Math.round((watchedEps / totalEps) * 100);
@@ -162,7 +262,7 @@ export default async function WatchingPage() {
         </h2>
         <div className="poster-grid">
           {seasons && seasons.length > 0 ? (
-            seasons.map((season, idx) => {
+            seasons.map((season) => {
               const totalEps = episodesPerSeason[season.id]?.length || 0;
               const watchedEps = episodesPerSeason[season.id]?.filter(id => userWatchedSet.has(id)).length || 0;
               const progressPercent = Math.round((watchedEps / totalEps) * 100);
