@@ -102,18 +102,18 @@ export default async function Home() {
                     {isCompleted && (
                       <div style={{
                         position: 'absolute',
-                        top: '8px',
-                        right: '8px',
+                        top: '12px',
+                        right: '12px',
                         backgroundColor: '#00ff88',
                         color: '#000',
                         borderRadius: '50%',
-                        width: '32px',
-                        height: '32px',
+                        width: '28px',
+                        height: '28px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         fontWeight: 'bold',
-                        fontSize: '1.2rem',
+                        fontSize: '1rem',
                         boxShadow: '0 0 10px rgba(0,255,136,0.5)',
                         zIndex: 10
                       }} title="Completada!">
@@ -123,11 +123,11 @@ export default async function Home() {
                     {!isCompleted && watchedEps > 0 && (
                       <div style={{
                         position: 'absolute',
-                        top: '8px',
-                        left: '8px',
+                        top: '12px',
+                        left: '12px',
                         backgroundColor: 'rgba(0, 210, 255, 0.9)',
                         color: '#000',
-                        padding: '2px 8px',
+                        padding: '3px 8px',
                         borderRadius: '4px',
                         fontSize: '0.65rem',
                         fontWeight: 'bold',
