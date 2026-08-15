@@ -320,7 +320,7 @@ export default function EpisodeList({
                             borderRadius: '50%', 
                             overflow: 'hidden', 
                             position: 'relative', 
-                            border: `2px solid ${res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : res.status === 'lalaparuza_winner' ? '#ff8c00' : res.status === 'miss_congeniality' ? '#00d2ff' : res.status === 'disqualified' ? '#7A7525' : res.status === 'medevac' ? '#ffaa00' : 'var(--color-gold)'}`
+                            border: `2px solid ${res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : res.status === 'lalaparuza_winner' ? '#ff8c00' : res.status === 'fame_games_winner' ? '#ff00ff' : res.status === 'miss_congeniality' ? '#00d2ff' : res.status === 'disqualified' ? '#7A7525' : res.status === 'medevac' ? '#ffaa00' : 'var(--color-gold)'}`
                           }}
                         >
                           <Image src={res.queens.image_url} alt={res.queens.name} fill style={{ objectFit: 'cover' }} sizes="45px" />
@@ -332,7 +332,7 @@ export default function EpisodeList({
                       )}
                       <span style={{ fontSize: '0.75rem', color: '#fff', fontWeight: 'bold' }}>{res.queens?.name}</span>
                       <span style={{ 
-                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : res.status === 'lalaparuza_winner' ? '#ff8c00' : res.status === 'miss_congeniality' ? '#00d2ff' : res.status === 'disqualified' ? '#7A7525' : res.status === 'medevac' ? '#ffaa00' : 'var(--color-gold)', 
+                        color: res.status === 'eliminated' ? '#ff4444' : res.status === 'winner' ? '#00ff88' : res.status === 'lalaparuza_winner' ? '#ff8c00' : res.status === 'fame_games_winner' ? '#ff00ff' : res.status === 'miss_congeniality' ? '#00d2ff' : res.status === 'disqualified' ? '#7A7525' : res.status === 'medevac' ? '#ffaa00' : 'var(--color-gold)', 
                         fontSize: '0.65rem', 
                         fontWeight: 'bold', 
                         textTransform: 'uppercase',
@@ -343,6 +343,7 @@ export default function EpisodeList({
                         {res.status === 'eliminated' ? 'Eliminada' : 
                          res.status === 'winner' ? 'Vencedora' : 
                          res.status === 'lalaparuza_winner' ? 'Vencedora do Lalaparuza' :
+                         res.status === 'fame_games_winner' ? 'Vencedora do Fame Games' :
                          res.status === 'disqualified' ? 'Desqualificada' :
                          res.status === 'medevac' ? 'Retirada (Saúde)' :
                          res.status === 'quit' ? 'Desistente' :
