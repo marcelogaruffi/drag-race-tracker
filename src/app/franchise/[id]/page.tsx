@@ -133,8 +133,8 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                     {isCompleted && (
                       <div style={{
                         position: 'absolute',
-                        top: '-10px',
-                        right: '-10px',
+                        top: '8px',
+                        right: '8px',
                         backgroundColor: '#00ff88',
                         color: '#000',
                         borderRadius: '50%',
@@ -149,6 +149,26 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                         zIndex: 10
                       }} title="Completada!">
                         ✓
+                      </div>
+                    )}
+
+                    {!isCompleted && watchedEps > 0 && !isLocked && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '8px',
+                        left: '8px',
+                        backgroundColor: 'rgba(0, 210, 255, 0.9)',
+                        color: '#000',
+                        padding: '2px 8px',
+                        borderRadius: '4px',
+                        fontSize: '0.65rem',
+                        fontWeight: 'bold',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        boxShadow: '0 0 8px rgba(0, 210, 255, 0.6)',
+                        zIndex: 10
+                      }}>
+                        Iniciado
                       </div>
                     )}
 
