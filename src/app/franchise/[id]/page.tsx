@@ -32,8 +32,24 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
   // Lógica Cross-Season Anti-Spoilers (Robô)
   const user = await getCustomUser();
   let lockedSeasonsMap = new Map<string, { required_season_name: string, required_franchise_name: string }>();
+  let userWatchedSet = new Set<string>();
+  let episodesPerSeason: Record<string, string[]> = {};
+
   if (user && seasons && seasons.length > 0) {
     const seasonIds = seasons.map(s => s.id);
+    
+    // Fetch progress and episodes for completed checks
+    const { data: up } = await supabase.from('user_progress').select('episode_id').eq('user_id', user.id);
+    if (up) userWatchedSet = new Set(up.map(x => x.episode_id));
+    
+    const { data: allEps } = await supabase.from('episodes').select('id, season_id').in('season_id', seasonIds);
+    if (allEps) {
+      allEps.forEach((ep: any) => {
+        if (!episodesPerSeason[ep.season_id]) episodesPerSeason[ep.season_id] = [];
+        episodesPerSeason[ep.season_id].push(ep.id);
+      });
+    }
+
     const { data: locks, error } = await supabase.rpc('get_locked_seasons', { 
       p_user_id: user.id, 
       p_season_ids: seasonIds 
@@ -81,11 +97,15 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
           seasons.map((season, idx) => {
             const lock = lockedSeasonsMap.get(season.id);
             const isLocked = !!lock;
+            
+            const totalEps = episodesPerSeason[season.id]?.length || 0;
+            const watchedEps = episodesPerSeason[season.id]?.filter(id => userWatchedSet.has(id)).length || 0;
+            const isCompleted = totalEps > 0 && watchedEps === totalEps;
 
             return (
               <Link href={`/season/${season.id}`} key={season.id} style={{ textDecoration: 'none', display: 'block', cursor: isLocked ? 'help' : 'pointer' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', height: '100%', opacity: isLocked ? 0.6 : 1, transition: 'all 0.3s ease' }}>
-                  <article className="poster-card" style={{ borderColor: isLocked ? '#331111' : 'var(--color-neon-pink)', backgroundColor: isLocked ? '#0a0000' : 'transparent' }}>
+                  <article className="poster-card" style={{ position: 'relative', borderColor: isLocked ? '#331111' : 'var(--color-neon-pink)', backgroundColor: isLocked ? '#0a0000' : 'transparent' }}>
                     {season.cover_image ? (
                       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                         <Image 
@@ -107,6 +127,28 @@ export default async function FranchisePage({ params }: { params: Promise<{ id: 
                     ) : (
                       <div style={{ backgroundColor: '#2a1111', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <span style={{ color: '#ff007f', opacity: 0.5, fontSize: '3rem' }}>{isLocked ? '🔒' : '🎬'}</span>
+                      </div>
+                    )}
+                    
+                    {isCompleted && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '-10px',
+                        right: '-10px',
+                        backgroundColor: '#00ff88',
+                        color: '#000',
+                        borderRadius: '50%',
+                        width: '32px',
+                        height: '32px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontWeight: 'bold',
+                        fontSize: '1.2rem',
+                        boxShadow: '0 0 10px rgba(0,255,136,0.5)',
+                        zIndex: 10
+                      }} title="Completada!">
+                        ✓
                       </div>
                     )}
 
