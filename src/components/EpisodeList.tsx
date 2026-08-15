@@ -345,6 +345,7 @@ export default function EpisodeList({
                          res.status === 'lalaparuza_winner' ? 'Vencedora do Lalaparuza' :
                          res.status === 'disqualified' ? 'Desqualificada' :
                          res.status === 'medevac' ? 'Retirada (Saúde)' :
+                         res.status === 'quit' ? 'Desistente' :
                          res.status === 'runner_up' ? 'Finalista' : 'Miss Simpatia'}
                       </span>
                     </div>
