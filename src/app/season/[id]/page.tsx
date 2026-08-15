@@ -55,9 +55,21 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   if (parentSeasonId) {
     const { data: pEps } = await supabase
       .from('episodes')
-      .select('id, episode_number')
+      .select('id, episode_number, thumb_image')
       .eq('season_id', parentSeasonId);
     if (pEps) parentEpisodes = pEps;
+    
+    // Mapear thumbnail do parente para o episódio de untucked
+    if (episodes) {
+      episodes.forEach(ep => {
+        if (!ep.thumb_image) {
+          const pEp = parentEpisodes.find(p => p.episode_number === ep.episode_number);
+          if (pEp && pEp.thumb_image) {
+            ep.thumb_image = pEp.thumb_image;
+          }
+        }
+      });
+    }
   }
 
   // Busca os resultados dos episódios
