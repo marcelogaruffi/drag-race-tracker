@@ -220,5 +220,3 @@ export default async function WatchingPage() {
     </main>
   );
 }
-  );
-}
