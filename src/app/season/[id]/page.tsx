@@ -135,6 +135,16 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
   const hasWatchedFirstEpisode = firstEpisodeId ? (parentSeasonId ? parentWatchedSet.has(firstEpisodeId) : watchedSet.has(firstEpisodeId)) : false;
   const hasWatchedSecondEpisode = secondEpisodeId ? (parentSeasonId ? parentWatchedSet.has(secondEpisodeId) : watchedSet.has(secondEpisodeId)) : false;
   
+  const fourthEpisodeId = parentSeasonId
+    ? (parentEpisodes.find(e => e.episode_number === 4)?.id)
+    : (episodes && episodes.length > 3 ? episodes[3].id : null);
+  const seventhEpisodeId = parentSeasonId
+    ? (parentEpisodes.find(e => e.episode_number === 7)?.id)
+    : (episodes && episodes.length > 6 ? episodes[6].id : null);
+
+  const hasWatchedFourthEpisode = fourthEpisodeId ? (parentSeasonId ? parentWatchedSet.has(fourthEpisodeId) : watchedSet.has(fourthEpisodeId)) : false;
+  const hasWatchedSeventhEpisode = seventhEpisodeId ? (parentSeasonId ? parentWatchedSet.has(seventhEpisodeId) : watchedSet.has(seventhEpisodeId)) : false;
+  
   const relevantSeasonIdForSplit = parentSeasonId || (season ? season.id : '');
 
   if (!season) {
@@ -297,6 +307,22 @@ export default async function SeasonPage({ params }: { params: Promise<{ id: str
             ? castData.filter((q: any) => ['willow-pill', 'bosco', 'kerri-colby', 'orion-story', 'kornbread-the-snack-jet', 'alyssa-hunter', 'june-jambalaya'].includes(q.queens.id))
             : (relevantSeasonIdForSplit === 'us-regular-s16' && hasWatchedFirstEpisode && !hasWatchedSecondEpisode)
             ? castData.filter((q: any) => ['sapphira-cristl', 'q', 'morphine-love-dion', 'dawn', 'xunami-muse', 'amanda-tori-meating', 'mirage'].includes(q.queens.id))
+            : (relevantSeasonIdForSplit === 'us-all-stars-s10')
+            ? castData.filter((q: any) => {
+                const group1 = ['phoenix', 'olivia-lux', 'deja-skye', 'irene-the-alien', 'aja', 'bosco'];
+                const group2 = ['jorgeous', 'lydia-b-kollins', 'kerri-colby', 'mistress-isabelle-brooks', 'nicole-paige-brooks', 'tina-burner'];
+                if (hasWatchedSeventhEpisode) return true;
+                if (hasWatchedFourthEpisode) return group1.includes(q.queens.id) || group2.includes(q.queens.id);
+                return group1.includes(q.queens.id);
+              })
+            : (relevantSeasonIdForSplit === 'us-all-stars-s11')
+            ? castData.filter((q: any) => {
+                const group1 = ['mystique-summers', 'morphine-love-dion', 'morgan-mcmichaels', 'lucky-starzzz', 'akeria-c-davenport', 'dawn'];
+                const group2 = ['vicacious', 'salina-estitties', 'aura-mayari', 'april-carrin', 'silky-nutmeg-ganache', 'crystal-methyd'];
+                if (hasWatchedSeventhEpisode) return true;
+                if (hasWatchedFourthEpisode) return group1.includes(q.queens.id) || group2.includes(q.queens.id);
+                return group1.includes(q.queens.id);
+              })
             : castData
         } />
       )}
