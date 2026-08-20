@@ -126,35 +126,35 @@ export default function EpisodeList({
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
       
-      {/* Container do Topo (Progresso e Avaliação) */}
       <div className="rating-section" style={{ position: 'relative' }}>
-        
-        {/* Rewatch Toggle Button */}
-        {(watched.size > 0 || rewatchMode) && (
-          <button 
-            onClick={toggleRewatchMode}
-            style={{
-              position: 'absolute', top: '-15px', right: '10px',
-              backgroundColor: rewatchMode ? '#b026ff' : '#1a1a1a',
-              color: rewatchMode ? '#fff' : '#888',
-              border: `1px solid ${rewatchMode ? '#b026ff' : '#333'}`,
-              borderRadius: '20px', padding: '4px 12px', fontSize: '0.75rem',
-              cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase',
-              boxShadow: rewatchMode ? '0 0 10px rgba(176, 38, 255, 0.4)' : 'none',
-              transition: 'all 0.3s ease', zIndex: 10
-            }}
-          >
-            {rewatchMode ? '🔄 Modo Re-assistir Ativo' : '🔄 Reassistir'}
-          </button>
-        )}
         
         {/* Barra de Progresso Visual */}
         {episodes.length > 0 && (
           <div style={{ flex: 1, minWidth: '200px', display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                {rewatchMode ? 'Progresso da Re-assistida' : 'Progresso da Temporada'}
-              </span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                  {rewatchMode ? 'Progresso da Re-assistida' : 'Progresso da Temporada'}
+                </span>
+                
+                {/* Rewatch Toggle Button */}
+                {(watched.size > 0 || rewatchMode) && (
+                  <button 
+                    onClick={toggleRewatchMode}
+                    style={{
+                      backgroundColor: rewatchMode ? '#b026ff' : '#1a1a1a',
+                      color: rewatchMode ? '#fff' : '#888',
+                      border: `1px solid ${rewatchMode ? '#b026ff' : '#333'}`,
+                      borderRadius: '20px', padding: '4px 12px', fontSize: '0.75rem',
+                      cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase',
+                      boxShadow: rewatchMode ? '0 0 10px rgba(176, 38, 255, 0.4)' : 'none',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    {rewatchMode ? '🔄 Modo Re-assistir Ativo' : '🔄 Reassistir'}
+                  </button>
+                )}
+              </div>
               <span style={{ color: isAllWatched ? successColor : primaryColor, fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
             </div>
             <div style={{ width: '100%', height: '8px', backgroundColor: '#222', borderRadius: '4px', overflow: 'hidden' }}>
