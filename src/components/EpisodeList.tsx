@@ -23,11 +23,40 @@ export default function EpisodeList({
   parentWatchedNumbers?: number[], parentSeasonId?: string, parentTotalEpisodes?: number
 }) {
   const [watched, setWatched] = useState<Set<string>>(new Set(initialWatched));
+  const [rewatched, setRewatched] = useState<Set<string>>(new Set());
+  const [rewatchMode, setRewatchMode] = useState<boolean>(false);
   const [rating, setRating] = useState<number>(initialRating);
   const [isPending, startTransition] = useTransition();
   const [selectedImage, setSelectedImage] = useState<{ url: string; name: string } | null>(null);
 
+  React.useEffect(() => {
+    try {
+      const mode = localStorage.getItem(`rewatch_mode_${seasonId}`);
+      if (mode === 'true') setRewatchMode(true);
+      
+      const storedRewatched = localStorage.getItem('drag_race_rewatched');
+      if (storedRewatched) {
+        setRewatched(new Set(JSON.parse(storedRewatched)));
+      }
+    } catch (e) {}
+  }, [seasonId]);
+
+  const toggleRewatchMode = () => {
+    const newMode = !rewatchMode;
+    setRewatchMode(newMode);
+    localStorage.setItem(`rewatch_mode_${seasonId}`, newMode ? 'true' : 'false');
+  };
+
   const toggleEpisode = (id: string) => {
+    if (rewatchMode) {
+      const newRewatched = new Set(rewatched);
+      if (newRewatched.has(id)) newRewatched.delete(id);
+      else newRewatched.add(id);
+      setRewatched(newRewatched);
+      localStorage.setItem('drag_race_rewatched', JSON.stringify(Array.from(newRewatched)));
+      return;
+    }
+
     const newWatched = new Set(watched);
     if (newWatched.has(id)) {
       newWatched.delete(id);
@@ -45,6 +74,11 @@ export default function EpisodeList({
 
   const handleMarkAllWatched = () => {
     const allIds = episodes.map(ep => ep.id);
+    if (rewatchMode) {
+      setRewatched(new Set(allIds));
+      localStorage.setItem('drag_race_rewatched', JSON.stringify(allIds));
+      return;
+    }
     setWatched(new Set(allIds));
     startTransition(() => {
       markSeasonWatched(seasonId, allIds);
@@ -52,6 +86,13 @@ export default function EpisodeList({
   };
 
   const handleUnmarkAllWatched = () => {
+    if (rewatchMode) {
+      const newRewatched = new Set(rewatched);
+      episodes.forEach(ep => newRewatched.delete(ep.id));
+      setRewatched(newRewatched);
+      localStorage.setItem('drag_race_rewatched', JSON.stringify(Array.from(newRewatched)));
+      return;
+    }
     const allIds = episodes.map(ep => ep.id);
     setWatched(new Set());
     startTransition(() => {
@@ -66,37 +107,61 @@ export default function EpisodeList({
     });
   };
 
-  const isAllWatched = watched.size === episodes.length && episodes.length > 0;
-  const isNoneWatched = watched.size === 0;
-  const progressPercent = episodes.length > 0 ? (watched.size / episodes.length) * 100 : 0;
+  const currentSet = rewatchMode ? rewatched : watched;
+  const isAllWatched = currentSet.size === episodes.length && episodes.length > 0;
+  const isNoneWatched = currentSet.size === 0;
+  const progressPercent = episodes.length > 0 ? (currentSet.size / episodes.length) * 100 : 0;
 
-  // Encontra o índice do primeiro episódio não assistido
   let firstUnwatchedIndex = -1;
   for (let i = 0; i < episodes.length; i++) {
-    if (!watched.has(episodes[i].id)) {
+    if (!currentSet.has(episodes[i].id)) {
       firstUnwatchedIndex = i;
       break;
     }
   }
 
+  const primaryColor = rewatchMode ? '#b026ff' : 'var(--color-neon-pink)';
+  const successColor = rewatchMode ? '#d870ff' : '#00ff88';
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
       
       {/* Container do Topo (Progresso e Avaliação) */}
-      <div className="rating-section">
+      <div className="rating-section" style={{ position: 'relative' }}>
+        
+        {/* Rewatch Toggle Button */}
+        {(watched.size > 0 || rewatchMode) && (
+          <button 
+            onClick={toggleRewatchMode}
+            style={{
+              position: 'absolute', top: '-15px', right: '10px',
+              backgroundColor: rewatchMode ? '#b026ff' : '#1a1a1a',
+              color: rewatchMode ? '#fff' : '#888',
+              border: `1px solid ${rewatchMode ? '#b026ff' : '#333'}`,
+              borderRadius: '20px', padding: '4px 12px', fontSize: '0.75rem',
+              cursor: 'pointer', fontWeight: 'bold', textTransform: 'uppercase',
+              boxShadow: rewatchMode ? '0 0 10px rgba(176, 38, 255, 0.4)' : 'none',
+              transition: 'all 0.3s ease', zIndex: 10
+            }}
+          >
+            {rewatchMode ? '🔄 Modo Re-assistir Ativo' : '🔄 Reassistir'}
+          </button>
+        )}
         
         {/* Barra de Progresso Visual */}
         {episodes.length > 0 && (
           <div style={{ flex: 1, minWidth: '200px', display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Progresso da Temporada</span>
-              <span style={{ color: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)', fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
+              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                {rewatchMode ? 'Progresso da Re-assistida' : 'Progresso da Temporada'}
+              </span>
+              <span style={{ color: isAllWatched ? successColor : primaryColor, fontWeight: 'bold', fontSize: '0.9rem' }}>{Math.round(progressPercent)}%</span>
             </div>
             <div style={{ width: '100%', height: '8px', backgroundColor: '#222', borderRadius: '4px', overflow: 'hidden' }}>
               <div style={{ 
                 width: `${progressPercent}%`, 
                 height: '100%', 
-                backgroundColor: isAllWatched ? '#00ff88' : 'var(--color-neon-pink)',
+                backgroundColor: isAllWatched ? successColor : primaryColor,
                 transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s'
               }}></div>
             </div>
@@ -159,9 +224,9 @@ export default function EpisodeList({
 
           <button 
             onClick={handleMarkAllWatched}
-            disabled={isAllWatched || isPending}
+            disabled={isAllWatched || (isPending && !rewatchMode)}
             style={{
-              backgroundColor: isAllWatched ? '#2a1111' : '#ff007f',
+              backgroundColor: isAllWatched ? '#2a1111' : primaryColor,
               color: '#fff',
               border: 'none',
               padding: '0.5rem 1rem',
@@ -174,14 +239,15 @@ export default function EpisodeList({
               opacity: isAllWatched ? 0.5 : 1
             }}
           >
-            {isAllWatched ? '✓ Temporada Completa' : 'Marcar Toda a Temporada como Vista'}
+            {isAllWatched ? '✓ Temporada Completa' : (rewatchMode ? 'Marcar Todos como Re-assistidos' : 'Marcar Toda a Temporada como Vista')}
           </button>
         </div>
       )}
 
       {episodes && episodes.length > 0 ? (
         episodes.map((ep, index) => {
-          const isWatched = watched.has(ep.id);
+          const isWatched = currentSet.has(ep.id);
+          const isOriginallyWatched = watched.has(ep.id);
           const isUntucked = !!parentSeasonId;
           
           let isUnlocked = true;
@@ -206,12 +272,13 @@ export default function EpisodeList({
           }
 
           const resultsForEpisode = episodeResults?.filter(res => res.episode_id === ep.id) || [];
-
+          
+          const cardBorderColor = isWatched ? (rewatchMode ? '#4a1144' : '#4a1122') : (isSpoiler ? '#331111' : primaryColor);
 
           return (
             <article key={ep.id} className="ep-card" style={{
-              backgroundColor: isWatched ? '#0a0404' : (isSpoiler ? '#110505' : '#1a0b0b'),
-              border: `1px solid ${isWatched ? '#4a1122' : (isSpoiler ? '#331111' : '#ff007f')}`,
+              backgroundColor: isWatched ? (rewatchMode ? '#0a040a' : '#0a0404') : (isSpoiler ? '#110505' : '#1a0b0b'),
+              border: `1px solid ${cardBorderColor}`,
               borderRadius: '8px',
               overflow: 'hidden',
               minHeight: '120px',
@@ -261,12 +328,12 @@ export default function EpisodeList({
                   <div style={{
                     position: 'absolute',
                     top: 0, left: 0, right: 0, bottom: 0,
-                    backgroundColor: 'rgba(255, 0, 127, 0.3)',
+                    backgroundColor: rewatchMode ? 'rgba(176, 38, 255, 0.3)' : 'rgba(255, 0, 127, 0.3)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <span style={{ fontSize: '3rem', textShadow: '0 0 10px #000' }}>✔️</span>
+                    <span style={{ fontSize: '3rem', textShadow: '0 0 10px #000' }}>{rewatchMode ? '🔄' : '✔️'}</span>
                   </div>
                 )}
                 {/* Overlay cadeado se for spoiler */}
@@ -308,7 +375,7 @@ export default function EpisodeList({
               </div>
 
               {/* Spoiler Revelado - Resultados do Episódio */}
-              {((isWatched || (isUntucked && isUnlocked)) && resultsForEpisode.length > 0) && (
+              {((isOriginallyWatched || (isUntucked && isUnlocked)) && resultsForEpisode.length > 0) && (
                 <div className="ep-results-wrapper">
                   {resultsForEpisode.map((res: any, idx: number) => (
                     <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', position: 'relative' }}>
@@ -361,15 +428,15 @@ export default function EpisodeList({
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: '0 1.5rem',
-                borderLeft: `1px solid ${isWatched ? '#4a1122' : 'rgba(255, 0, 127, 0.2)'}`
+                borderLeft: `1px solid ${isWatched ? (rewatchMode ? '#4a1144' : '#4a1122') : (rewatchMode ? 'rgba(176, 38, 255, 0.2)' : 'rgba(255, 0, 127, 0.2)')}`
               }}>
                 <input 
                   type="checkbox" 
                   checked={isWatched}
                   onChange={() => toggleEpisode(ep.id)}
                   disabled={isUntucked && !isUnlocked}
-                  style={{ width: '24px', height: '24px', cursor: (isUntucked && !isUnlocked) ? 'not-allowed' : 'pointer', accentColor: '#ff007f' }}
-                  title={isUntucked && !isUnlocked ? "Bloqueado" : "Marcar como visto"}
+                  style={{ width: '24px', height: '24px', cursor: (isUntucked && !isUnlocked) ? 'not-allowed' : 'pointer', accentColor: primaryColor }}
+                  title={isUntucked && !isUnlocked ? "Bloqueado" : (rewatchMode ? "Marcar como re-assistido" : "Marcar como visto")}
                 />
               </div>
             </article>
